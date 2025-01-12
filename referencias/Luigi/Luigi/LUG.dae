@@ -1,0 +1,3359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <asset>
+    <contributor>
+      <author>Centrixe</author>
+      <authoring_tool>OpenCOLLADA for 3ds Max;  Version: 1.6;  Revision: 68</authoring_tool>
+    </contributor>
+    <created>2024-05-22T21:22:25</created>
+    <modified>2024-05-22T21:22:25</modified>
+    <unit name="inch" meter="0.0254"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_effects>
+    <effect id="Mt_Body">
+      <profile_COMMON>
+        <newparam sid="Body_png-surface">
+          <surface type="2D">
+            <init_from>Body_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="Body_png-sampler">
+          <sampler2D>
+            <source>Body_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="Cmn_Character_NM_png-surface">
+          <surface type="2D">
+            <init_from>Cmn_Character_NM_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="Cmn_Character_NM_png-sampler">
+          <sampler2D>
+            <source>Cmn_Character_NM_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <blinn>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0.588 0.588 0.588 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="Body_png-sampler" texcoord="CHANNEL1"/>
+            </diffuse>
+            <specular>
+              <color>0 0 0 1</color>
+            </specular>
+            <shininess>
+              <float>10</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <transparent opaque="A_ONE">
+              <texture texture="Body_png-sampler" texcoord="CHANNEL1"/>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </blinn>
+          <extra>
+            <technique profile="OpenCOLLADA3dsMax">
+              <bump bumptype="HEIGHTFIELD">
+                <texture texture="Cmn_Character_NM_png-sampler" texcoord="CHANNEL1"/>
+              </bump>
+            </technique>
+          </extra>
+        </technique>
+      </profile_COMMON>
+      <extra>
+        <technique profile="OpenCOLLADA3dsMax">
+          <extended_shader>
+            <opacity_type sid="opacity_type" type="int">0</opacity_type>
+            <falloff_type sid="falloff_type" type="int">0</falloff_type>
+            <falloff sid="falloff" type="float">0</falloff>
+            <index_of_refraction sid="index_of_refraction" type="float">1.5</index_of_refraction>
+            <wire_size sid="wire_size" type="float">1</wire_size>
+            <wire_units sid="wire_units" type="int">0</wire_units>
+            <apply_reflection_dimming sid="apply_reflection_dimming" type="bool">0</apply_reflection_dimming>
+            <dim_level sid="dim_level" type="float">0</dim_level>
+            <reflection_level sid="reflection_level" type="float">3</reflection_level>
+          </extended_shader>
+          <shader>
+            <ambient_diffuse_texture_lock sid="ambient_diffuse_texture_lock" type="bool">1</ambient_diffuse_texture_lock>
+            <ambient_diffuse_lock sid="ambient_diffuse_lock" type="bool">1</ambient_diffuse_lock>
+            <diffuse_specular_lock sid="diffuse_specular_lock" type="bool">0</diffuse_specular_lock>
+            <use_self_illum_color sid="use_self_illum_color" type="bool">0</use_self_illum_color>
+            <self_illumination sid="self_illumination" type="float">0</self_illumination>
+            <specular_level sid="specular_level" type="float">0</specular_level>
+            <soften sid="soften" type="float">0.1</soften>
+          </shader>
+        </technique>
+      </extra>
+    </effect>
+    <effect id="Mt_FootL">
+      <profile_COMMON>
+        <newparam sid="FootL_001_png-surface">
+          <surface type="2D">
+            <init_from>FootL_001_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="FootL_001_png-sampler">
+          <sampler2D>
+            <source>FootL_001_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="Cmn_Character_NM_png-surface">
+          <surface type="2D">
+            <init_from>Cmn_Character_NM_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="Cmn_Character_NM_png-sampler">
+          <sampler2D>
+            <source>Cmn_Character_NM_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <blinn>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0.588 0.588 0.588 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="FootL_001_png-sampler" texcoord="CHANNEL1"/>
+            </diffuse>
+            <specular>
+              <color>0 0 0 1</color>
+            </specular>
+            <shininess>
+              <float>10</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <transparent opaque="A_ONE">
+              <texture texture="FootL_001_png-sampler" texcoord="CHANNEL1"/>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </blinn>
+          <extra>
+            <technique profile="OpenCOLLADA3dsMax">
+              <bump bumptype="HEIGHTFIELD">
+                <texture texture="Cmn_Character_NM_png-sampler" texcoord="CHANNEL1"/>
+              </bump>
+            </technique>
+          </extra>
+        </technique>
+      </profile_COMMON>
+      <extra>
+        <technique profile="OpenCOLLADA3dsMax">
+          <extended_shader>
+            <opacity_type sid="opacity_type" type="int">0</opacity_type>
+            <falloff_type sid="falloff_type" type="int">0</falloff_type>
+            <falloff sid="falloff" type="float">0</falloff>
+            <index_of_refraction sid="index_of_refraction" type="float">1.5</index_of_refraction>
+            <wire_size sid="wire_size" type="float">1</wire_size>
+            <wire_units sid="wire_units" type="int">0</wire_units>
+            <apply_reflection_dimming sid="apply_reflection_dimming" type="bool">0</apply_reflection_dimming>
+            <dim_level sid="dim_level" type="float">0</dim_level>
+            <reflection_level sid="reflection_level" type="float">3</reflection_level>
+          </extended_shader>
+          <shader>
+            <ambient_diffuse_texture_lock sid="ambient_diffuse_texture_lock" type="bool">1</ambient_diffuse_texture_lock>
+            <ambient_diffuse_lock sid="ambient_diffuse_lock" type="bool">1</ambient_diffuse_lock>
+            <diffuse_specular_lock sid="diffuse_specular_lock" type="bool">0</diffuse_specular_lock>
+            <use_self_illum_color sid="use_self_illum_color" type="bool">0</use_self_illum_color>
+            <self_illumination sid="self_illumination" type="float">0</self_illumination>
+            <specular_level sid="specular_level" type="float">0</specular_level>
+            <soften sid="soften" type="float">0.1</soften>
+          </shader>
+        </technique>
+      </extra>
+    </effect>
+    <effect id="Mt_FootR">
+      <profile_COMMON>
+        <newparam sid="FootR_001_png-surface">
+          <surface type="2D">
+            <init_from>FootR_001_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="FootR_001_png-sampler">
+          <sampler2D>
+            <source>FootR_001_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="Cmn_Character_NM_png-surface">
+          <surface type="2D">
+            <init_from>Cmn_Character_NM_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="Cmn_Character_NM_png-sampler">
+          <sampler2D>
+            <source>Cmn_Character_NM_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <blinn>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0.588 0.588 0.588 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="FootR_001_png-sampler" texcoord="CHANNEL1"/>
+            </diffuse>
+            <specular>
+              <color>0 0 0 1</color>
+            </specular>
+            <shininess>
+              <float>10</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <transparent opaque="A_ONE">
+              <texture texture="FootR_001_png-sampler" texcoord="CHANNEL1"/>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </blinn>
+          <extra>
+            <technique profile="OpenCOLLADA3dsMax">
+              <bump bumptype="HEIGHTFIELD">
+                <texture texture="Cmn_Character_NM_png-sampler" texcoord="CHANNEL1"/>
+              </bump>
+            </technique>
+          </extra>
+        </technique>
+      </profile_COMMON>
+      <extra>
+        <technique profile="OpenCOLLADA3dsMax">
+          <extended_shader>
+            <opacity_type sid="opacity_type" type="int">0</opacity_type>
+            <falloff_type sid="falloff_type" type="int">0</falloff_type>
+            <falloff sid="falloff" type="float">0</falloff>
+            <index_of_refraction sid="index_of_refraction" type="float">1.5</index_of_refraction>
+            <wire_size sid="wire_size" type="float">1</wire_size>
+            <wire_units sid="wire_units" type="int">0</wire_units>
+            <apply_reflection_dimming sid="apply_reflection_dimming" type="bool">0</apply_reflection_dimming>
+            <dim_level sid="dim_level" type="float">0</dim_level>
+            <reflection_level sid="reflection_level" type="float">3</reflection_level>
+          </extended_shader>
+          <shader>
+            <ambient_diffuse_texture_lock sid="ambient_diffuse_texture_lock" type="bool">1</ambient_diffuse_texture_lock>
+            <ambient_diffuse_lock sid="ambient_diffuse_lock" type="bool">1</ambient_diffuse_lock>
+            <diffuse_specular_lock sid="diffuse_specular_lock" type="bool">0</diffuse_specular_lock>
+            <use_self_illum_color sid="use_self_illum_color" type="bool">0</use_self_illum_color>
+            <self_illumination sid="self_illumination" type="float">0</self_illumination>
+            <specular_level sid="specular_level" type="float">0</specular_level>
+            <soften sid="soften" type="float">0.1</soften>
+          </shader>
+        </technique>
+      </extra>
+    </effect>
+    <effect id="Mt_Cap">
+      <profile_COMMON>
+        <newparam sid="Cap_001_png-surface">
+          <surface type="2D">
+            <init_from>Cap_001_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="Cap_001_png-sampler">
+          <sampler2D>
+            <source>Cap_001_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="Cmn_Character_NM_png-surface">
+          <surface type="2D">
+            <init_from>Cmn_Character_NM_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="Cmn_Character_NM_png-sampler">
+          <sampler2D>
+            <source>Cmn_Character_NM_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <blinn>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0.588 0.588 0.588 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="Cap_001_png-sampler" texcoord="CHANNEL1"/>
+            </diffuse>
+            <specular>
+              <color>0 0 0 1</color>
+            </specular>
+            <shininess>
+              <float>10</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <transparent opaque="A_ONE">
+              <texture texture="Cap_001_png-sampler" texcoord="CHANNEL1"/>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </blinn>
+          <extra>
+            <technique profile="OpenCOLLADA3dsMax">
+              <bump bumptype="HEIGHTFIELD">
+                <texture texture="Cmn_Character_NM_png-sampler" texcoord="CHANNEL1"/>
+              </bump>
+            </technique>
+          </extra>
+        </technique>
+      </profile_COMMON>
+      <extra>
+        <technique profile="OpenCOLLADA3dsMax">
+          <extended_shader>
+            <opacity_type sid="opacity_type" type="int">0</opacity_type>
+            <falloff_type sid="falloff_type" type="int">0</falloff_type>
+            <falloff sid="falloff" type="float">0</falloff>
+            <index_of_refraction sid="index_of_refraction" type="float">1.5</index_of_refraction>
+            <wire_size sid="wire_size" type="float">1</wire_size>
+            <wire_units sid="wire_units" type="int">0</wire_units>
+            <apply_reflection_dimming sid="apply_reflection_dimming" type="bool">0</apply_reflection_dimming>
+            <dim_level sid="dim_level" type="float">0</dim_level>
+            <reflection_level sid="reflection_level" type="float">3</reflection_level>
+          </extended_shader>
+          <shader>
+            <ambient_diffuse_texture_lock sid="ambient_diffuse_texture_lock" type="bool">1</ambient_diffuse_texture_lock>
+            <ambient_diffuse_lock sid="ambient_diffuse_lock" type="bool">1</ambient_diffuse_lock>
+            <diffuse_specular_lock sid="diffuse_specular_lock" type="bool">0</diffuse_specular_lock>
+            <use_self_illum_color sid="use_self_illum_color" type="bool">0</use_self_illum_color>
+            <self_illumination sid="self_illumination" type="float">0</self_illumination>
+            <specular_level sid="specular_level" type="float">0</specular_level>
+            <soften sid="soften" type="float">0.1</soften>
+          </shader>
+        </technique>
+      </extra>
+    </effect>
+    <effect id="Mt_CapShadow">
+      <profile_COMMON>
+        <newparam sid="CapShadow_png-surface">
+          <surface type="2D">
+            <init_from>CapShadow_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="CapShadow_png-sampler">
+          <sampler2D>
+            <source>CapShadow_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="Cmn_Character_NM_png-surface">
+          <surface type="2D">
+            <init_from>Cmn_Character_NM_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="Cmn_Character_NM_png-sampler">
+          <sampler2D>
+            <source>Cmn_Character_NM_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <blinn>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0.588 0.588 0.588 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="CapShadow_png-sampler" texcoord="CHANNEL1"/>
+            </diffuse>
+            <specular>
+              <color>0 0 0 1</color>
+            </specular>
+            <shininess>
+              <float>10</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <transparent opaque="A_ONE">
+              <texture texture="CapShadow_png-sampler" texcoord="CHANNEL1"/>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </blinn>
+          <extra>
+            <technique profile="OpenCOLLADA3dsMax">
+              <bump bumptype="HEIGHTFIELD">
+                <texture texture="Cmn_Character_NM_png-sampler" texcoord="CHANNEL1"/>
+              </bump>
+            </technique>
+          </extra>
+        </technique>
+      </profile_COMMON>
+      <extra>
+        <technique profile="OpenCOLLADA3dsMax">
+          <extended_shader>
+            <opacity_type sid="opacity_type" type="int">0</opacity_type>
+            <falloff_type sid="falloff_type" type="int">0</falloff_type>
+            <falloff sid="falloff" type="float">0</falloff>
+            <index_of_refraction sid="index_of_refraction" type="float">1.5</index_of_refraction>
+            <wire_size sid="wire_size" type="float">1</wire_size>
+            <wire_units sid="wire_units" type="int">0</wire_units>
+            <apply_reflection_dimming sid="apply_reflection_dimming" type="bool">0</apply_reflection_dimming>
+            <dim_level sid="dim_level" type="float">0</dim_level>
+            <reflection_level sid="reflection_level" type="float">3</reflection_level>
+          </extended_shader>
+          <shader>
+            <ambient_diffuse_texture_lock sid="ambient_diffuse_texture_lock" type="bool">1</ambient_diffuse_texture_lock>
+            <ambient_diffuse_lock sid="ambient_diffuse_lock" type="bool">1</ambient_diffuse_lock>
+            <diffuse_specular_lock sid="diffuse_specular_lock" type="bool">0</diffuse_specular_lock>
+            <use_self_illum_color sid="use_self_illum_color" type="bool">0</use_self_illum_color>
+            <self_illumination sid="self_illumination" type="float">0</self_illumination>
+            <specular_level sid="specular_level" type="float">0</specular_level>
+            <soften sid="soften" type="float">0.1</soften>
+          </shader>
+        </technique>
+      </extra>
+    </effect>
+    <effect id="Mt_EyeL">
+      <profile_COMMON>
+        <newparam sid="EyeL_001_png-surface">
+          <surface type="2D">
+            <init_from>EyeL_001_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="EyeL_001_png-sampler">
+          <sampler2D>
+            <source>EyeL_001_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="Cmn_Character_NM_png-surface">
+          <surface type="2D">
+            <init_from>Cmn_Character_NM_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="Cmn_Character_NM_png-sampler">
+          <sampler2D>
+            <source>Cmn_Character_NM_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <blinn>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0.588 0.588 0.588 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="EyeL_001_png-sampler" texcoord="CHANNEL1"/>
+            </diffuse>
+            <specular>
+              <color>0 0 0 1</color>
+            </specular>
+            <shininess>
+              <float>10</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <transparent opaque="A_ONE">
+              <texture texture="EyeL_001_png-sampler" texcoord="CHANNEL1"/>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </blinn>
+          <extra>
+            <technique profile="OpenCOLLADA3dsMax">
+              <bump bumptype="HEIGHTFIELD">
+                <texture texture="Cmn_Character_NM_png-sampler" texcoord="CHANNEL1"/>
+              </bump>
+            </technique>
+          </extra>
+        </technique>
+      </profile_COMMON>
+      <extra>
+        <technique profile="OpenCOLLADA3dsMax">
+          <extended_shader>
+            <opacity_type sid="opacity_type" type="int">0</opacity_type>
+            <falloff_type sid="falloff_type" type="int">0</falloff_type>
+            <falloff sid="falloff" type="float">0</falloff>
+            <index_of_refraction sid="index_of_refraction" type="float">1.5</index_of_refraction>
+            <wire_size sid="wire_size" type="float">1</wire_size>
+            <wire_units sid="wire_units" type="int">0</wire_units>
+            <apply_reflection_dimming sid="apply_reflection_dimming" type="bool">0</apply_reflection_dimming>
+            <dim_level sid="dim_level" type="float">0</dim_level>
+            <reflection_level sid="reflection_level" type="float">3</reflection_level>
+          </extended_shader>
+          <shader>
+            <ambient_diffuse_texture_lock sid="ambient_diffuse_texture_lock" type="bool">1</ambient_diffuse_texture_lock>
+            <ambient_diffuse_lock sid="ambient_diffuse_lock" type="bool">1</ambient_diffuse_lock>
+            <diffuse_specular_lock sid="diffuse_specular_lock" type="bool">0</diffuse_specular_lock>
+            <use_self_illum_color sid="use_self_illum_color" type="bool">0</use_self_illum_color>
+            <self_illumination sid="self_illumination" type="float">0</self_illumination>
+            <specular_level sid="specular_level" type="float">0</specular_level>
+            <soften sid="soften" type="float">0.1</soften>
+          </shader>
+        </technique>
+      </extra>
+    </effect>
+    <effect id="Mt_EyeR">
+      <profile_COMMON>
+        <newparam sid="EyeR_001_png-surface">
+          <surface type="2D">
+            <init_from>EyeR_001_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="EyeR_001_png-sampler">
+          <sampler2D>
+            <source>EyeR_001_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="Cmn_Character_NM_png-surface">
+          <surface type="2D">
+            <init_from>Cmn_Character_NM_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="Cmn_Character_NM_png-sampler">
+          <sampler2D>
+            <source>Cmn_Character_NM_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <blinn>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0.588 0.588 0.588 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="EyeR_001_png-sampler" texcoord="CHANNEL1"/>
+            </diffuse>
+            <specular>
+              <color>0 0 0 1</color>
+            </specular>
+            <shininess>
+              <float>10</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <transparent opaque="A_ONE">
+              <texture texture="EyeR_001_png-sampler" texcoord="CHANNEL1"/>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </blinn>
+          <extra>
+            <technique profile="OpenCOLLADA3dsMax">
+              <bump bumptype="HEIGHTFIELD">
+                <texture texture="Cmn_Character_NM_png-sampler" texcoord="CHANNEL1"/>
+              </bump>
+            </technique>
+          </extra>
+        </technique>
+      </profile_COMMON>
+      <extra>
+        <technique profile="OpenCOLLADA3dsMax">
+          <extended_shader>
+            <opacity_type sid="opacity_type" type="int">0</opacity_type>
+            <falloff_type sid="falloff_type" type="int">0</falloff_type>
+            <falloff sid="falloff" type="float">0</falloff>
+            <index_of_refraction sid="index_of_refraction" type="float">1.5</index_of_refraction>
+            <wire_size sid="wire_size" type="float">1</wire_size>
+            <wire_units sid="wire_units" type="int">0</wire_units>
+            <apply_reflection_dimming sid="apply_reflection_dimming" type="bool">0</apply_reflection_dimming>
+            <dim_level sid="dim_level" type="float">0</dim_level>
+            <reflection_level sid="reflection_level" type="float">3</reflection_level>
+          </extended_shader>
+          <shader>
+            <ambient_diffuse_texture_lock sid="ambient_diffuse_texture_lock" type="bool">1</ambient_diffuse_texture_lock>
+            <ambient_diffuse_lock sid="ambient_diffuse_lock" type="bool">1</ambient_diffuse_lock>
+            <diffuse_specular_lock sid="diffuse_specular_lock" type="bool">0</diffuse_specular_lock>
+            <use_self_illum_color sid="use_self_illum_color" type="bool">0</use_self_illum_color>
+            <self_illumination sid="self_illumination" type="float">0</self_illumination>
+            <specular_level sid="specular_level" type="float">0</specular_level>
+            <soften sid="soften" type="float">0.1</soften>
+          </shader>
+        </technique>
+      </extra>
+    </effect>
+    <effect id="Mt_Ear">
+      <profile_COMMON>
+        <newparam sid="Ear_png-surface">
+          <surface type="2D">
+            <init_from>Ear_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="Ear_png-sampler">
+          <sampler2D>
+            <source>Ear_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="Cmn_Character_NM_png-surface">
+          <surface type="2D">
+            <init_from>Cmn_Character_NM_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="Cmn_Character_NM_png-sampler">
+          <sampler2D>
+            <source>Cmn_Character_NM_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <blinn>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0.588 0.588 0.588 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="Ear_png-sampler" texcoord="CHANNEL1"/>
+            </diffuse>
+            <specular>
+              <color>0 0 0 1</color>
+            </specular>
+            <shininess>
+              <float>10</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <transparent opaque="A_ONE">
+              <texture texture="Ear_png-sampler" texcoord="CHANNEL1"/>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </blinn>
+          <extra>
+            <technique profile="OpenCOLLADA3dsMax">
+              <bump bumptype="HEIGHTFIELD">
+                <texture texture="Cmn_Character_NM_png-sampler" texcoord="CHANNEL1"/>
+              </bump>
+            </technique>
+          </extra>
+        </technique>
+      </profile_COMMON>
+      <extra>
+        <technique profile="OpenCOLLADA3dsMax">
+          <extended_shader>
+            <opacity_type sid="opacity_type" type="int">0</opacity_type>
+            <falloff_type sid="falloff_type" type="int">0</falloff_type>
+            <falloff sid="falloff" type="float">0</falloff>
+            <index_of_refraction sid="index_of_refraction" type="float">1.5</index_of_refraction>
+            <wire_size sid="wire_size" type="float">1</wire_size>
+            <wire_units sid="wire_units" type="int">0</wire_units>
+            <apply_reflection_dimming sid="apply_reflection_dimming" type="bool">0</apply_reflection_dimming>
+            <dim_level sid="dim_level" type="float">0</dim_level>
+            <reflection_level sid="reflection_level" type="float">3</reflection_level>
+          </extended_shader>
+          <shader>
+            <ambient_diffuse_texture_lock sid="ambient_diffuse_texture_lock" type="bool">1</ambient_diffuse_texture_lock>
+            <ambient_diffuse_lock sid="ambient_diffuse_lock" type="bool">1</ambient_diffuse_lock>
+            <diffuse_specular_lock sid="diffuse_specular_lock" type="bool">0</diffuse_specular_lock>
+            <use_self_illum_color sid="use_self_illum_color" type="bool">0</use_self_illum_color>
+            <self_illumination sid="self_illumination" type="float">0</self_illumination>
+            <specular_level sid="specular_level" type="float">0</specular_level>
+            <soften sid="soften" type="float">0.1</soften>
+          </shader>
+        </technique>
+      </extra>
+    </effect>
+    <effect id="Mt_Face">
+      <profile_COMMON>
+        <newparam sid="Face_001_png-surface">
+          <surface type="2D">
+            <init_from>Face_001_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="Face_001_png-sampler">
+          <sampler2D>
+            <source>Face_001_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="Cmn_Character_NM_png-surface">
+          <surface type="2D">
+            <init_from>Cmn_Character_NM_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="Cmn_Character_NM_png-sampler">
+          <sampler2D>
+            <source>Cmn_Character_NM_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <blinn>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0.588 0.588 0.588 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="Face_001_png-sampler" texcoord="CHANNEL1"/>
+            </diffuse>
+            <specular>
+              <color>0 0 0 1</color>
+            </specular>
+            <shininess>
+              <float>10</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <transparent opaque="A_ONE">
+              <texture texture="Face_001_png-sampler" texcoord="CHANNEL1"/>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </blinn>
+          <extra>
+            <technique profile="OpenCOLLADA3dsMax">
+              <bump bumptype="HEIGHTFIELD">
+                <texture texture="Cmn_Character_NM_png-sampler" texcoord="CHANNEL1"/>
+              </bump>
+            </technique>
+          </extra>
+        </technique>
+      </profile_COMMON>
+      <extra>
+        <technique profile="OpenCOLLADA3dsMax">
+          <extended_shader>
+            <opacity_type sid="opacity_type" type="int">0</opacity_type>
+            <falloff_type sid="falloff_type" type="int">0</falloff_type>
+            <falloff sid="falloff" type="float">0</falloff>
+            <index_of_refraction sid="index_of_refraction" type="float">1.5</index_of_refraction>
+            <wire_size sid="wire_size" type="float">1</wire_size>
+            <wire_units sid="wire_units" type="int">0</wire_units>
+            <apply_reflection_dimming sid="apply_reflection_dimming" type="bool">0</apply_reflection_dimming>
+            <dim_level sid="dim_level" type="float">0</dim_level>
+            <reflection_level sid="reflection_level" type="float">3</reflection_level>
+          </extended_shader>
+          <shader>
+            <ambient_diffuse_texture_lock sid="ambient_diffuse_texture_lock" type="bool">1</ambient_diffuse_texture_lock>
+            <ambient_diffuse_lock sid="ambient_diffuse_lock" type="bool">1</ambient_diffuse_lock>
+            <diffuse_specular_lock sid="diffuse_specular_lock" type="bool">0</diffuse_specular_lock>
+            <use_self_illum_color sid="use_self_illum_color" type="bool">0</use_self_illum_color>
+            <self_illumination sid="self_illumination" type="float">0</self_illumination>
+            <specular_level sid="specular_level" type="float">0</specular_level>
+            <soften sid="soften" type="float">0.1</soften>
+          </shader>
+        </technique>
+      </extra>
+    </effect>
+    <effect id="Mt_ArmL">
+      <profile_COMMON>
+        <newparam sid="ArmL_001_png-surface">
+          <surface type="2D">
+            <init_from>ArmL_001_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="ArmL_001_png-sampler">
+          <sampler2D>
+            <source>ArmL_001_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="Cmn_Character_NM_png-surface">
+          <surface type="2D">
+            <init_from>Cmn_Character_NM_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="Cmn_Character_NM_png-sampler">
+          <sampler2D>
+            <source>Cmn_Character_NM_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <blinn>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0.588 0.588 0.588 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="ArmL_001_png-sampler" texcoord="CHANNEL1"/>
+            </diffuse>
+            <specular>
+              <color>0 0 0 1</color>
+            </specular>
+            <shininess>
+              <float>10</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <transparent opaque="A_ONE">
+              <texture texture="ArmL_001_png-sampler" texcoord="CHANNEL1"/>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </blinn>
+          <extra>
+            <technique profile="OpenCOLLADA3dsMax">
+              <bump bumptype="HEIGHTFIELD">
+                <texture texture="Cmn_Character_NM_png-sampler" texcoord="CHANNEL1"/>
+              </bump>
+            </technique>
+          </extra>
+        </technique>
+      </profile_COMMON>
+      <extra>
+        <technique profile="OpenCOLLADA3dsMax">
+          <extended_shader>
+            <opacity_type sid="opacity_type" type="int">0</opacity_type>
+            <falloff_type sid="falloff_type" type="int">0</falloff_type>
+            <falloff sid="falloff" type="float">0</falloff>
+            <index_of_refraction sid="index_of_refraction" type="float">1.5</index_of_refraction>
+            <wire_size sid="wire_size" type="float">1</wire_size>
+            <wire_units sid="wire_units" type="int">0</wire_units>
+            <apply_reflection_dimming sid="apply_reflection_dimming" type="bool">0</apply_reflection_dimming>
+            <dim_level sid="dim_level" type="float">0</dim_level>
+            <reflection_level sid="reflection_level" type="float">3</reflection_level>
+          </extended_shader>
+          <shader>
+            <ambient_diffuse_texture_lock sid="ambient_diffuse_texture_lock" type="bool">1</ambient_diffuse_texture_lock>
+            <ambient_diffuse_lock sid="ambient_diffuse_lock" type="bool">1</ambient_diffuse_lock>
+            <diffuse_specular_lock sid="diffuse_specular_lock" type="bool">0</diffuse_specular_lock>
+            <use_self_illum_color sid="use_self_illum_color" type="bool">0</use_self_illum_color>
+            <self_illumination sid="self_illumination" type="float">0</self_illumination>
+            <specular_level sid="specular_level" type="float">0</specular_level>
+            <soften sid="soften" type="float">0.1</soften>
+          </shader>
+        </technique>
+      </extra>
+    </effect>
+    <effect id="Mt_HandL">
+      <profile_COMMON>
+        <newparam sid="HandL_001_png-surface">
+          <surface type="2D">
+            <init_from>HandL_001_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="HandL_001_png-sampler">
+          <sampler2D>
+            <source>HandL_001_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="Cmn_Character_NM_png-surface">
+          <surface type="2D">
+            <init_from>Cmn_Character_NM_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="Cmn_Character_NM_png-sampler">
+          <sampler2D>
+            <source>Cmn_Character_NM_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <blinn>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0.588 0.588 0.588 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="HandL_001_png-sampler" texcoord="CHANNEL1"/>
+            </diffuse>
+            <specular>
+              <color>0 0 0 1</color>
+            </specular>
+            <shininess>
+              <float>10</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <transparent opaque="A_ONE">
+              <texture texture="HandL_001_png-sampler" texcoord="CHANNEL1"/>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </blinn>
+          <extra>
+            <technique profile="OpenCOLLADA3dsMax">
+              <bump bumptype="HEIGHTFIELD">
+                <texture texture="Cmn_Character_NM_png-sampler" texcoord="CHANNEL1"/>
+              </bump>
+            </technique>
+          </extra>
+        </technique>
+      </profile_COMMON>
+      <extra>
+        <technique profile="OpenCOLLADA3dsMax">
+          <extended_shader>
+            <opacity_type sid="opacity_type" type="int">0</opacity_type>
+            <falloff_type sid="falloff_type" type="int">0</falloff_type>
+            <falloff sid="falloff" type="float">0</falloff>
+            <index_of_refraction sid="index_of_refraction" type="float">1.5</index_of_refraction>
+            <wire_size sid="wire_size" type="float">1</wire_size>
+            <wire_units sid="wire_units" type="int">0</wire_units>
+            <apply_reflection_dimming sid="apply_reflection_dimming" type="bool">0</apply_reflection_dimming>
+            <dim_level sid="dim_level" type="float">0</dim_level>
+            <reflection_level sid="reflection_level" type="float">3</reflection_level>
+          </extended_shader>
+          <shader>
+            <ambient_diffuse_texture_lock sid="ambient_diffuse_texture_lock" type="bool">1</ambient_diffuse_texture_lock>
+            <ambient_diffuse_lock sid="ambient_diffuse_lock" type="bool">1</ambient_diffuse_lock>
+            <diffuse_specular_lock sid="diffuse_specular_lock" type="bool">0</diffuse_specular_lock>
+            <use_self_illum_color sid="use_self_illum_color" type="bool">0</use_self_illum_color>
+            <self_illumination sid="self_illumination" type="float">0</self_illumination>
+            <specular_level sid="specular_level" type="float">0</specular_level>
+            <soften sid="soften" type="float">0.1</soften>
+          </shader>
+        </technique>
+      </extra>
+    </effect>
+    <effect id="Mt_ArmR">
+      <profile_COMMON>
+        <newparam sid="ArmR_001_png-surface">
+          <surface type="2D">
+            <init_from>ArmR_001_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="ArmR_001_png-sampler">
+          <sampler2D>
+            <source>ArmR_001_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="Cmn_Character_NM_png-surface">
+          <surface type="2D">
+            <init_from>Cmn_Character_NM_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="Cmn_Character_NM_png-sampler">
+          <sampler2D>
+            <source>Cmn_Character_NM_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <blinn>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0.588 0.588 0.588 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="ArmR_001_png-sampler" texcoord="CHANNEL1"/>
+            </diffuse>
+            <specular>
+              <color>0 0 0 1</color>
+            </specular>
+            <shininess>
+              <float>10</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <transparent opaque="A_ONE">
+              <texture texture="ArmR_001_png-sampler" texcoord="CHANNEL1"/>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </blinn>
+          <extra>
+            <technique profile="OpenCOLLADA3dsMax">
+              <bump bumptype="HEIGHTFIELD">
+                <texture texture="Cmn_Character_NM_png-sampler" texcoord="CHANNEL1"/>
+              </bump>
+            </technique>
+          </extra>
+        </technique>
+      </profile_COMMON>
+      <extra>
+        <technique profile="OpenCOLLADA3dsMax">
+          <extended_shader>
+            <opacity_type sid="opacity_type" type="int">0</opacity_type>
+            <falloff_type sid="falloff_type" type="int">0</falloff_type>
+            <falloff sid="falloff" type="float">0</falloff>
+            <index_of_refraction sid="index_of_refraction" type="float">1.5</index_of_refraction>
+            <wire_size sid="wire_size" type="float">1</wire_size>
+            <wire_units sid="wire_units" type="int">0</wire_units>
+            <apply_reflection_dimming sid="apply_reflection_dimming" type="bool">0</apply_reflection_dimming>
+            <dim_level sid="dim_level" type="float">0</dim_level>
+            <reflection_level sid="reflection_level" type="float">3</reflection_level>
+          </extended_shader>
+          <shader>
+            <ambient_diffuse_texture_lock sid="ambient_diffuse_texture_lock" type="bool">1</ambient_diffuse_texture_lock>
+            <ambient_diffuse_lock sid="ambient_diffuse_lock" type="bool">1</ambient_diffuse_lock>
+            <diffuse_specular_lock sid="diffuse_specular_lock" type="bool">0</diffuse_specular_lock>
+            <use_self_illum_color sid="use_self_illum_color" type="bool">0</use_self_illum_color>
+            <self_illumination sid="self_illumination" type="float">0</self_illumination>
+            <specular_level sid="specular_level" type="float">0</specular_level>
+            <soften sid="soften" type="float">0.1</soften>
+          </shader>
+        </technique>
+      </extra>
+    </effect>
+    <effect id="Mt_HandR">
+      <profile_COMMON>
+        <newparam sid="HandR_001_png-surface">
+          <surface type="2D">
+            <init_from>HandR_001_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="HandR_001_png-sampler">
+          <sampler2D>
+            <source>HandR_001_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="Cmn_Character_NM_png-surface">
+          <surface type="2D">
+            <init_from>Cmn_Character_NM_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="Cmn_Character_NM_png-sampler">
+          <sampler2D>
+            <source>Cmn_Character_NM_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <blinn>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0.588 0.588 0.588 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="HandR_001_png-sampler" texcoord="CHANNEL1"/>
+            </diffuse>
+            <specular>
+              <color>0 0 0 1</color>
+            </specular>
+            <shininess>
+              <float>10</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <transparent opaque="A_ONE">
+              <texture texture="HandR_001_png-sampler" texcoord="CHANNEL1"/>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </blinn>
+          <extra>
+            <technique profile="OpenCOLLADA3dsMax">
+              <bump bumptype="HEIGHTFIELD">
+                <texture texture="Cmn_Character_NM_png-sampler" texcoord="CHANNEL1"/>
+              </bump>
+            </technique>
+          </extra>
+        </technique>
+      </profile_COMMON>
+      <extra>
+        <technique profile="OpenCOLLADA3dsMax">
+          <extended_shader>
+            <opacity_type sid="opacity_type" type="int">0</opacity_type>
+            <falloff_type sid="falloff_type" type="int">0</falloff_type>
+            <falloff sid="falloff" type="float">0</falloff>
+            <index_of_refraction sid="index_of_refraction" type="float">1.5</index_of_refraction>
+            <wire_size sid="wire_size" type="float">1</wire_size>
+            <wire_units sid="wire_units" type="int">0</wire_units>
+            <apply_reflection_dimming sid="apply_reflection_dimming" type="bool">0</apply_reflection_dimming>
+            <dim_level sid="dim_level" type="float">0</dim_level>
+            <reflection_level sid="reflection_level" type="float">3</reflection_level>
+          </extended_shader>
+          <shader>
+            <ambient_diffuse_texture_lock sid="ambient_diffuse_texture_lock" type="bool">1</ambient_diffuse_texture_lock>
+            <ambient_diffuse_lock sid="ambient_diffuse_lock" type="bool">1</ambient_diffuse_lock>
+            <diffuse_specular_lock sid="diffuse_specular_lock" type="bool">0</diffuse_specular_lock>
+            <use_self_illum_color sid="use_self_illum_color" type="bool">0</use_self_illum_color>
+            <self_illumination sid="self_illumination" type="float">0</self_illumination>
+            <specular_level sid="specular_level" type="float">0</specular_level>
+            <soften sid="soften" type="float">0.1</soften>
+          </shader>
+        </technique>
+      </extra>
+    </effect>
+    <effect id="Mt_TitleShadow">
+      <profile_COMMON>
+        <newparam sid="Title_Shadow_png-surface">
+          <surface type="2D">
+            <init_from>Title_Shadow_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="Title_Shadow_png-sampler">
+          <sampler2D>
+            <source>Title_Shadow_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="Cmn_Dummy_NM_png-surface">
+          <surface type="2D">
+            <init_from>Cmn_Dummy_NM_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="Cmn_Dummy_NM_png-sampler">
+          <sampler2D>
+            <source>Cmn_Dummy_NM_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <blinn>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0.588 0.588 0.588 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="Title_Shadow_png-sampler" texcoord="CHANNEL1"/>
+            </diffuse>
+            <specular>
+              <color>0 0 0 1</color>
+            </specular>
+            <shininess>
+              <float>10</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <transparent opaque="A_ONE">
+              <texture texture="Title_Shadow_png-sampler" texcoord="CHANNEL1"/>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </blinn>
+          <extra>
+            <technique profile="OpenCOLLADA3dsMax">
+              <bump bumptype="HEIGHTFIELD">
+                <texture texture="Cmn_Dummy_NM_png-sampler" texcoord="CHANNEL1"/>
+              </bump>
+            </technique>
+          </extra>
+        </technique>
+      </profile_COMMON>
+      <extra>
+        <technique profile="OpenCOLLADA3dsMax">
+          <extended_shader>
+            <opacity_type sid="opacity_type" type="int">0</opacity_type>
+            <falloff_type sid="falloff_type" type="int">0</falloff_type>
+            <falloff sid="falloff" type="float">0</falloff>
+            <index_of_refraction sid="index_of_refraction" type="float">1.5</index_of_refraction>
+            <wire_size sid="wire_size" type="float">1</wire_size>
+            <wire_units sid="wire_units" type="int">0</wire_units>
+            <apply_reflection_dimming sid="apply_reflection_dimming" type="bool">0</apply_reflection_dimming>
+            <dim_level sid="dim_level" type="float">0</dim_level>
+            <reflection_level sid="reflection_level" type="float">3</reflection_level>
+          </extended_shader>
+          <shader>
+            <ambient_diffuse_texture_lock sid="ambient_diffuse_texture_lock" type="bool">1</ambient_diffuse_texture_lock>
+            <ambient_diffuse_lock sid="ambient_diffuse_lock" type="bool">1</ambient_diffuse_lock>
+            <diffuse_specular_lock sid="diffuse_specular_lock" type="bool">0</diffuse_specular_lock>
+            <use_self_illum_color sid="use_self_illum_color" type="bool">0</use_self_illum_color>
+            <self_illumination sid="self_illumination" type="float">0</self_illumination>
+            <specular_level sid="specular_level" type="float">0</specular_level>
+            <soften sid="soften" type="float">0.1</soften>
+          </shader>
+        </technique>
+      </extra>
+    </effect>
+  </library_effects>
+  <library_materials>
+    <material id="Mt_Body-material" name="Mt_Body">
+      <instance_effect url="#Mt_Body"/>
+    </material>
+    <material id="Mt_FootL-material" name="Mt_FootL">
+      <instance_effect url="#Mt_FootL"/>
+    </material>
+    <material id="Mt_FootR-material" name="Mt_FootR">
+      <instance_effect url="#Mt_FootR"/>
+    </material>
+    <material id="Mt_Cap-material" name="Mt_Cap">
+      <instance_effect url="#Mt_Cap"/>
+    </material>
+    <material id="Mt_CapShadow-material" name="Mt_CapShadow">
+      <instance_effect url="#Mt_CapShadow"/>
+    </material>
+    <material id="Mt_EyeL-material" name="Mt_EyeL">
+      <instance_effect url="#Mt_EyeL"/>
+    </material>
+    <material id="Mt_EyeR-material" name="Mt_EyeR">
+      <instance_effect url="#Mt_EyeR"/>
+    </material>
+    <material id="Mt_Ear-material" name="Mt_Ear">
+      <instance_effect url="#Mt_Ear"/>
+    </material>
+    <material id="Mt_Face-material" name="Mt_Face">
+      <instance_effect url="#Mt_Face"/>
+    </material>
+    <material id="Mt_ArmL-material" name="Mt_ArmL">
+      <instance_effect url="#Mt_ArmL"/>
+    </material>
+    <material id="Mt_HandL-material" name="Mt_HandL">
+      <instance_effect url="#Mt_HandL"/>
+    </material>
+    <material id="Mt_ArmR-material" name="Mt_ArmR">
+      <instance_effect url="#Mt_ArmR"/>
+    </material>
+    <material id="Mt_HandR-material" name="Mt_HandR">
+      <instance_effect url="#Mt_HandR"/>
+    </material>
+    <material id="Mt_TitleShadow-material" name="Mt_TitleShadow">
+      <instance_effect url="#Mt_TitleShadow"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="geom-Body__Mt_Body" name="Body__Mt_Body">
+      <mesh>
+        <source id="geom-Body__Mt_Body-positions">
+          <float_array id="geom-Body__Mt_Body-positions-array" count="12">-0.5947126 0 0.6223406 0.9364874 0 0.6223406 -0.5947126 0 2.339141 0.9364874 0 2.339141</float_array>
+          <technique_common>
+            <accessor source="#geom-Body__Mt_Body-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Body__Mt_Body-normals">
+          <float_array id="geom-Body__Mt_Body-normals-array" count="12">0 -1 0 0 -1 0 0 -1 0 0 -1 0</float_array>
+          <technique_common>
+            <accessor source="#geom-Body__Mt_Body-normals-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Body__Mt_Body-map-2">
+          <float_array id="geom-Body__Mt_Body-map-2-array" count="12">1 1 1 1 1 1 1 1 1 1 1 1</float_array>
+          <technique_common>
+            <accessor source="#geom-Body__Mt_Body-map-2-array" count="4" stride="3">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Body__Mt_Body-map0">
+          <float_array id="geom-Body__Mt_Body-map0-array" count="12">1 1 1 1 1 1 1 1 1 1 1 1</float_array>
+          <technique_common>
+            <accessor source="#geom-Body__Mt_Body-map0-array" count="4" stride="3">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Body__Mt_Body-map1">
+          <float_array id="geom-Body__Mt_Body-map1-array" count="12">0 0 0 1 0 0 0 1 0 1 1 0</float_array>
+          <technique_common>
+            <accessor source="#geom-Body__Mt_Body-map1-array" count="4" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-Body__Mt_Body-vertices">
+          <input semantic="POSITION" source="#geom-Body__Mt_Body-positions"/>
+        </vertices>
+        <triangles material="Mt_Body" count="2">
+          <input semantic="VERTEX" source="#geom-Body__Mt_Body-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#geom-Body__Mt_Body-normals" offset="1"/>
+          <input semantic="COLOR" source="#geom-Body__Mt_Body-map0" offset="2" set="0"/>
+          <input semantic="TEXCOORD" source="#geom-Body__Mt_Body-map1" offset="3" set="0"/>
+          <p>0 0 0 0 1 1 1 1 2 2 2 2 1 1 1 1 3 3 3 3 2 2 2 2</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom-FootL__Mt_FootL" name="FootL__Mt_FootL">
+      <mesh>
+        <source id="geom-FootL__Mt_FootL-positions">
+          <float_array id="geom-FootL__Mt_FootL-positions-array" count="12">-0.4714288 -0.0179738 -0.251174 1.08277 -0.0179738 -0.251174 -0.4714288 -0.01797378 0.9548807 1.08277 -0.01797378 0.9548807</float_array>
+          <technique_common>
+            <accessor source="#geom-FootL__Mt_FootL-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-FootL__Mt_FootL-normals">
+          <float_array id="geom-FootL__Mt_FootL-normals-array" count="12">0 -1 0 0 -1 0 0 -1 0 0 -1 0</float_array>
+          <technique_common>
+            <accessor source="#geom-FootL__Mt_FootL-normals-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-FootL__Mt_FootL-map-2">
+          <float_array id="geom-FootL__Mt_FootL-map-2-array" count="12">1 1 1 1 1 1 1 1 1 1 1 1</float_array>
+          <technique_common>
+            <accessor source="#geom-FootL__Mt_FootL-map-2-array" count="4" stride="3">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-FootL__Mt_FootL-map0">
+          <float_array id="geom-FootL__Mt_FootL-map0-array" count="12">1 1 1 1 1 1 1 1 1 1 1 1</float_array>
+          <technique_common>
+            <accessor source="#geom-FootL__Mt_FootL-map0-array" count="4" stride="3">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-FootL__Mt_FootL-map1">
+          <float_array id="geom-FootL__Mt_FootL-map1-array" count="12">0 0 0 1 0 0 0 1 0 1 1 0</float_array>
+          <technique_common>
+            <accessor source="#geom-FootL__Mt_FootL-map1-array" count="4" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-FootL__Mt_FootL-vertices">
+          <input semantic="POSITION" source="#geom-FootL__Mt_FootL-positions"/>
+        </vertices>
+        <triangles material="Mt_FootL" count="2">
+          <input semantic="VERTEX" source="#geom-FootL__Mt_FootL-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#geom-FootL__Mt_FootL-normals" offset="1"/>
+          <input semantic="COLOR" source="#geom-FootL__Mt_FootL-map0" offset="2" set="0"/>
+          <input semantic="TEXCOORD" source="#geom-FootL__Mt_FootL-map1" offset="3" set="0"/>
+          <p>0 0 0 0 1 1 1 1 2 2 2 2 1 1 1 1 3 3 3 3 2 2 2 2</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom-FootR__Mt_FootR" name="FootR__Mt_FootR">
+      <mesh>
+        <source id="geom-FootR__Mt_FootR-positions">
+          <float_array id="geom-FootR__Mt_FootR-positions-array" count="12">-0.9299816 0.02000001 -0.2335759 0.6244183 0.02000001 -0.2335759 -0.9299816 0.01999998 0.9728241 0.6244183 0.01999998 0.9728241</float_array>
+          <technique_common>
+            <accessor source="#geom-FootR__Mt_FootR-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-FootR__Mt_FootR-normals">
+          <float_array id="geom-FootR__Mt_FootR-normals-array" count="12">0 -1 0 0 -1 0 0 -1 0 0 -1 0</float_array>
+          <technique_common>
+            <accessor source="#geom-FootR__Mt_FootR-normals-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-FootR__Mt_FootR-map-2">
+          <float_array id="geom-FootR__Mt_FootR-map-2-array" count="12">1 1 1 1 1 1 1 1 1 1 1 1</float_array>
+          <technique_common>
+            <accessor source="#geom-FootR__Mt_FootR-map-2-array" count="4" stride="3">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-FootR__Mt_FootR-map0">
+          <float_array id="geom-FootR__Mt_FootR-map0-array" count="12">1 1 1 1 1 1 1 1 1 1 1 1</float_array>
+          <technique_common>
+            <accessor source="#geom-FootR__Mt_FootR-map0-array" count="4" stride="3">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-FootR__Mt_FootR-map1">
+          <float_array id="geom-FootR__Mt_FootR-map1-array" count="12">0 0 0 1 0 0 0 1 0 1 1 0</float_array>
+          <technique_common>
+            <accessor source="#geom-FootR__Mt_FootR-map1-array" count="4" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-FootR__Mt_FootR-vertices">
+          <input semantic="POSITION" source="#geom-FootR__Mt_FootR-positions"/>
+        </vertices>
+        <triangles material="Mt_FootR" count="2">
+          <input semantic="VERTEX" source="#geom-FootR__Mt_FootR-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#geom-FootR__Mt_FootR-normals" offset="1"/>
+          <input semantic="COLOR" source="#geom-FootR__Mt_FootR-map0" offset="2" set="0"/>
+          <input semantic="TEXCOORD" source="#geom-FootR__Mt_FootR-map1" offset="3" set="0"/>
+          <p>0 0 0 0 1 1 1 1 2 2 2 2 1 1 1 1 3 3 3 3 2 2 2 2</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom-Cap__Mt_Cap" name="Cap__Mt_Cap">
+      <mesh>
+        <source id="geom-Cap__Mt_Cap-positions">
+          <float_array id="geom-Cap__Mt_Cap-positions-array" count="12">-1.03811 0.03699994 3.013073 1.28189 0.03699994 3.013073 -1.03811 0.03700018 4.567472 1.28189 0.03700018 4.567472</float_array>
+          <technique_common>
+            <accessor source="#geom-Cap__Mt_Cap-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Cap__Mt_Cap-normals">
+          <float_array id="geom-Cap__Mt_Cap-normals-array" count="12">0 -1 0 0 -1 0 0 -1 0 0 -1 0</float_array>
+          <technique_common>
+            <accessor source="#geom-Cap__Mt_Cap-normals-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Cap__Mt_Cap-map-2">
+          <float_array id="geom-Cap__Mt_Cap-map-2-array" count="12">1 1 1 1 1 1 1 1 1 1 1 1</float_array>
+          <technique_common>
+            <accessor source="#geom-Cap__Mt_Cap-map-2-array" count="4" stride="3">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Cap__Mt_Cap-map0">
+          <float_array id="geom-Cap__Mt_Cap-map0-array" count="12">1 1 1 1 1 1 1 1 1 1 1 1</float_array>
+          <technique_common>
+            <accessor source="#geom-Cap__Mt_Cap-map0-array" count="4" stride="3">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Cap__Mt_Cap-map1">
+          <float_array id="geom-Cap__Mt_Cap-map1-array" count="12">0 0 0 1 0 0 0 1 0 1 1 0</float_array>
+          <technique_common>
+            <accessor source="#geom-Cap__Mt_Cap-map1-array" count="4" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-Cap__Mt_Cap-vertices">
+          <input semantic="POSITION" source="#geom-Cap__Mt_Cap-positions"/>
+        </vertices>
+        <triangles material="Mt_Cap" count="2">
+          <input semantic="VERTEX" source="#geom-Cap__Mt_Cap-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#geom-Cap__Mt_Cap-normals" offset="1"/>
+          <input semantic="COLOR" source="#geom-Cap__Mt_Cap-map0" offset="2" set="0"/>
+          <input semantic="TEXCOORD" source="#geom-Cap__Mt_Cap-map1" offset="3" set="0"/>
+          <p>0 0 0 0 1 1 1 1 2 2 2 2 1 1 1 1 3 3 3 3 2 2 2 2</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom-CapShadow__Mt_CapShadow" name="CapShadow__Mt_CapShadow">
+      <mesh>
+        <source id="geom-CapShadow__Mt_CapShadow-positions">
+          <float_array id="geom-CapShadow__Mt_CapShadow-positions-array" count="12">-0.9922242 0.05182099 3.362697 0.1909758 0.05182099 3.362697 -0.9922242 0.05182099 3.989096 0.1909758 0.05182099 3.989096</float_array>
+          <technique_common>
+            <accessor source="#geom-CapShadow__Mt_CapShadow-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-CapShadow__Mt_CapShadow-normals">
+          <float_array id="geom-CapShadow__Mt_CapShadow-normals-array" count="12">0 -1 0 0 -1 0 0 -1 2.38419e-5 0 -1 2.38419e-5</float_array>
+          <technique_common>
+            <accessor source="#geom-CapShadow__Mt_CapShadow-normals-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-CapShadow__Mt_CapShadow-map-2">
+          <float_array id="geom-CapShadow__Mt_CapShadow-map-2-array" count="12">1 1 1 1 1 1 1 1 1 1 1 1</float_array>
+          <technique_common>
+            <accessor source="#geom-CapShadow__Mt_CapShadow-map-2-array" count="4" stride="3">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-CapShadow__Mt_CapShadow-map0">
+          <float_array id="geom-CapShadow__Mt_CapShadow-map0-array" count="12">1 1 1 1 1 1 1 1 1 1 1 1</float_array>
+          <technique_common>
+            <accessor source="#geom-CapShadow__Mt_CapShadow-map0-array" count="4" stride="3">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-CapShadow__Mt_CapShadow-map1">
+          <float_array id="geom-CapShadow__Mt_CapShadow-map1-array" count="12">0 0 0 1 0 0 0 1 0 1 1 0</float_array>
+          <technique_common>
+            <accessor source="#geom-CapShadow__Mt_CapShadow-map1-array" count="4" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-CapShadow__Mt_CapShadow-vertices">
+          <input semantic="POSITION" source="#geom-CapShadow__Mt_CapShadow-positions"/>
+        </vertices>
+        <triangles material="Mt_CapShadow" count="2">
+          <input semantic="VERTEX" source="#geom-CapShadow__Mt_CapShadow-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#geom-CapShadow__Mt_CapShadow-normals" offset="1"/>
+          <input semantic="COLOR" source="#geom-CapShadow__Mt_CapShadow-map0" offset="2" set="0"/>
+          <input semantic="TEXCOORD" source="#geom-CapShadow__Mt_CapShadow-map1" offset="3" set="0"/>
+          <p>0 0 0 0 1 1 1 1 2 2 2 2 1 1 1 1 3 3 3 3 2 2 2 2</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom-EyeL__Mt_EyeL" name="EyeL__Mt_EyeL">
+      <mesh>
+        <source id="geom-EyeL__Mt_EyeL-positions">
+          <float_array id="geom-EyeL__Mt_EyeL-positions-array" count="12">-0.1816643 0.03999996 3.075809 0.2126228 0.03999996 3.075809 -0.1816643 0.03999996 3.655643 0.2126228 0.03999996 3.655643</float_array>
+          <technique_common>
+            <accessor source="#geom-EyeL__Mt_EyeL-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-EyeL__Mt_EyeL-normals">
+          <float_array id="geom-EyeL__Mt_EyeL-normals-array" count="12">0 -1 0 0 -1 0 0 -1 0 0 -1 0</float_array>
+          <technique_common>
+            <accessor source="#geom-EyeL__Mt_EyeL-normals-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-EyeL__Mt_EyeL-map-2">
+          <float_array id="geom-EyeL__Mt_EyeL-map-2-array" count="12">1 1 1 1 1 1 1 1 1 1 1 1</float_array>
+          <technique_common>
+            <accessor source="#geom-EyeL__Mt_EyeL-map-2-array" count="4" stride="3">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-EyeL__Mt_EyeL-map0">
+          <float_array id="geom-EyeL__Mt_EyeL-map0-array" count="12">1 1 1 1 1 1 1 1 1 1 1 1</float_array>
+          <technique_common>
+            <accessor source="#geom-EyeL__Mt_EyeL-map0-array" count="4" stride="3">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-EyeL__Mt_EyeL-map1">
+          <float_array id="geom-EyeL__Mt_EyeL-map1-array" count="12">0 0 0 1 0 0 0 1 0 1 1 0</float_array>
+          <technique_common>
+            <accessor source="#geom-EyeL__Mt_EyeL-map1-array" count="4" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-EyeL__Mt_EyeL-vertices">
+          <input semantic="POSITION" source="#geom-EyeL__Mt_EyeL-positions"/>
+        </vertices>
+        <triangles material="Mt_EyeL" count="2">
+          <input semantic="VERTEX" source="#geom-EyeL__Mt_EyeL-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#geom-EyeL__Mt_EyeL-normals" offset="1"/>
+          <input semantic="COLOR" source="#geom-EyeL__Mt_EyeL-map0" offset="2" set="0"/>
+          <input semantic="TEXCOORD" source="#geom-EyeL__Mt_EyeL-map1" offset="3" set="0"/>
+          <p>0 0 0 0 1 1 1 1 2 2 2 2 1 1 1 1 3 3 3 3 2 2 2 2</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom-EyeR__Mt_EyeR" name="EyeR__Mt_EyeR">
+      <mesh>
+        <source id="geom-EyeR__Mt_EyeR-positions">
+          <float_array id="geom-EyeR__Mt_EyeR-positions-array" count="12">-0.4923279 0.03999996 3.142005 -0.1908143 0.03999996 3.142005 -0.4923279 0.03999996 3.721717 -0.1908143 0.03999996 3.721717</float_array>
+          <technique_common>
+            <accessor source="#geom-EyeR__Mt_EyeR-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-EyeR__Mt_EyeR-normals">
+          <float_array id="geom-EyeR__Mt_EyeR-normals-array" count="12">0 -1 0 0 -1 0 0 -1 0 0 -1 0</float_array>
+          <technique_common>
+            <accessor source="#geom-EyeR__Mt_EyeR-normals-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-EyeR__Mt_EyeR-map-2">
+          <float_array id="geom-EyeR__Mt_EyeR-map-2-array" count="12">1 1 1 1 1 1 1 1 1 1 1 1</float_array>
+          <technique_common>
+            <accessor source="#geom-EyeR__Mt_EyeR-map-2-array" count="4" stride="3">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-EyeR__Mt_EyeR-map0">
+          <float_array id="geom-EyeR__Mt_EyeR-map0-array" count="12">1 1 1 1 1 1 1 1 1 1 1 1</float_array>
+          <technique_common>
+            <accessor source="#geom-EyeR__Mt_EyeR-map0-array" count="4" stride="3">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-EyeR__Mt_EyeR-map1">
+          <float_array id="geom-EyeR__Mt_EyeR-map1-array" count="12">0 0 0 1 0 0 0 1 0 1 1 0</float_array>
+          <technique_common>
+            <accessor source="#geom-EyeR__Mt_EyeR-map1-array" count="4" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-EyeR__Mt_EyeR-vertices">
+          <input semantic="POSITION" source="#geom-EyeR__Mt_EyeR-positions"/>
+        </vertices>
+        <triangles material="Mt_EyeR" count="2">
+          <input semantic="VERTEX" source="#geom-EyeR__Mt_EyeR-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#geom-EyeR__Mt_EyeR-normals" offset="1"/>
+          <input semantic="COLOR" source="#geom-EyeR__Mt_EyeR-map0" offset="2" set="0"/>
+          <input semantic="TEXCOORD" source="#geom-EyeR__Mt_EyeR-map1" offset="3" set="0"/>
+          <p>0 0 0 0 1 1 1 1 2 2 2 2 1 1 1 1 3 3 3 3 2 2 2 2</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom-Ear__Mt_Ear" name="Ear__Mt_Ear">
+      <mesh>
+        <source id="geom-Ear__Mt_Ear-positions">
+          <float_array id="geom-Ear__Mt_Ear-positions-array" count="30">0.9218652 -0.006205082 2.465019 1.252909 -0.05870295 2.465019 1.252909 -0.05870295 3.300219 0.9218652 -0.006205082 3.300219 0.7102144 0.02974653 2.46502 0.7102144 0.02974653 3.300219 0.6218688 0.05338359 2.46502 0.6218688 0.05338359 3.300219 0.5105088 0.08054185 3.300219 0.5105088 0.08054185 2.465019</float_array>
+          <technique_common>
+            <accessor source="#geom-Ear__Mt_Ear-positions-array" count="10" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Ear__Mt_Ear-normals">
+          <float_array id="geom-Ear__Mt_Ear-normals-array" count="30">0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0</float_array>
+          <technique_common>
+            <accessor source="#geom-Ear__Mt_Ear-normals-array" count="10" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Ear__Mt_Ear-map-2">
+          <float_array id="geom-Ear__Mt_Ear-map-2-array" count="30">1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1</float_array>
+          <technique_common>
+            <accessor source="#geom-Ear__Mt_Ear-map-2-array" count="10" stride="3">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Ear__Mt_Ear-map0">
+          <float_array id="geom-Ear__Mt_Ear-map0-array" count="30">1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1</float_array>
+          <technique_common>
+            <accessor source="#geom-Ear__Mt_Ear-map0-array" count="10" stride="3">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Ear__Mt_Ear-map1">
+          <float_array id="geom-Ear__Mt_Ear-map1-array" count="30">0.5529412 0 0 1 0 0 1 1 0 0.5529412 1 0 0.2705882 0 0 0.2705882 1 0 0.1490196 0 0 0.1490196 1 0 0 1 0 0 0 0</float_array>
+          <technique_common>
+            <accessor source="#geom-Ear__Mt_Ear-map1-array" count="10" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-Ear__Mt_Ear-vertices">
+          <input semantic="POSITION" source="#geom-Ear__Mt_Ear-positions"/>
+        </vertices>
+        <triangles material="Mt_Ear" count="8">
+          <input semantic="VERTEX" source="#geom-Ear__Mt_Ear-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#geom-Ear__Mt_Ear-normals" offset="1"/>
+          <input semantic="COLOR" source="#geom-Ear__Mt_Ear-map0" offset="2" set="0"/>
+          <input semantic="TEXCOORD" source="#geom-Ear__Mt_Ear-map1" offset="3" set="0"/>
+          <p>0 0 0 0 1 1 1 1 2 2 2 2 3 3 3 3 0 0 0 0 2 2 2 2 4 4 4 4 0 0 0 0 3 3 3 3 5 5 5 5 4 4 4 4 3 3 3 3 6 6 6 6 4 4 4 4 5 5 5 5 7 7 7 7 6 6 6 6 5 5 5 5 6 6 6 6 7 7 7 7 8 8 8 8 9 9 9 9 6 6 6 6 8 8 8 8</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom-Face__Mt_Face" name="Face__Mt_Face">
+      <mesh>
+        <source id="geom-Face__Mt_Face-positions">
+          <float_array id="geom-Face__Mt_Face-positions-array" count="12">-1.082957 0.04833364 1.671729 1.353044 0.04833364 1.671729 -1.082957 0.04833364 4.084529 1.353044 0.04833364 4.084529</float_array>
+          <technique_common>
+            <accessor source="#geom-Face__Mt_Face-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Face__Mt_Face-normals">
+          <float_array id="geom-Face__Mt_Face-normals-array" count="12">0 -1 0 0 -1 0 0 -1 0 0 -1 0</float_array>
+          <technique_common>
+            <accessor source="#geom-Face__Mt_Face-normals-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Face__Mt_Face-map-2">
+          <float_array id="geom-Face__Mt_Face-map-2-array" count="12">1 1 1 1 1 1 1 1 1 1 1 1</float_array>
+          <technique_common>
+            <accessor source="#geom-Face__Mt_Face-map-2-array" count="4" stride="3">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Face__Mt_Face-map0">
+          <float_array id="geom-Face__Mt_Face-map0-array" count="12">1 1 1 1 1 1 1 1 1 1 1 1</float_array>
+          <technique_common>
+            <accessor source="#geom-Face__Mt_Face-map0-array" count="4" stride="3">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Face__Mt_Face-map1">
+          <float_array id="geom-Face__Mt_Face-map1-array" count="12">0 0 0 1 0 0 0 1 0 1 1 0</float_array>
+          <technique_common>
+            <accessor source="#geom-Face__Mt_Face-map1-array" count="4" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-Face__Mt_Face-vertices">
+          <input semantic="POSITION" source="#geom-Face__Mt_Face-positions"/>
+        </vertices>
+        <triangles material="Mt_Face" count="2">
+          <input semantic="VERTEX" source="#geom-Face__Mt_Face-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#geom-Face__Mt_Face-normals" offset="1"/>
+          <input semantic="COLOR" source="#geom-Face__Mt_Face-map0" offset="2" set="0"/>
+          <input semantic="TEXCOORD" source="#geom-Face__Mt_Face-map1" offset="3" set="0"/>
+          <p>0 0 0 0 1 1 1 1 2 2 2 2 1 1 1 1 3 3 3 3 2 2 2 2</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom-ArmL__Mt_ArmL" name="ArmL__Mt_ArmL">
+      <mesh>
+        <source id="geom-ArmL__Mt_ArmL-positions">
+          <float_array id="geom-ArmL__Mt_ArmL-positions-array" count="12">-0.9137089 -0.02750915 0.7284737 0.9886348 -0.02750915 0.7284737 -0.9137089 -0.02750921 2.189899 0.9886348 -0.02750921 2.189899</float_array>
+          <technique_common>
+            <accessor source="#geom-ArmL__Mt_ArmL-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-ArmL__Mt_ArmL-normals">
+          <float_array id="geom-ArmL__Mt_ArmL-normals-array" count="12">0 -1 0 0 -1 0 0 -1 0 0 -1 0</float_array>
+          <technique_common>
+            <accessor source="#geom-ArmL__Mt_ArmL-normals-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-ArmL__Mt_ArmL-map-2">
+          <float_array id="geom-ArmL__Mt_ArmL-map-2-array" count="12">1 1 1 1 1 1 1 1 1 1 1 1</float_array>
+          <technique_common>
+            <accessor source="#geom-ArmL__Mt_ArmL-map-2-array" count="4" stride="3">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-ArmL__Mt_ArmL-map0">
+          <float_array id="geom-ArmL__Mt_ArmL-map0-array" count="12">1 1 1 1 1 1 1 1 1 1 1 1</float_array>
+          <technique_common>
+            <accessor source="#geom-ArmL__Mt_ArmL-map0-array" count="4" stride="3">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-ArmL__Mt_ArmL-map1">
+          <float_array id="geom-ArmL__Mt_ArmL-map1-array" count="12">0 0 0 1 0 0 0 1 0 1 1 0</float_array>
+          <technique_common>
+            <accessor source="#geom-ArmL__Mt_ArmL-map1-array" count="4" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-ArmL__Mt_ArmL-vertices">
+          <input semantic="POSITION" source="#geom-ArmL__Mt_ArmL-positions"/>
+        </vertices>
+        <triangles material="Mt_ArmL" count="2">
+          <input semantic="VERTEX" source="#geom-ArmL__Mt_ArmL-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#geom-ArmL__Mt_ArmL-normals" offset="1"/>
+          <input semantic="COLOR" source="#geom-ArmL__Mt_ArmL-map0" offset="2" set="0"/>
+          <input semantic="TEXCOORD" source="#geom-ArmL__Mt_ArmL-map1" offset="3" set="0"/>
+          <p>0 0 0 0 1 1 1 1 2 2 2 2 1 1 1 1 3 3 3 3 2 2 2 2</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom-HandL__Mt_HandL" name="HandL__Mt_HandL">
+      <mesh>
+        <source id="geom-HandL__Mt_HandL-positions">
+          <float_array id="geom-HandL__Mt_HandL-positions-array" count="12">-0.3216816 -0.04785012 0.06476605 1.371919 -0.04785012 0.06476605 -0.3216816 -0.04785013 1.758366 1.371919 -0.04785013 1.758366</float_array>
+          <technique_common>
+            <accessor source="#geom-HandL__Mt_HandL-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-HandL__Mt_HandL-normals">
+          <float_array id="geom-HandL__Mt_HandL-normals-array" count="12">0 -1 0 0 -1 0 0 -1 0 0 -1 0</float_array>
+          <technique_common>
+            <accessor source="#geom-HandL__Mt_HandL-normals-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-HandL__Mt_HandL-map-2">
+          <float_array id="geom-HandL__Mt_HandL-map-2-array" count="12">1 1 1 1 1 1 1 1 1 1 1 1</float_array>
+          <technique_common>
+            <accessor source="#geom-HandL__Mt_HandL-map-2-array" count="4" stride="3">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-HandL__Mt_HandL-map0">
+          <float_array id="geom-HandL__Mt_HandL-map0-array" count="12">1 1 1 1 1 1 1 1 1 1 1 1</float_array>
+          <technique_common>
+            <accessor source="#geom-HandL__Mt_HandL-map0-array" count="4" stride="3">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-HandL__Mt_HandL-map1">
+          <float_array id="geom-HandL__Mt_HandL-map1-array" count="12">0 0 0 1 0 0 0 1 0 1 1 0</float_array>
+          <technique_common>
+            <accessor source="#geom-HandL__Mt_HandL-map1-array" count="4" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-HandL__Mt_HandL-vertices">
+          <input semantic="POSITION" source="#geom-HandL__Mt_HandL-positions"/>
+        </vertices>
+        <triangles material="Mt_HandL" count="2">
+          <input semantic="VERTEX" source="#geom-HandL__Mt_HandL-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#geom-HandL__Mt_HandL-normals" offset="1"/>
+          <input semantic="COLOR" source="#geom-HandL__Mt_HandL-map0" offset="2" set="0"/>
+          <input semantic="TEXCOORD" source="#geom-HandL__Mt_HandL-map1" offset="3" set="0"/>
+          <p>0 0 0 0 1 1 1 1 2 2 2 2 1 1 1 1 3 3 3 3 2 2 2 2</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom-ArmR__Mt_ArmR" name="ArmR__Mt_ArmR">
+      <mesh>
+        <source id="geom-ArmR__Mt_ArmR-positions">
+          <float_array id="geom-ArmR__Mt_ArmR-positions-array" count="12">-0.5731065 0.04678971 0.941177 0.6332936 0.04678971 0.941177 -0.5731065 0.04678965 2.286777 0.6332936 0.04678965 2.286777</float_array>
+          <technique_common>
+            <accessor source="#geom-ArmR__Mt_ArmR-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-ArmR__Mt_ArmR-normals">
+          <float_array id="geom-ArmR__Mt_ArmR-normals-array" count="12">0 -1 0 0 -1 0 0 -1 0 0 -1 0</float_array>
+          <technique_common>
+            <accessor source="#geom-ArmR__Mt_ArmR-normals-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-ArmR__Mt_ArmR-map-2">
+          <float_array id="geom-ArmR__Mt_ArmR-map-2-array" count="12">1 1 1 1 1 1 1 1 1 1 1 1</float_array>
+          <technique_common>
+            <accessor source="#geom-ArmR__Mt_ArmR-map-2-array" count="4" stride="3">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-ArmR__Mt_ArmR-map0">
+          <float_array id="geom-ArmR__Mt_ArmR-map0-array" count="12">1 1 1 1 1 1 1 1 1 1 1 1</float_array>
+          <technique_common>
+            <accessor source="#geom-ArmR__Mt_ArmR-map0-array" count="4" stride="3">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-ArmR__Mt_ArmR-map1">
+          <float_array id="geom-ArmR__Mt_ArmR-map1-array" count="12">0 0 0 1 0 0 0 1 0 1 1 0</float_array>
+          <technique_common>
+            <accessor source="#geom-ArmR__Mt_ArmR-map1-array" count="4" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-ArmR__Mt_ArmR-vertices">
+          <input semantic="POSITION" source="#geom-ArmR__Mt_ArmR-positions"/>
+        </vertices>
+        <triangles material="Mt_ArmR" count="2">
+          <input semantic="VERTEX" source="#geom-ArmR__Mt_ArmR-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#geom-ArmR__Mt_ArmR-normals" offset="1"/>
+          <input semantic="COLOR" source="#geom-ArmR__Mt_ArmR-map0" offset="2" set="0"/>
+          <input semantic="TEXCOORD" source="#geom-ArmR__Mt_ArmR-map1" offset="3" set="0"/>
+          <p>0 0 0 0 1 1 1 1 2 2 2 2 1 1 1 1 3 3 3 3 2 2 2 2</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom-HandR__Mt_HandR" name="HandR__Mt_HandR">
+      <mesh>
+        <source id="geom-HandR__Mt_HandR-positions">
+          <float_array id="geom-HandR__Mt_HandR-positions-array" count="12">-1.30922 0.03 -0.07195938 0.6395797 0.03 -0.07195938 -1.30922 0.02999997 1.853641 0.6395797 0.02999997 1.853641</float_array>
+          <technique_common>
+            <accessor source="#geom-HandR__Mt_HandR-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-HandR__Mt_HandR-normals">
+          <float_array id="geom-HandR__Mt_HandR-normals-array" count="12">0 -1 0 0 -1 0 0 -1 0 0 -1 0</float_array>
+          <technique_common>
+            <accessor source="#geom-HandR__Mt_HandR-normals-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-HandR__Mt_HandR-map-2">
+          <float_array id="geom-HandR__Mt_HandR-map-2-array" count="12">1 1 1 1 1 1 1 1 1 1 1 1</float_array>
+          <technique_common>
+            <accessor source="#geom-HandR__Mt_HandR-map-2-array" count="4" stride="3">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-HandR__Mt_HandR-map0">
+          <float_array id="geom-HandR__Mt_HandR-map0-array" count="12">1 1 1 1 1 1 1 1 1 1 1 1</float_array>
+          <technique_common>
+            <accessor source="#geom-HandR__Mt_HandR-map0-array" count="4" stride="3">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-HandR__Mt_HandR-map1">
+          <float_array id="geom-HandR__Mt_HandR-map1-array" count="12">0 0 0 1 0 0 0 1 0 1 1 0</float_array>
+          <technique_common>
+            <accessor source="#geom-HandR__Mt_HandR-map1-array" count="4" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-HandR__Mt_HandR-vertices">
+          <input semantic="POSITION" source="#geom-HandR__Mt_HandR-positions"/>
+        </vertices>
+        <triangles material="Mt_HandR" count="2">
+          <input semantic="VERTEX" source="#geom-HandR__Mt_HandR-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#geom-HandR__Mt_HandR-normals" offset="1"/>
+          <input semantic="COLOR" source="#geom-HandR__Mt_HandR-map0" offset="2" set="0"/>
+          <input semantic="TEXCOORD" source="#geom-HandR__Mt_HandR-map1" offset="3" set="0"/>
+          <p>0 0 0 0 1 1 1 1 2 2 2 2 1 1 1 1 3 3 3 3 2 2 2 2</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom-TitleShadow__Mt_TitleShadow" name="TitleShadow__Mt_TitleShadow">
+      <mesh>
+        <source id="geom-TitleShadow__Mt_TitleShadow-positions">
+          <float_array id="geom-TitleShadow__Mt_TitleShadow-positions-array" count="12">-2.712686 0.2482561 -0.3595839 2.703617 0.2482561 -0.3595839 -2.712686 0.2482562 5.056719 2.703617 0.2482562 5.056719</float_array>
+          <technique_common>
+            <accessor source="#geom-TitleShadow__Mt_TitleShadow-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-TitleShadow__Mt_TitleShadow-normals">
+          <float_array id="geom-TitleShadow__Mt_TitleShadow-normals-array" count="12">0 -1 0 0 -1 0 0 -1 0 0 -1 0</float_array>
+          <technique_common>
+            <accessor source="#geom-TitleShadow__Mt_TitleShadow-normals-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-TitleShadow__Mt_TitleShadow-map-2">
+          <float_array id="geom-TitleShadow__Mt_TitleShadow-map-2-array" count="12">1 1 1 1 1 1 1 1 1 1 1 1</float_array>
+          <technique_common>
+            <accessor source="#geom-TitleShadow__Mt_TitleShadow-map-2-array" count="4" stride="3">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-TitleShadow__Mt_TitleShadow-map0">
+          <float_array id="geom-TitleShadow__Mt_TitleShadow-map0-array" count="12">1 1 1 1 1 1 1 1 1 1 1 1</float_array>
+          <technique_common>
+            <accessor source="#geom-TitleShadow__Mt_TitleShadow-map0-array" count="4" stride="3">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-TitleShadow__Mt_TitleShadow-map1">
+          <float_array id="geom-TitleShadow__Mt_TitleShadow-map1-array" count="12">0 0 0 1 0 0 0 1 0 1 1 0</float_array>
+          <technique_common>
+            <accessor source="#geom-TitleShadow__Mt_TitleShadow-map1-array" count="4" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-TitleShadow__Mt_TitleShadow-vertices">
+          <input semantic="POSITION" source="#geom-TitleShadow__Mt_TitleShadow-positions"/>
+        </vertices>
+        <triangles material="Mt_TitleShadow" count="2">
+          <input semantic="VERTEX" source="#geom-TitleShadow__Mt_TitleShadow-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#geom-TitleShadow__Mt_TitleShadow-normals" offset="1"/>
+          <input semantic="COLOR" source="#geom-TitleShadow__Mt_TitleShadow-map0" offset="2" set="0"/>
+          <input semantic="TEXCOORD" source="#geom-TitleShadow__Mt_TitleShadow-map1" offset="3" set="0"/>
+          <p>0 0 0 0 1 1 1 1 2 2 2 2 1 1 1 1 3 3 3 3 2 2 2 2</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_controllers>
+    <controller id="geom-Body__Mt_Body-skin1">
+      <skin source="#geom-Body__Mt_Body">
+        <bind_shape_matrix>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</bind_shape_matrix>
+        <source id="geom-Body__Mt_Body-skin1-joints">
+          <Name_array id="geom-Body__Mt_Body-skin1-joints-array" count="1">joint0</Name_array>
+          <technique_common>
+            <accessor source="#geom-Body__Mt_Body-skin1-joints-array" count="1" stride="1">
+              <param name="JOINT" type="name"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Body__Mt_Body-skin1-bind_poses">
+          <float_array id="geom-Body__Mt_Body-skin1-bind_poses-array" count="16">1 0 0 -0.1708874 0 0 1 -1.480741 0 -1 0 0 0 0 0 1</float_array>
+          <technique_common>
+            <accessor source="#geom-Body__Mt_Body-skin1-bind_poses-array" count="1" stride="16">
+              <param name="TRANSFORM" type="float4x4"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Body__Mt_Body-skin1-weights">
+          <float_array id="geom-Body__Mt_Body-skin1-weights-array" count="1">1</float_array>
+          <technique_common>
+            <accessor source="#geom-Body__Mt_Body-skin1-weights-array" count="1" stride="1">
+              <param name="WEIGHT" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <joints>
+          <input semantic="JOINT" source="#geom-Body__Mt_Body-skin1-joints"/>
+          <input semantic="INV_BIND_MATRIX" source="#geom-Body__Mt_Body-skin1-bind_poses"/>
+        </joints>
+        <vertex_weights count="4">
+          <input semantic="JOINT" source="#geom-Body__Mt_Body-skin1-joints" offset="0"/>
+          <input semantic="WEIGHT" source="#geom-Body__Mt_Body-skin1-weights" offset="1"/>
+          <vcount>1 1 1 1</vcount>
+          <v>0 0 0 0 0 0 0 0</v>
+        </vertex_weights>
+      </skin>
+    </controller>
+    <controller id="geom-FootL__Mt_FootL-skin1">
+      <skin source="#geom-FootL__Mt_FootL">
+        <bind_shape_matrix>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</bind_shape_matrix>
+        <source id="geom-FootL__Mt_FootL-skin1-joints">
+          <Name_array id="geom-FootL__Mt_FootL-skin1-joints-array" count="1">joint1</Name_array>
+          <technique_common>
+            <accessor source="#geom-FootL__Mt_FootL-skin1-joints-array" count="1" stride="1">
+              <param name="JOINT" type="name"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-FootL__Mt_FootL-skin1-bind_poses">
+          <float_array id="geom-FootL__Mt_FootL-skin1-bind_poses-array" count="16">1 0 0 -0.4089423 0 0 1 -0.6316385 0 -1 0 -0.0179738 0 0 0 1</float_array>
+          <technique_common>
+            <accessor source="#geom-FootL__Mt_FootL-skin1-bind_poses-array" count="1" stride="16">
+              <param name="TRANSFORM" type="float4x4"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-FootL__Mt_FootL-skin1-weights">
+          <float_array id="geom-FootL__Mt_FootL-skin1-weights-array" count="1">1</float_array>
+          <technique_common>
+            <accessor source="#geom-FootL__Mt_FootL-skin1-weights-array" count="1" stride="1">
+              <param name="WEIGHT" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <joints>
+          <input semantic="JOINT" source="#geom-FootL__Mt_FootL-skin1-joints"/>
+          <input semantic="INV_BIND_MATRIX" source="#geom-FootL__Mt_FootL-skin1-bind_poses"/>
+        </joints>
+        <vertex_weights count="4">
+          <input semantic="JOINT" source="#geom-FootL__Mt_FootL-skin1-joints" offset="0"/>
+          <input semantic="WEIGHT" source="#geom-FootL__Mt_FootL-skin1-weights" offset="1"/>
+          <vcount>1 1 1 1</vcount>
+          <v>0 0 0 0 0 0 0 0</v>
+        </vertex_weights>
+      </skin>
+    </controller>
+    <controller id="geom-FootR__Mt_FootR-skin1">
+      <skin source="#geom-FootR__Mt_FootR">
+        <bind_shape_matrix>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</bind_shape_matrix>
+        <source id="geom-FootR__Mt_FootR-skin1-joints">
+          <Name_array id="geom-FootR__Mt_FootR-skin1-joints-array" count="1">joint2</Name_array>
+          <technique_common>
+            <accessor source="#geom-FootR__Mt_FootR-skin1-joints-array" count="1" stride="1">
+              <param name="JOINT" type="name"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-FootR__Mt_FootR-skin1-bind_poses">
+          <float_array id="geom-FootR__Mt_FootR-skin1-bind_poses-array" count="16">1 0 0 -0.02306077 0 0 1 -0.6816026 0 -1 0 0.02 0 0 0 1</float_array>
+          <technique_common>
+            <accessor source="#geom-FootR__Mt_FootR-skin1-bind_poses-array" count="1" stride="16">
+              <param name="TRANSFORM" type="float4x4"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-FootR__Mt_FootR-skin1-weights">
+          <float_array id="geom-FootR__Mt_FootR-skin1-weights-array" count="1">1</float_array>
+          <technique_common>
+            <accessor source="#geom-FootR__Mt_FootR-skin1-weights-array" count="1" stride="1">
+              <param name="WEIGHT" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <joints>
+          <input semantic="JOINT" source="#geom-FootR__Mt_FootR-skin1-joints"/>
+          <input semantic="INV_BIND_MATRIX" source="#geom-FootR__Mt_FootR-skin1-bind_poses"/>
+        </joints>
+        <vertex_weights count="4">
+          <input semantic="JOINT" source="#geom-FootR__Mt_FootR-skin1-joints" offset="0"/>
+          <input semantic="WEIGHT" source="#geom-FootR__Mt_FootR-skin1-weights" offset="1"/>
+          <vcount>1 1 1 1</vcount>
+          <v>0 0 0 0 0 0 0 0</v>
+        </vertex_weights>
+      </skin>
+    </controller>
+    <controller id="geom-Cap__Mt_Cap-skin1">
+      <skin source="#geom-Cap__Mt_Cap">
+        <bind_shape_matrix>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</bind_shape_matrix>
+        <source id="geom-Cap__Mt_Cap-skin1-joints">
+          <Name_array id="geom-Cap__Mt_Cap-skin1-joints-array" count="1">joint3</Name_array>
+          <technique_common>
+            <accessor source="#geom-Cap__Mt_Cap-skin1-joints-array" count="1" stride="1">
+              <param name="JOINT" type="name"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Cap__Mt_Cap-skin1-bind_poses">
+          <float_array id="geom-Cap__Mt_Cap-skin1-bind_poses-array" count="16">1 0 0 -0.8925692 0 0 1 -3.185207 0 -1 0 0.037 0 0 0 1</float_array>
+          <technique_common>
+            <accessor source="#geom-Cap__Mt_Cap-skin1-bind_poses-array" count="1" stride="16">
+              <param name="TRANSFORM" type="float4x4"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Cap__Mt_Cap-skin1-weights">
+          <float_array id="geom-Cap__Mt_Cap-skin1-weights-array" count="1">1</float_array>
+          <technique_common>
+            <accessor source="#geom-Cap__Mt_Cap-skin1-weights-array" count="1" stride="1">
+              <param name="WEIGHT" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <joints>
+          <input semantic="JOINT" source="#geom-Cap__Mt_Cap-skin1-joints"/>
+          <input semantic="INV_BIND_MATRIX" source="#geom-Cap__Mt_Cap-skin1-bind_poses"/>
+        </joints>
+        <vertex_weights count="4">
+          <input semantic="JOINT" source="#geom-Cap__Mt_Cap-skin1-joints" offset="0"/>
+          <input semantic="WEIGHT" source="#geom-Cap__Mt_Cap-skin1-weights" offset="1"/>
+          <vcount>1 1 1 1</vcount>
+          <v>0 0 0 0 0 0 0 0</v>
+        </vertex_weights>
+      </skin>
+    </controller>
+    <controller id="geom-CapShadow__Mt_CapShadow-skin1">
+      <skin source="#geom-CapShadow__Mt_CapShadow">
+        <bind_shape_matrix>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</bind_shape_matrix>
+        <source id="geom-CapShadow__Mt_CapShadow-skin1-joints">
+          <Name_array id="geom-CapShadow__Mt_CapShadow-skin1-joints-array" count="1">joint4</Name_array>
+          <technique_common>
+            <accessor source="#geom-CapShadow__Mt_CapShadow-skin1-joints-array" count="1" stride="1">
+              <param name="JOINT" type="name"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-CapShadow__Mt_CapShadow-skin1-bind_poses">
+          <float_array id="geom-CapShadow__Mt_CapShadow-skin1-bind_poses-array" count="16">1 0 0 -0.8925692 0 0 1 -3.185207 0 -1 0 0.037 0 0 0 1</float_array>
+          <technique_common>
+            <accessor source="#geom-CapShadow__Mt_CapShadow-skin1-bind_poses-array" count="1" stride="16">
+              <param name="TRANSFORM" type="float4x4"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-CapShadow__Mt_CapShadow-skin1-weights">
+          <float_array id="geom-CapShadow__Mt_CapShadow-skin1-weights-array" count="1">1</float_array>
+          <technique_common>
+            <accessor source="#geom-CapShadow__Mt_CapShadow-skin1-weights-array" count="1" stride="1">
+              <param name="WEIGHT" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <joints>
+          <input semantic="JOINT" source="#geom-CapShadow__Mt_CapShadow-skin1-joints"/>
+          <input semantic="INV_BIND_MATRIX" source="#geom-CapShadow__Mt_CapShadow-skin1-bind_poses"/>
+        </joints>
+        <vertex_weights count="4">
+          <input semantic="JOINT" source="#geom-CapShadow__Mt_CapShadow-skin1-joints" offset="0"/>
+          <input semantic="WEIGHT" source="#geom-CapShadow__Mt_CapShadow-skin1-weights" offset="1"/>
+          <vcount>1 1 1 1</vcount>
+          <v>0 0 0 0 0 0 0 0</v>
+        </vertex_weights>
+      </skin>
+    </controller>
+    <controller id="geom-EyeL__Mt_EyeL-skin1">
+      <skin source="#geom-EyeL__Mt_EyeL">
+        <bind_shape_matrix>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</bind_shape_matrix>
+        <source id="geom-EyeL__Mt_EyeL-skin1-joints">
+          <Name_array id="geom-EyeL__Mt_EyeL-skin1-joints-array" count="1">joint5</Name_array>
+          <technique_common>
+            <accessor source="#geom-EyeL__Mt_EyeL-skin1-joints-array" count="1" stride="1">
+              <param name="JOINT" type="name"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-EyeL__Mt_EyeL-skin1-bind_poses">
+          <float_array id="geom-EyeL__Mt_EyeL-skin1-bind_poses-array" count="16">1 0 0 3.89874e-4 0 0 1 -3.292362 0 -1 0 0.04 0 0 0 1</float_array>
+          <technique_common>
+            <accessor source="#geom-EyeL__Mt_EyeL-skin1-bind_poses-array" count="1" stride="16">
+              <param name="TRANSFORM" type="float4x4"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-EyeL__Mt_EyeL-skin1-weights">
+          <float_array id="geom-EyeL__Mt_EyeL-skin1-weights-array" count="1">1</float_array>
+          <technique_common>
+            <accessor source="#geom-EyeL__Mt_EyeL-skin1-weights-array" count="1" stride="1">
+              <param name="WEIGHT" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <joints>
+          <input semantic="JOINT" source="#geom-EyeL__Mt_EyeL-skin1-joints"/>
+          <input semantic="INV_BIND_MATRIX" source="#geom-EyeL__Mt_EyeL-skin1-bind_poses"/>
+        </joints>
+        <vertex_weights count="4">
+          <input semantic="JOINT" source="#geom-EyeL__Mt_EyeL-skin1-joints" offset="0"/>
+          <input semantic="WEIGHT" source="#geom-EyeL__Mt_EyeL-skin1-weights" offset="1"/>
+          <vcount>1 1 1 1</vcount>
+          <v>0 0 0 0 0 0 0 0</v>
+        </vertex_weights>
+      </skin>
+    </controller>
+    <controller id="geom-EyeR__Mt_EyeR-skin1">
+      <skin source="#geom-EyeR__Mt_EyeR">
+        <bind_shape_matrix>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</bind_shape_matrix>
+        <source id="geom-EyeR__Mt_EyeR-skin1-joints">
+          <Name_array id="geom-EyeR__Mt_EyeR-skin1-joints-array" count="1">joint6</Name_array>
+          <technique_common>
+            <accessor source="#geom-EyeR__Mt_EyeR-skin1-joints-array" count="1" stride="1">
+              <param name="JOINT" type="name"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-EyeR__Mt_EyeR-skin1-bind_poses">
+          <float_array id="geom-EyeR__Mt_EyeR-skin1-bind_poses-array" count="16">1 0 0 0.3510926 0 0 1 -3.361122 0 -1 0 0.04 0 0 0 1</float_array>
+          <technique_common>
+            <accessor source="#geom-EyeR__Mt_EyeR-skin1-bind_poses-array" count="1" stride="16">
+              <param name="TRANSFORM" type="float4x4"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-EyeR__Mt_EyeR-skin1-weights">
+          <float_array id="geom-EyeR__Mt_EyeR-skin1-weights-array" count="1">1</float_array>
+          <technique_common>
+            <accessor source="#geom-EyeR__Mt_EyeR-skin1-weights-array" count="1" stride="1">
+              <param name="WEIGHT" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <joints>
+          <input semantic="JOINT" source="#geom-EyeR__Mt_EyeR-skin1-joints"/>
+          <input semantic="INV_BIND_MATRIX" source="#geom-EyeR__Mt_EyeR-skin1-bind_poses"/>
+        </joints>
+        <vertex_weights count="4">
+          <input semantic="JOINT" source="#geom-EyeR__Mt_EyeR-skin1-joints" offset="0"/>
+          <input semantic="WEIGHT" source="#geom-EyeR__Mt_EyeR-skin1-weights" offset="1"/>
+          <vcount>1 1 1 1</vcount>
+          <v>0 0 0 0 0 0 0 0</v>
+        </vertex_weights>
+      </skin>
+    </controller>
+    <controller id="geom-Ear__Mt_Ear-skin1">
+      <skin source="#geom-Ear__Mt_Ear">
+        <bind_shape_matrix>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</bind_shape_matrix>
+        <source id="geom-Ear__Mt_Ear-skin1-joints">
+          <Name_array id="geom-Ear__Mt_Ear-skin1-joints-array" count="1">joint7</Name_array>
+          <technique_common>
+            <accessor source="#geom-Ear__Mt_Ear-skin1-joints-array" count="1" stride="1">
+              <param name="JOINT" type="name"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Ear__Mt_Ear-skin1-bind_poses">
+          <float_array id="geom-Ear__Mt_Ear-skin1-bind_poses-array" count="16">1 0 0 -0.1082519 0 0 1 -2.25349 0 -1 0 0.04833359 0 0 0 1</float_array>
+          <technique_common>
+            <accessor source="#geom-Ear__Mt_Ear-skin1-bind_poses-array" count="1" stride="16">
+              <param name="TRANSFORM" type="float4x4"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Ear__Mt_Ear-skin1-weights">
+          <float_array id="geom-Ear__Mt_Ear-skin1-weights-array" count="1">1</float_array>
+          <technique_common>
+            <accessor source="#geom-Ear__Mt_Ear-skin1-weights-array" count="1" stride="1">
+              <param name="WEIGHT" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <joints>
+          <input semantic="JOINT" source="#geom-Ear__Mt_Ear-skin1-joints"/>
+          <input semantic="INV_BIND_MATRIX" source="#geom-Ear__Mt_Ear-skin1-bind_poses"/>
+        </joints>
+        <vertex_weights count="10">
+          <input semantic="JOINT" source="#geom-Ear__Mt_Ear-skin1-joints" offset="0"/>
+          <input semantic="WEIGHT" source="#geom-Ear__Mt_Ear-skin1-weights" offset="1"/>
+          <vcount>1 1 1 1 1 1 1 1 1 1</vcount>
+          <v>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</v>
+        </vertex_weights>
+      </skin>
+    </controller>
+    <controller id="geom-Face__Mt_Face-skin1">
+      <skin source="#geom-Face__Mt_Face">
+        <bind_shape_matrix>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</bind_shape_matrix>
+        <source id="geom-Face__Mt_Face-skin1-joints">
+          <Name_array id="geom-Face__Mt_Face-skin1-joints-array" count="1">joint8</Name_array>
+          <technique_common>
+            <accessor source="#geom-Face__Mt_Face-skin1-joints-array" count="1" stride="1">
+              <param name="JOINT" type="name"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Face__Mt_Face-skin1-bind_poses">
+          <float_array id="geom-Face__Mt_Face-skin1-bind_poses-array" count="16">1 0 0 -0.1082519 0 0 1 -2.25349 0 -1 0 0.04833359 0 0 0 1</float_array>
+          <technique_common>
+            <accessor source="#geom-Face__Mt_Face-skin1-bind_poses-array" count="1" stride="16">
+              <param name="TRANSFORM" type="float4x4"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Face__Mt_Face-skin1-weights">
+          <float_array id="geom-Face__Mt_Face-skin1-weights-array" count="1">1</float_array>
+          <technique_common>
+            <accessor source="#geom-Face__Mt_Face-skin1-weights-array" count="1" stride="1">
+              <param name="WEIGHT" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <joints>
+          <input semantic="JOINT" source="#geom-Face__Mt_Face-skin1-joints"/>
+          <input semantic="INV_BIND_MATRIX" source="#geom-Face__Mt_Face-skin1-bind_poses"/>
+        </joints>
+        <vertex_weights count="4">
+          <input semantic="JOINT" source="#geom-Face__Mt_Face-skin1-joints" offset="0"/>
+          <input semantic="WEIGHT" source="#geom-Face__Mt_Face-skin1-weights" offset="1"/>
+          <vcount>1 1 1 1</vcount>
+          <v>0 0 0 0 0 0 0 0</v>
+        </vertex_weights>
+      </skin>
+    </controller>
+    <controller id="geom-ArmL__Mt_ArmL-skin1">
+      <skin source="#geom-ArmL__Mt_ArmL">
+        <bind_shape_matrix>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</bind_shape_matrix>
+        <source id="geom-ArmL__Mt_ArmL-skin1-joints">
+          <Name_array id="geom-ArmL__Mt_ArmL-skin1-joints-array" count="1">joint9</Name_array>
+          <technique_common>
+            <accessor source="#geom-ArmL__Mt_ArmL-skin1-joints-array" count="1" stride="1">
+              <param name="JOINT" type="name"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-ArmL__Mt_ArmL-skin1-bind_poses">
+          <float_array id="geom-ArmL__Mt_ArmL-skin1-bind_poses-array" count="16">1 0 0 -0.4974239 0 0 1 -1.911091 0 -1 0 -0.02750915 0 0 0 1</float_array>
+          <technique_common>
+            <accessor source="#geom-ArmL__Mt_ArmL-skin1-bind_poses-array" count="1" stride="16">
+              <param name="TRANSFORM" type="float4x4"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-ArmL__Mt_ArmL-skin1-weights">
+          <float_array id="geom-ArmL__Mt_ArmL-skin1-weights-array" count="1">1</float_array>
+          <technique_common>
+            <accessor source="#geom-ArmL__Mt_ArmL-skin1-weights-array" count="1" stride="1">
+              <param name="WEIGHT" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <joints>
+          <input semantic="JOINT" source="#geom-ArmL__Mt_ArmL-skin1-joints"/>
+          <input semantic="INV_BIND_MATRIX" source="#geom-ArmL__Mt_ArmL-skin1-bind_poses"/>
+        </joints>
+        <vertex_weights count="4">
+          <input semantic="JOINT" source="#geom-ArmL__Mt_ArmL-skin1-joints" offset="0"/>
+          <input semantic="WEIGHT" source="#geom-ArmL__Mt_ArmL-skin1-weights" offset="1"/>
+          <vcount>1 1 1 1</vcount>
+          <v>0 0 0 0 0 0 0 0</v>
+        </vertex_weights>
+      </skin>
+    </controller>
+    <controller id="geom-HandL__Mt_HandL-skin1">
+      <skin source="#geom-HandL__Mt_HandL">
+        <bind_shape_matrix>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</bind_shape_matrix>
+        <source id="geom-HandL__Mt_HandL-skin1-joints">
+          <Name_array id="geom-HandL__Mt_HandL-skin1-joints-array" count="1">joint10</Name_array>
+          <technique_common>
+            <accessor source="#geom-HandL__Mt_HandL-skin1-joints-array" count="1" stride="1">
+              <param name="JOINT" type="name"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-HandL__Mt_HandL-skin1-bind_poses">
+          <float_array id="geom-HandL__Mt_HandL-skin1-bind_poses-array" count="16">1 0 0 -0.582049 0 0 1 -1.527128 0 -1 0 -0.04785012 0 0 0 1</float_array>
+          <technique_common>
+            <accessor source="#geom-HandL__Mt_HandL-skin1-bind_poses-array" count="1" stride="16">
+              <param name="TRANSFORM" type="float4x4"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-HandL__Mt_HandL-skin1-weights">
+          <float_array id="geom-HandL__Mt_HandL-skin1-weights-array" count="1">1</float_array>
+          <technique_common>
+            <accessor source="#geom-HandL__Mt_HandL-skin1-weights-array" count="1" stride="1">
+              <param name="WEIGHT" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <joints>
+          <input semantic="JOINT" source="#geom-HandL__Mt_HandL-skin1-joints"/>
+          <input semantic="INV_BIND_MATRIX" source="#geom-HandL__Mt_HandL-skin1-bind_poses"/>
+        </joints>
+        <vertex_weights count="4">
+          <input semantic="JOINT" source="#geom-HandL__Mt_HandL-skin1-joints" offset="0"/>
+          <input semantic="WEIGHT" source="#geom-HandL__Mt_HandL-skin1-weights" offset="1"/>
+          <vcount>1 1 1 1</vcount>
+          <v>0 0 0 0 0 0 0 0</v>
+        </vertex_weights>
+      </skin>
+    </controller>
+    <controller id="geom-ArmR__Mt_ArmR-skin1">
+      <skin source="#geom-ArmR__Mt_ArmR">
+        <bind_shape_matrix>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</bind_shape_matrix>
+        <source id="geom-ArmR__Mt_ArmR-skin1-joints">
+          <Name_array id="geom-ArmR__Mt_ArmR-skin1-joints-array" count="1">joint11</Name_array>
+          <technique_common>
+            <accessor source="#geom-ArmR__Mt_ArmR-skin1-joints-array" count="1" stride="1">
+              <param name="JOINT" type="name"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-ArmR__Mt_ArmR-skin1-bind_poses">
+          <float_array id="geom-ArmR__Mt_ArmR-skin1-bind_poses-array" count="16">1 0 0 -0.2680514 0 0 1 -1.93312 0 -1 0 0.04678971 0 0 0 1</float_array>
+          <technique_common>
+            <accessor source="#geom-ArmR__Mt_ArmR-skin1-bind_poses-array" count="1" stride="16">
+              <param name="TRANSFORM" type="float4x4"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-ArmR__Mt_ArmR-skin1-weights">
+          <float_array id="geom-ArmR__Mt_ArmR-skin1-weights-array" count="1">1</float_array>
+          <technique_common>
+            <accessor source="#geom-ArmR__Mt_ArmR-skin1-weights-array" count="1" stride="1">
+              <param name="WEIGHT" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <joints>
+          <input semantic="JOINT" source="#geom-ArmR__Mt_ArmR-skin1-joints"/>
+          <input semantic="INV_BIND_MATRIX" source="#geom-ArmR__Mt_ArmR-skin1-bind_poses"/>
+        </joints>
+        <vertex_weights count="4">
+          <input semantic="JOINT" source="#geom-ArmR__Mt_ArmR-skin1-joints" offset="0"/>
+          <input semantic="WEIGHT" source="#geom-ArmR__Mt_ArmR-skin1-weights" offset="1"/>
+          <vcount>1 1 1 1</vcount>
+          <v>0 0 0 0 0 0 0 0</v>
+        </vertex_weights>
+      </skin>
+    </controller>
+    <controller id="geom-HandR__Mt_HandR-skin1">
+      <skin source="#geom-HandR__Mt_HandR">
+        <bind_shape_matrix>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</bind_shape_matrix>
+        <source id="geom-HandR__Mt_HandR-skin1-joints">
+          <Name_array id="geom-HandR__Mt_HandR-skin1-joints-array" count="1">joint12</Name_array>
+          <technique_common>
+            <accessor source="#geom-HandR__Mt_HandR-skin1-joints-array" count="1" stride="1">
+              <param name="JOINT" type="name"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-HandR__Mt_HandR-skin1-bind_poses">
+          <float_array id="geom-HandR__Mt_HandR-skin1-bind_poses-array" count="16">1 0 0 -0.06013542 0 0 1 -1.624418 0 -1 0 0.03 0 0 0 1</float_array>
+          <technique_common>
+            <accessor source="#geom-HandR__Mt_HandR-skin1-bind_poses-array" count="1" stride="16">
+              <param name="TRANSFORM" type="float4x4"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-HandR__Mt_HandR-skin1-weights">
+          <float_array id="geom-HandR__Mt_HandR-skin1-weights-array" count="1">1</float_array>
+          <technique_common>
+            <accessor source="#geom-HandR__Mt_HandR-skin1-weights-array" count="1" stride="1">
+              <param name="WEIGHT" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <joints>
+          <input semantic="JOINT" source="#geom-HandR__Mt_HandR-skin1-joints"/>
+          <input semantic="INV_BIND_MATRIX" source="#geom-HandR__Mt_HandR-skin1-bind_poses"/>
+        </joints>
+        <vertex_weights count="4">
+          <input semantic="JOINT" source="#geom-HandR__Mt_HandR-skin1-joints" offset="0"/>
+          <input semantic="WEIGHT" source="#geom-HandR__Mt_HandR-skin1-weights" offset="1"/>
+          <vcount>1 1 1 1</vcount>
+          <v>0 0 0 0 0 0 0 0</v>
+        </vertex_weights>
+      </skin>
+    </controller>
+    <controller id="geom-TitleShadow__Mt_TitleShadow-skin1">
+      <skin source="#geom-TitleShadow__Mt_TitleShadow">
+        <bind_shape_matrix>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</bind_shape_matrix>
+        <source id="geom-TitleShadow__Mt_TitleShadow-skin1-joints">
+          <Name_array id="geom-TitleShadow__Mt_TitleShadow-skin1-joints-array" count="1">joint13</Name_array>
+          <technique_common>
+            <accessor source="#geom-TitleShadow__Mt_TitleShadow-skin1-joints-array" count="1" stride="1">
+              <param name="JOINT" type="name"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-TitleShadow__Mt_TitleShadow-skin1-bind_poses">
+          <float_array id="geom-TitleShadow__Mt_TitleShadow-skin1-bind_poses-array" count="16">1 0 0 0.004534577 0 0 1 -2.348567 0 -1 0 0.2482561 0 0 0 1</float_array>
+          <technique_common>
+            <accessor source="#geom-TitleShadow__Mt_TitleShadow-skin1-bind_poses-array" count="1" stride="16">
+              <param name="TRANSFORM" type="float4x4"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-TitleShadow__Mt_TitleShadow-skin1-weights">
+          <float_array id="geom-TitleShadow__Mt_TitleShadow-skin1-weights-array" count="1">1</float_array>
+          <technique_common>
+            <accessor source="#geom-TitleShadow__Mt_TitleShadow-skin1-weights-array" count="1" stride="1">
+              <param name="WEIGHT" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <joints>
+          <input semantic="JOINT" source="#geom-TitleShadow__Mt_TitleShadow-skin1-joints"/>
+          <input semantic="INV_BIND_MATRIX" source="#geom-TitleShadow__Mt_TitleShadow-skin1-bind_poses"/>
+        </joints>
+        <vertex_weights count="4">
+          <input semantic="JOINT" source="#geom-TitleShadow__Mt_TitleShadow-skin1-joints" offset="0"/>
+          <input semantic="WEIGHT" source="#geom-TitleShadow__Mt_TitleShadow-skin1-weights" offset="1"/>
+          <vcount>1 1 1 1</vcount>
+          <v>0 0 0 0 0 0 0 0</v>
+        </vertex_weights>
+      </skin>
+    </controller>
+  </library_controllers>
+  <library_lights>
+    <light id="EnvironmentAmbientLight" name="EnvironmentAmbientLight">
+      <technique_common>
+        <ambient>
+          <color>0 0 0</color>
+        </ambient>
+      </technique_common>
+    </light>
+  </library_lights>
+  <library_images>
+    <image id="ArmL_001_png">
+      <init_from>./ArmL.001.png</init_from>
+    </image>
+    <image id="ArmR_001_png">
+      <init_from>./ArmR.001.png</init_from>
+    </image>
+    <image id="Body_png">
+      <init_from>./Body.png</init_from>
+    </image>
+    <image id="Cap_001_png">
+      <init_from>./Cap.001.png</init_from>
+    </image>
+    <image id="CapShadow_png">
+      <init_from>./CapShadow.png</init_from>
+    </image>
+    <image id="Cmn_Character_NM_png">
+      <init_from>./Cmn_Character_NM.png</init_from>
+    </image>
+    <image id="Cmn_Dummy_NM_png">
+      <init_from>./Cmn_Dummy_NM.png</init_from>
+    </image>
+    <image id="Ear_png">
+      <init_from>./Ear.png</init_from>
+    </image>
+    <image id="EyeL_001_png">
+      <init_from>./EyeL.001.png</init_from>
+    </image>
+    <image id="EyeR_001_png">
+      <init_from>./EyeR.001.png</init_from>
+    </image>
+    <image id="Face_001_png">
+      <init_from>./Face.001.png</init_from>
+    </image>
+    <image id="FootL_001_png">
+      <init_from>./FootL.001.png</init_from>
+    </image>
+    <image id="FootR_001_png">
+      <init_from>./FootR.001.png</init_from>
+    </image>
+    <image id="HandL_001_png">
+      <init_from>./HandL.001.png</init_from>
+    </image>
+    <image id="HandR_001_png">
+      <init_from>./HandR.001.png</init_from>
+    </image>
+    <image id="Title_Shadow_png">
+      <init_from>./Title_Shadow.png</init_from>
+    </image>
+  </library_images>
+  <library_visual_scenes>
+    <visual_scene id="MaxScene">
+      <node name="EnvironmentAmbientLight">
+        <instance_light url="#EnvironmentAmbientLight"/>
+      </node>
+      <node id="node-Export" name="Export">
+        <rotate>-1 0 0 -90</rotate>
+        <node id="node-Base" name="Base">
+          <node id="node-B_Body" name="B_Body">
+            <translate>0.1708874 1.483741 0</translate>
+            <node id="node-Body" name="Body" sid="joint0" type="JOINT">
+              <translate>0 -0.003000021 0</translate>
+              <extra>
+                <technique profile="OpenCOLLADA">
+                  <cast_shadows sid="cast_shadows" type="bool">1</cast_shadows>
+                  <receive_shadows sid="receive_shadows" type="bool">1</receive_shadows>
+                  <primary_visibility sid="primary_visibility" type="bool">1</primary_visibility>
+                  <secondary_visibility sid="secondary_visibility" type="bool">1</secondary_visibility>
+                </technique>
+              </extra>
+            </node>
+            <extra>
+              <technique profile="OpenCOLLADA">
+                <cast_shadows sid="cast_shadows" type="bool">1</cast_shadows>
+                <receive_shadows sid="receive_shadows" type="bool">1</receive_shadows>
+                <primary_visibility sid="primary_visibility" type="bool">1</primary_visibility>
+                <secondary_visibility sid="secondary_visibility" type="bool">1</secondary_visibility>
+              </technique>
+            </extra>
+          </node>
+          <node id="node-B_FootL" name="B_FootL">
+            <translate>0.4089423 0.6316385 0.0179738</translate>
+            <node id="node-FootL" name="FootL" sid="joint1" type="JOINT">
+              <extra>
+                <technique profile="OpenCOLLADA">
+                  <cast_shadows sid="cast_shadows" type="bool">1</cast_shadows>
+                  <receive_shadows sid="receive_shadows" type="bool">1</receive_shadows>
+                  <primary_visibility sid="primary_visibility" type="bool">1</primary_visibility>
+                  <secondary_visibility sid="secondary_visibility" type="bool">1</secondary_visibility>
+                </technique>
+              </extra>
+            </node>
+            <extra>
+              <technique profile="OpenCOLLADA">
+                <cast_shadows sid="cast_shadows" type="bool">1</cast_shadows>
+                <receive_shadows sid="receive_shadows" type="bool">1</receive_shadows>
+                <primary_visibility sid="primary_visibility" type="bool">1</primary_visibility>
+                <secondary_visibility sid="secondary_visibility" type="bool">1</secondary_visibility>
+              </technique>
+            </extra>
+          </node>
+          <node id="node-B_FootR" name="B_FootR">
+            <translate>0.02306077 0.6816026 -0.02</translate>
+            <node id="node-FootR" name="FootR" sid="joint2" type="JOINT">
+              <extra>
+                <technique profile="OpenCOLLADA">
+                  <cast_shadows sid="cast_shadows" type="bool">1</cast_shadows>
+                  <receive_shadows sid="receive_shadows" type="bool">1</receive_shadows>
+                  <primary_visibility sid="primary_visibility" type="bool">1</primary_visibility>
+                  <secondary_visibility sid="secondary_visibility" type="bool">1</secondary_visibility>
+                </technique>
+              </extra>
+            </node>
+            <extra>
+              <technique profile="OpenCOLLADA">
+                <cast_shadows sid="cast_shadows" type="bool">1</cast_shadows>
+                <receive_shadows sid="receive_shadows" type="bool">1</receive_shadows>
+                <primary_visibility sid="primary_visibility" type="bool">1</primary_visibility>
+                <secondary_visibility sid="secondary_visibility" type="bool">1</secondary_visibility>
+              </technique>
+            </extra>
+          </node>
+          <node id="node-Lct_PrBaseY_Face" name="Lct_PrBaseY_Face">
+            <translate>0.1082519 2.25349 -0.04833359</translate>
+            <node id="node-B_Cap" name="B_Cap">
+              <translate>0.7843173 0.9317176 0.01133359</translate>
+              <node id="node-Cap" name="Cap" sid="joint3" type="JOINT">
+                <extra>
+                  <technique profile="OpenCOLLADA">
+                    <cast_shadows sid="cast_shadows" type="bool">1</cast_shadows>
+                    <receive_shadows sid="receive_shadows" type="bool">1</receive_shadows>
+                    <primary_visibility sid="primary_visibility" type="bool">1</primary_visibility>
+                    <secondary_visibility sid="secondary_visibility" type="bool">1</secondary_visibility>
+                  </technique>
+                </extra>
+              </node>
+              <node id="node-CapShadow" name="CapShadow" sid="joint4" type="JOINT">
+                <extra>
+                  <technique profile="OpenCOLLADA">
+                    <cast_shadows sid="cast_shadows" type="bool">1</cast_shadows>
+                    <receive_shadows sid="receive_shadows" type="bool">1</receive_shadows>
+                    <primary_visibility sid="primary_visibility" type="bool">1</primary_visibility>
+                    <secondary_visibility sid="secondary_visibility" type="bool">1</secondary_visibility>
+                  </technique>
+                </extra>
+              </node>
+              <extra>
+                <technique profile="OpenCOLLADA">
+                  <cast_shadows sid="cast_shadows" type="bool">1</cast_shadows>
+                  <receive_shadows sid="receive_shadows" type="bool">1</receive_shadows>
+                  <primary_visibility sid="primary_visibility" type="bool">1</primary_visibility>
+                  <secondary_visibility sid="secondary_visibility" type="bool">1</secondary_visibility>
+                </technique>
+              </extra>
+            </node>
+            <node id="node-B_EyeL" name="B_EyeL">
+              <translate>-0.1086417 1.038872 0.00833359</translate>
+              <node id="node-EyeL" name="EyeL" sid="joint5" type="JOINT">
+                <extra>
+                  <technique profile="OpenCOLLADA">
+                    <cast_shadows sid="cast_shadows" type="bool">1</cast_shadows>
+                    <receive_shadows sid="receive_shadows" type="bool">1</receive_shadows>
+                    <primary_visibility sid="primary_visibility" type="bool">1</primary_visibility>
+                    <secondary_visibility sid="secondary_visibility" type="bool">1</secondary_visibility>
+                  </technique>
+                </extra>
+              </node>
+              <extra>
+                <technique profile="OpenCOLLADA">
+                  <cast_shadows sid="cast_shadows" type="bool">1</cast_shadows>
+                  <receive_shadows sid="receive_shadows" type="bool">1</receive_shadows>
+                  <primary_visibility sid="primary_visibility" type="bool">1</primary_visibility>
+                  <secondary_visibility sid="secondary_visibility" type="bool">1</secondary_visibility>
+                </technique>
+              </extra>
+            </node>
+            <node id="node-B_EyeR" name="B_EyeR">
+              <translate>-0.4593444 1.107632 0.00833359</translate>
+              <node id="node-EyeR" name="EyeR" sid="joint6" type="JOINT">
+                <extra>
+                  <technique profile="OpenCOLLADA">
+                    <cast_shadows sid="cast_shadows" type="bool">1</cast_shadows>
+                    <receive_shadows sid="receive_shadows" type="bool">1</receive_shadows>
+                    <primary_visibility sid="primary_visibility" type="bool">1</primary_visibility>
+                    <secondary_visibility sid="secondary_visibility" type="bool">1</secondary_visibility>
+                  </technique>
+                </extra>
+              </node>
+              <extra>
+                <technique profile="OpenCOLLADA">
+                  <cast_shadows sid="cast_shadows" type="bool">1</cast_shadows>
+                  <receive_shadows sid="receive_shadows" type="bool">1</receive_shadows>
+                  <primary_visibility sid="primary_visibility" type="bool">1</primary_visibility>
+                  <secondary_visibility sid="secondary_visibility" type="bool">1</secondary_visibility>
+                </technique>
+              </extra>
+            </node>
+            <node id="node-B_Face" name="B_Face">
+              <node id="node-Ear" name="Ear" sid="joint7" type="JOINT">
+                <extra>
+                  <technique profile="OpenCOLLADA">
+                    <cast_shadows sid="cast_shadows" type="bool">1</cast_shadows>
+                    <receive_shadows sid="receive_shadows" type="bool">1</receive_shadows>
+                    <primary_visibility sid="primary_visibility" type="bool">1</primary_visibility>
+                    <secondary_visibility sid="secondary_visibility" type="bool">1</secondary_visibility>
+                  </technique>
+                </extra>
+              </node>
+              <node id="node-Face" name="Face" sid="joint8" type="JOINT">
+                <extra>
+                  <technique profile="OpenCOLLADA">
+                    <cast_shadows sid="cast_shadows" type="bool">1</cast_shadows>
+                    <receive_shadows sid="receive_shadows" type="bool">1</receive_shadows>
+                    <primary_visibility sid="primary_visibility" type="bool">1</primary_visibility>
+                    <secondary_visibility sid="secondary_visibility" type="bool">1</secondary_visibility>
+                  </technique>
+                </extra>
+              </node>
+              <extra>
+                <technique profile="OpenCOLLADA">
+                  <cast_shadows sid="cast_shadows" type="bool">1</cast_shadows>
+                  <receive_shadows sid="receive_shadows" type="bool">1</receive_shadows>
+                  <primary_visibility sid="primary_visibility" type="bool">1</primary_visibility>
+                  <secondary_visibility sid="secondary_visibility" type="bool">1</secondary_visibility>
+                </technique>
+              </extra>
+            </node>
+            <extra>
+              <technique profile="OpenCOLLADA">
+                <cast_shadows sid="cast_shadows" type="bool">1</cast_shadows>
+                <receive_shadows sid="receive_shadows" type="bool">1</receive_shadows>
+                <primary_visibility sid="primary_visibility" type="bool">1</primary_visibility>
+                <secondary_visibility sid="secondary_visibility" type="bool">1</secondary_visibility>
+              </technique>
+            </extra>
+          </node>
+          <node id="node-Lct_PrBaseZ_ArmL" name="Lct_PrBaseZ_ArmL">
+            <translate>0.4974239 1.911091 0.02750915</translate>
+            <node id="node-B_ArmL" name="B_ArmL">
+              <node id="node-ArmL" name="ArmL" sid="joint9" type="JOINT">
+                <extra>
+                  <technique profile="OpenCOLLADA">
+                    <cast_shadows sid="cast_shadows" type="bool">1</cast_shadows>
+                    <receive_shadows sid="receive_shadows" type="bool">1</receive_shadows>
+                    <primary_visibility sid="primary_visibility" type="bool">1</primary_visibility>
+                    <secondary_visibility sid="secondary_visibility" type="bool">1</secondary_visibility>
+                  </technique>
+                </extra>
+              </node>
+              <extra>
+                <technique profile="OpenCOLLADA">
+                  <cast_shadows sid="cast_shadows" type="bool">1</cast_shadows>
+                  <receive_shadows sid="receive_shadows" type="bool">1</receive_shadows>
+                  <primary_visibility sid="primary_visibility" type="bool">1</primary_visibility>
+                  <secondary_visibility sid="secondary_visibility" type="bool">1</secondary_visibility>
+                </technique>
+              </extra>
+            </node>
+            <node id="node-B_HandL" name="B_HandL">
+              <translate>0.08312511 -0.384963 0.02034096</translate>
+              <node id="node-HandL" name="HandL" sid="joint10" type="JOINT">
+                <translate>0.00150001 0.001000047 0</translate>
+                <extra>
+                  <technique profile="OpenCOLLADA">
+                    <cast_shadows sid="cast_shadows" type="bool">1</cast_shadows>
+                    <receive_shadows sid="receive_shadows" type="bool">1</receive_shadows>
+                    <primary_visibility sid="primary_visibility" type="bool">1</primary_visibility>
+                    <secondary_visibility sid="secondary_visibility" type="bool">1</secondary_visibility>
+                  </technique>
+                </extra>
+              </node>
+              <extra>
+                <technique profile="OpenCOLLADA">
+                  <cast_shadows sid="cast_shadows" type="bool">1</cast_shadows>
+                  <receive_shadows sid="receive_shadows" type="bool">1</receive_shadows>
+                  <primary_visibility sid="primary_visibility" type="bool">1</primary_visibility>
+                  <secondary_visibility sid="secondary_visibility" type="bool">1</secondary_visibility>
+                </technique>
+              </extra>
+            </node>
+            <extra>
+              <technique profile="OpenCOLLADA">
+                <cast_shadows sid="cast_shadows" type="bool">1</cast_shadows>
+                <receive_shadows sid="receive_shadows" type="bool">1</receive_shadows>
+                <primary_visibility sid="primary_visibility" type="bool">1</primary_visibility>
+                <secondary_visibility sid="secondary_visibility" type="bool">1</secondary_visibility>
+              </technique>
+            </extra>
+          </node>
+          <node id="node-Lct_PrBaseZ_ArmR" name="Lct_PrBaseZ_ArmR">
+            <translate>0.2680514 1.93312 -0.04678971</translate>
+            <node id="node-B_ArmR" name="B_ArmR">
+              <node id="node-ArmR" name="ArmR" sid="joint11" type="JOINT">
+                <extra>
+                  <technique profile="OpenCOLLADA">
+                    <cast_shadows sid="cast_shadows" type="bool">1</cast_shadows>
+                    <receive_shadows sid="receive_shadows" type="bool">1</receive_shadows>
+                    <primary_visibility sid="primary_visibility" type="bool">1</primary_visibility>
+                    <secondary_visibility sid="secondary_visibility" type="bool">1</secondary_visibility>
+                  </technique>
+                </extra>
+              </node>
+              <extra>
+                <technique profile="OpenCOLLADA">
+                  <cast_shadows sid="cast_shadows" type="bool">1</cast_shadows>
+                  <receive_shadows sid="receive_shadows" type="bool">1</receive_shadows>
+                  <primary_visibility sid="primary_visibility" type="bool">1</primary_visibility>
+                  <secondary_visibility sid="secondary_visibility" type="bool">1</secondary_visibility>
+                </technique>
+              </extra>
+            </node>
+            <node id="node-B_HandR" name="B_HandR">
+              <translate>-0.207916 -0.3087029 0.0167897</translate>
+              <node id="node-HandR" name="HandR" sid="joint12" type="JOINT">
+                <extra>
+                  <technique profile="OpenCOLLADA">
+                    <cast_shadows sid="cast_shadows" type="bool">1</cast_shadows>
+                    <receive_shadows sid="receive_shadows" type="bool">1</receive_shadows>
+                    <primary_visibility sid="primary_visibility" type="bool">1</primary_visibility>
+                    <secondary_visibility sid="secondary_visibility" type="bool">1</secondary_visibility>
+                  </technique>
+                </extra>
+              </node>
+              <extra>
+                <technique profile="OpenCOLLADA">
+                  <cast_shadows sid="cast_shadows" type="bool">1</cast_shadows>
+                  <receive_shadows sid="receive_shadows" type="bool">1</receive_shadows>
+                  <primary_visibility sid="primary_visibility" type="bool">1</primary_visibility>
+                  <secondary_visibility sid="secondary_visibility" type="bool">1</secondary_visibility>
+                </technique>
+              </extra>
+            </node>
+            <extra>
+              <technique profile="OpenCOLLADA">
+                <cast_shadows sid="cast_shadows" type="bool">1</cast_shadows>
+                <receive_shadows sid="receive_shadows" type="bool">1</receive_shadows>
+                <primary_visibility sid="primary_visibility" type="bool">1</primary_visibility>
+                <secondary_visibility sid="secondary_visibility" type="bool">1</secondary_visibility>
+              </technique>
+            </extra>
+          </node>
+          <node id="node-TitleShadow" name="TitleShadow" sid="joint13" type="JOINT">
+            <translate>-0.004534577 2.348567 -0.2482561</translate>
+            <extra>
+              <technique profile="OpenCOLLADA">
+                <cast_shadows sid="cast_shadows" type="bool">1</cast_shadows>
+                <receive_shadows sid="receive_shadows" type="bool">1</receive_shadows>
+                <primary_visibility sid="primary_visibility" type="bool">1</primary_visibility>
+                <secondary_visibility sid="secondary_visibility" type="bool">1</secondary_visibility>
+              </technique>
+            </extra>
+          </node>
+          <extra>
+            <technique profile="OpenCOLLADA">
+              <cast_shadows sid="cast_shadows" type="bool">1</cast_shadows>
+              <receive_shadows sid="receive_shadows" type="bool">1</receive_shadows>
+              <primary_visibility sid="primary_visibility" type="bool">1</primary_visibility>
+              <secondary_visibility sid="secondary_visibility" type="bool">1</secondary_visibility>
+            </technique>
+          </extra>
+        </node>
+        <extra>
+          <technique profile="OpenCOLLADA">
+            <cast_shadows sid="cast_shadows" type="bool">1</cast_shadows>
+            <receive_shadows sid="receive_shadows" type="bool">1</receive_shadows>
+            <primary_visibility sid="primary_visibility" type="bool">1</primary_visibility>
+            <secondary_visibility sid="secondary_visibility" type="bool">1</secondary_visibility>
+          </technique>
+        </extra>
+      </node>
+      <node id="node-Body__Mt_Body" name="Body__Mt_Body">
+        <instance_controller url="#geom-Body__Mt_Body-skin1">
+          <skeleton>#node-Body</skeleton>
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Mt_Body" target="#Mt_Body-material">
+                <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="0"/>
+                <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="0"/>
+                <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_controller>
+        <extra>
+          <technique profile="OpenCOLLADA">
+            <cast_shadows sid="cast_shadows" type="bool">1</cast_shadows>
+            <receive_shadows sid="receive_shadows" type="bool">1</receive_shadows>
+            <primary_visibility sid="primary_visibility" type="bool">1</primary_visibility>
+            <secondary_visibility sid="secondary_visibility" type="bool">1</secondary_visibility>
+          </technique>
+        </extra>
+      </node>
+      <node id="node-FootL__Mt_FootL" name="FootL__Mt_FootL">
+        <instance_controller url="#geom-FootL__Mt_FootL-skin1">
+          <skeleton>#node-FootL</skeleton>
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Mt_FootL" target="#Mt_FootL-material">
+                <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="0"/>
+                <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="0"/>
+                <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_controller>
+        <extra>
+          <technique profile="OpenCOLLADA">
+            <cast_shadows sid="cast_shadows" type="bool">1</cast_shadows>
+            <receive_shadows sid="receive_shadows" type="bool">1</receive_shadows>
+            <primary_visibility sid="primary_visibility" type="bool">1</primary_visibility>
+            <secondary_visibility sid="secondary_visibility" type="bool">1</secondary_visibility>
+          </technique>
+        </extra>
+      </node>
+      <node id="node-FootR__Mt_FootR" name="FootR__Mt_FootR">
+        <instance_controller url="#geom-FootR__Mt_FootR-skin1">
+          <skeleton>#node-FootR</skeleton>
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Mt_FootR" target="#Mt_FootR-material">
+                <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="0"/>
+                <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="0"/>
+                <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_controller>
+        <extra>
+          <technique profile="OpenCOLLADA">
+            <cast_shadows sid="cast_shadows" type="bool">1</cast_shadows>
+            <receive_shadows sid="receive_shadows" type="bool">1</receive_shadows>
+            <primary_visibility sid="primary_visibility" type="bool">1</primary_visibility>
+            <secondary_visibility sid="secondary_visibility" type="bool">1</secondary_visibility>
+          </technique>
+        </extra>
+      </node>
+      <node id="node-Cap__Mt_Cap" name="Cap__Mt_Cap">
+        <instance_controller url="#geom-Cap__Mt_Cap-skin1">
+          <skeleton>#node-Cap</skeleton>
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Mt_Cap" target="#Mt_Cap-material">
+                <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="0"/>
+                <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="0"/>
+                <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_controller>
+        <extra>
+          <technique profile="OpenCOLLADA">
+            <cast_shadows sid="cast_shadows" type="bool">1</cast_shadows>
+            <receive_shadows sid="receive_shadows" type="bool">1</receive_shadows>
+            <primary_visibility sid="primary_visibility" type="bool">1</primary_visibility>
+            <secondary_visibility sid="secondary_visibility" type="bool">1</secondary_visibility>
+          </technique>
+        </extra>
+      </node>
+      <node id="node-CapShadow__Mt_CapShadow" name="CapShadow__Mt_CapShadow">
+        <instance_controller url="#geom-CapShadow__Mt_CapShadow-skin1">
+          <skeleton>#node-CapShadow</skeleton>
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Mt_CapShadow" target="#Mt_CapShadow-material">
+                <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="0"/>
+                <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="0"/>
+                <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_controller>
+        <extra>
+          <technique profile="OpenCOLLADA">
+            <cast_shadows sid="cast_shadows" type="bool">1</cast_shadows>
+            <receive_shadows sid="receive_shadows" type="bool">1</receive_shadows>
+            <primary_visibility sid="primary_visibility" type="bool">1</primary_visibility>
+            <secondary_visibility sid="secondary_visibility" type="bool">1</secondary_visibility>
+          </technique>
+        </extra>
+      </node>
+      <node id="node-EyeL__Mt_EyeL" name="EyeL__Mt_EyeL">
+        <instance_controller url="#geom-EyeL__Mt_EyeL-skin1">
+          <skeleton>#node-EyeL</skeleton>
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Mt_EyeL" target="#Mt_EyeL-material">
+                <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="0"/>
+                <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="0"/>
+                <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_controller>
+        <extra>
+          <technique profile="OpenCOLLADA">
+            <cast_shadows sid="cast_shadows" type="bool">1</cast_shadows>
+            <receive_shadows sid="receive_shadows" type="bool">1</receive_shadows>
+            <primary_visibility sid="primary_visibility" type="bool">1</primary_visibility>
+            <secondary_visibility sid="secondary_visibility" type="bool">1</secondary_visibility>
+          </technique>
+        </extra>
+      </node>
+      <node id="node-EyeR__Mt_EyeR" name="EyeR__Mt_EyeR">
+        <instance_controller url="#geom-EyeR__Mt_EyeR-skin1">
+          <skeleton>#node-EyeR</skeleton>
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Mt_EyeR" target="#Mt_EyeR-material">
+                <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="0"/>
+                <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="0"/>
+                <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_controller>
+        <extra>
+          <technique profile="OpenCOLLADA">
+            <cast_shadows sid="cast_shadows" type="bool">1</cast_shadows>
+            <receive_shadows sid="receive_shadows" type="bool">1</receive_shadows>
+            <primary_visibility sid="primary_visibility" type="bool">1</primary_visibility>
+            <secondary_visibility sid="secondary_visibility" type="bool">1</secondary_visibility>
+          </technique>
+        </extra>
+      </node>
+      <node id="node-Ear__Mt_Ear" name="Ear__Mt_Ear">
+        <instance_controller url="#geom-Ear__Mt_Ear-skin1">
+          <skeleton>#node-Ear</skeleton>
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Mt_Ear" target="#Mt_Ear-material">
+                <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="0"/>
+                <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="0"/>
+                <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_controller>
+        <extra>
+          <technique profile="OpenCOLLADA">
+            <cast_shadows sid="cast_shadows" type="bool">1</cast_shadows>
+            <receive_shadows sid="receive_shadows" type="bool">1</receive_shadows>
+            <primary_visibility sid="primary_visibility" type="bool">1</primary_visibility>
+            <secondary_visibility sid="secondary_visibility" type="bool">1</secondary_visibility>
+          </technique>
+        </extra>
+      </node>
+      <node id="node-Face__Mt_Face" name="Face__Mt_Face">
+        <instance_controller url="#geom-Face__Mt_Face-skin1">
+          <skeleton>#node-Face</skeleton>
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Mt_Face" target="#Mt_Face-material">
+                <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="0"/>
+                <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="0"/>
+                <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_controller>
+        <extra>
+          <technique profile="OpenCOLLADA">
+            <cast_shadows sid="cast_shadows" type="bool">1</cast_shadows>
+            <receive_shadows sid="receive_shadows" type="bool">1</receive_shadows>
+            <primary_visibility sid="primary_visibility" type="bool">1</primary_visibility>
+            <secondary_visibility sid="secondary_visibility" type="bool">1</secondary_visibility>
+          </technique>
+        </extra>
+      </node>
+      <node id="node-ArmL__Mt_ArmL" name="ArmL__Mt_ArmL">
+        <instance_controller url="#geom-ArmL__Mt_ArmL-skin1">
+          <skeleton>#node-ArmL</skeleton>
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Mt_ArmL" target="#Mt_ArmL-material">
+                <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="0"/>
+                <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="0"/>
+                <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_controller>
+        <extra>
+          <technique profile="OpenCOLLADA">
+            <cast_shadows sid="cast_shadows" type="bool">1</cast_shadows>
+            <receive_shadows sid="receive_shadows" type="bool">1</receive_shadows>
+            <primary_visibility sid="primary_visibility" type="bool">1</primary_visibility>
+            <secondary_visibility sid="secondary_visibility" type="bool">1</secondary_visibility>
+          </technique>
+        </extra>
+      </node>
+      <node id="node-HandL__Mt_HandL" name="HandL__Mt_HandL">
+        <instance_controller url="#geom-HandL__Mt_HandL-skin1">
+          <skeleton>#node-HandL</skeleton>
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Mt_HandL" target="#Mt_HandL-material">
+                <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="0"/>
+                <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="0"/>
+                <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_controller>
+        <extra>
+          <technique profile="OpenCOLLADA">
+            <cast_shadows sid="cast_shadows" type="bool">1</cast_shadows>
+            <receive_shadows sid="receive_shadows" type="bool">1</receive_shadows>
+            <primary_visibility sid="primary_visibility" type="bool">1</primary_visibility>
+            <secondary_visibility sid="secondary_visibility" type="bool">1</secondary_visibility>
+          </technique>
+        </extra>
+      </node>
+      <node id="node-ArmR__Mt_ArmR" name="ArmR__Mt_ArmR">
+        <instance_controller url="#geom-ArmR__Mt_ArmR-skin1">
+          <skeleton>#node-ArmR</skeleton>
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Mt_ArmR" target="#Mt_ArmR-material">
+                <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="0"/>
+                <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="0"/>
+                <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_controller>
+        <extra>
+          <technique profile="OpenCOLLADA">
+            <cast_shadows sid="cast_shadows" type="bool">1</cast_shadows>
+            <receive_shadows sid="receive_shadows" type="bool">1</receive_shadows>
+            <primary_visibility sid="primary_visibility" type="bool">1</primary_visibility>
+            <secondary_visibility sid="secondary_visibility" type="bool">1</secondary_visibility>
+          </technique>
+        </extra>
+      </node>
+      <node id="node-HandR__Mt_HandR" name="HandR__Mt_HandR">
+        <instance_controller url="#geom-HandR__Mt_HandR-skin1">
+          <skeleton>#node-HandR</skeleton>
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Mt_HandR" target="#Mt_HandR-material">
+                <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="0"/>
+                <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="0"/>
+                <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_controller>
+        <extra>
+          <technique profile="OpenCOLLADA">
+            <cast_shadows sid="cast_shadows" type="bool">1</cast_shadows>
+            <receive_shadows sid="receive_shadows" type="bool">1</receive_shadows>
+            <primary_visibility sid="primary_visibility" type="bool">1</primary_visibility>
+            <secondary_visibility sid="secondary_visibility" type="bool">1</secondary_visibility>
+          </technique>
+        </extra>
+      </node>
+      <node id="node-TitleShadow__Mt_TitleShadow" name="TitleShadow__Mt_TitleShadow">
+        <instance_controller url="#geom-TitleShadow__Mt_TitleShadow-skin1">
+          <skeleton>#node-TitleShadow</skeleton>
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Mt_TitleShadow" target="#Mt_TitleShadow-material">
+                <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="0"/>
+                <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="0"/>
+                <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_controller>
+        <extra>
+          <technique profile="OpenCOLLADA">
+            <cast_shadows sid="cast_shadows" type="bool">1</cast_shadows>
+            <receive_shadows sid="receive_shadows" type="bool">1</receive_shadows>
+            <primary_visibility sid="primary_visibility" type="bool">1</primary_visibility>
+            <secondary_visibility sid="secondary_visibility" type="bool">1</secondary_visibility>
+          </technique>
+        </extra>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#MaxScene"/>
+  </scene>
+</COLLADA>

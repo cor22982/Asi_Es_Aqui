@@ -1,0 +1,1722 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <asset>
+    <contributor>
+      <author>Centrixe</author>
+      <authoring_tool>OpenCOLLADA for 3ds Max;  Version: 1.6;  Revision: 68</authoring_tool>
+    </contributor>
+    <created>2024-05-23T01:12:23</created>
+    <modified>2024-05-23T01:12:23</modified>
+    <unit name="inch" meter="0.0254"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_effects>
+    <effect id="Mt_Body_Back">
+      <profile_COMMON>
+        <newparam sid="Body_Back_png-surface">
+          <surface type="2D">
+            <init_from>Body_Back_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="Body_Back_png-sampler">
+          <sampler2D>
+            <source>Body_Back_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="Cmn_Character_NM_png-surface">
+          <surface type="2D">
+            <init_from>Cmn_Character_NM_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="Cmn_Character_NM_png-sampler">
+          <sampler2D>
+            <source>Cmn_Character_NM_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <blinn>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0.588 0.588 0.588 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="Body_Back_png-sampler" texcoord="CHANNEL1"/>
+            </diffuse>
+            <specular>
+              <color>0 0 0 1</color>
+            </specular>
+            <shininess>
+              <float>10</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <transparent opaque="A_ONE">
+              <texture texture="Body_Back_png-sampler" texcoord="CHANNEL1"/>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </blinn>
+          <extra>
+            <technique profile="OpenCOLLADA3dsMax">
+              <bump bumptype="HEIGHTFIELD">
+                <texture texture="Cmn_Character_NM_png-sampler" texcoord="CHANNEL1"/>
+              </bump>
+            </technique>
+          </extra>
+        </technique>
+      </profile_COMMON>
+      <extra>
+        <technique profile="OpenCOLLADA3dsMax">
+          <extended_shader>
+            <opacity_type sid="opacity_type" type="int">0</opacity_type>
+            <falloff_type sid="falloff_type" type="int">0</falloff_type>
+            <falloff sid="falloff" type="float">0</falloff>
+            <index_of_refraction sid="index_of_refraction" type="float">1.5</index_of_refraction>
+            <wire_size sid="wire_size" type="float">1</wire_size>
+            <wire_units sid="wire_units" type="int">0</wire_units>
+            <apply_reflection_dimming sid="apply_reflection_dimming" type="bool">0</apply_reflection_dimming>
+            <dim_level sid="dim_level" type="float">0</dim_level>
+            <reflection_level sid="reflection_level" type="float">3</reflection_level>
+          </extended_shader>
+          <shader>
+            <ambient_diffuse_texture_lock sid="ambient_diffuse_texture_lock" type="bool">1</ambient_diffuse_texture_lock>
+            <ambient_diffuse_lock sid="ambient_diffuse_lock" type="bool">1</ambient_diffuse_lock>
+            <diffuse_specular_lock sid="diffuse_specular_lock" type="bool">0</diffuse_specular_lock>
+            <use_self_illum_color sid="use_self_illum_color" type="bool">0</use_self_illum_color>
+            <self_illumination sid="self_illumination" type="float">0</self_illumination>
+            <specular_level sid="specular_level" type="float">0</specular_level>
+            <soften sid="soften" type="float">0.1</soften>
+          </shader>
+        </technique>
+      </extra>
+    </effect>
+    <effect id="Mt_Face_Back">
+      <profile_COMMON>
+        <newparam sid="Face_Back_png-surface">
+          <surface type="2D">
+            <init_from>Face_Back_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="Face_Back_png-sampler">
+          <sampler2D>
+            <source>Face_Back_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="Cmn_Character_NM_png-surface">
+          <surface type="2D">
+            <init_from>Cmn_Character_NM_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="Cmn_Character_NM_png-sampler">
+          <sampler2D>
+            <source>Cmn_Character_NM_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <blinn>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0.588 0.588 0.588 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="Face_Back_png-sampler" texcoord="CHANNEL1"/>
+            </diffuse>
+            <specular>
+              <color>0 0 0 1</color>
+            </specular>
+            <shininess>
+              <float>10</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <transparent opaque="A_ONE">
+              <texture texture="Face_Back_png-sampler" texcoord="CHANNEL1"/>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </blinn>
+          <extra>
+            <technique profile="OpenCOLLADA3dsMax">
+              <bump bumptype="HEIGHTFIELD">
+                <texture texture="Cmn_Character_NM_png-sampler" texcoord="CHANNEL1"/>
+              </bump>
+            </technique>
+          </extra>
+        </technique>
+      </profile_COMMON>
+      <extra>
+        <technique profile="OpenCOLLADA3dsMax">
+          <extended_shader>
+            <opacity_type sid="opacity_type" type="int">0</opacity_type>
+            <falloff_type sid="falloff_type" type="int">0</falloff_type>
+            <falloff sid="falloff" type="float">0</falloff>
+            <index_of_refraction sid="index_of_refraction" type="float">1.5</index_of_refraction>
+            <wire_size sid="wire_size" type="float">1</wire_size>
+            <wire_units sid="wire_units" type="int">0</wire_units>
+            <apply_reflection_dimming sid="apply_reflection_dimming" type="bool">0</apply_reflection_dimming>
+            <dim_level sid="dim_level" type="float">0</dim_level>
+            <reflection_level sid="reflection_level" type="float">3</reflection_level>
+          </extended_shader>
+          <shader>
+            <ambient_diffuse_texture_lock sid="ambient_diffuse_texture_lock" type="bool">1</ambient_diffuse_texture_lock>
+            <ambient_diffuse_lock sid="ambient_diffuse_lock" type="bool">1</ambient_diffuse_lock>
+            <diffuse_specular_lock sid="diffuse_specular_lock" type="bool">0</diffuse_specular_lock>
+            <use_self_illum_color sid="use_self_illum_color" type="bool">0</use_self_illum_color>
+            <self_illumination sid="self_illumination" type="float">0</self_illumination>
+            <specular_level sid="specular_level" type="float">0</specular_level>
+            <soften sid="soften" type="float">0.1</soften>
+          </shader>
+        </technique>
+      </extra>
+    </effect>
+    <effect id="Mt_FootL_Back">
+      <profile_COMMON>
+        <newparam sid="FootL_Back_001_png-surface">
+          <surface type="2D">
+            <init_from>FootL_Back_001_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="FootL_Back_001_png-sampler">
+          <sampler2D>
+            <source>FootL_Back_001_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="Cmn_Character_NM_png-surface">
+          <surface type="2D">
+            <init_from>Cmn_Character_NM_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="Cmn_Character_NM_png-sampler">
+          <sampler2D>
+            <source>Cmn_Character_NM_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <blinn>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0.588 0.588 0.588 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="FootL_Back_001_png-sampler" texcoord="CHANNEL1"/>
+            </diffuse>
+            <specular>
+              <color>0 0 0 1</color>
+            </specular>
+            <shininess>
+              <float>10</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <transparent opaque="A_ONE">
+              <texture texture="FootL_Back_001_png-sampler" texcoord="CHANNEL1"/>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </blinn>
+          <extra>
+            <technique profile="OpenCOLLADA3dsMax">
+              <bump bumptype="HEIGHTFIELD">
+                <texture texture="Cmn_Character_NM_png-sampler" texcoord="CHANNEL1"/>
+              </bump>
+            </technique>
+          </extra>
+        </technique>
+      </profile_COMMON>
+      <extra>
+        <technique profile="OpenCOLLADA3dsMax">
+          <extended_shader>
+            <opacity_type sid="opacity_type" type="int">0</opacity_type>
+            <falloff_type sid="falloff_type" type="int">0</falloff_type>
+            <falloff sid="falloff" type="float">0</falloff>
+            <index_of_refraction sid="index_of_refraction" type="float">1.5</index_of_refraction>
+            <wire_size sid="wire_size" type="float">1</wire_size>
+            <wire_units sid="wire_units" type="int">0</wire_units>
+            <apply_reflection_dimming sid="apply_reflection_dimming" type="bool">0</apply_reflection_dimming>
+            <dim_level sid="dim_level" type="float">0</dim_level>
+            <reflection_level sid="reflection_level" type="float">3</reflection_level>
+          </extended_shader>
+          <shader>
+            <ambient_diffuse_texture_lock sid="ambient_diffuse_texture_lock" type="bool">1</ambient_diffuse_texture_lock>
+            <ambient_diffuse_lock sid="ambient_diffuse_lock" type="bool">1</ambient_diffuse_lock>
+            <diffuse_specular_lock sid="diffuse_specular_lock" type="bool">0</diffuse_specular_lock>
+            <use_self_illum_color sid="use_self_illum_color" type="bool">0</use_self_illum_color>
+            <self_illumination sid="self_illumination" type="float">0</self_illumination>
+            <specular_level sid="specular_level" type="float">0</specular_level>
+            <soften sid="soften" type="float">0.1</soften>
+          </shader>
+        </technique>
+      </extra>
+    </effect>
+    <effect id="Mt_FootR_Back">
+      <profile_COMMON>
+        <newparam sid="FootR_Back_001_png-surface">
+          <surface type="2D">
+            <init_from>FootR_Back_001_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="FootR_Back_001_png-sampler">
+          <sampler2D>
+            <source>FootR_Back_001_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="Cmn_Character_NM_png-surface">
+          <surface type="2D">
+            <init_from>Cmn_Character_NM_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="Cmn_Character_NM_png-sampler">
+          <sampler2D>
+            <source>Cmn_Character_NM_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <blinn>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0.588 0.588 0.588 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="FootR_Back_001_png-sampler" texcoord="CHANNEL1"/>
+            </diffuse>
+            <specular>
+              <color>0 0 0 1</color>
+            </specular>
+            <shininess>
+              <float>10</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <transparent opaque="A_ONE">
+              <texture texture="FootR_Back_001_png-sampler" texcoord="CHANNEL1"/>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </blinn>
+          <extra>
+            <technique profile="OpenCOLLADA3dsMax">
+              <bump bumptype="HEIGHTFIELD">
+                <texture texture="Cmn_Character_NM_png-sampler" texcoord="CHANNEL1"/>
+              </bump>
+            </technique>
+          </extra>
+        </technique>
+      </profile_COMMON>
+      <extra>
+        <technique profile="OpenCOLLADA3dsMax">
+          <extended_shader>
+            <opacity_type sid="opacity_type" type="int">0</opacity_type>
+            <falloff_type sid="falloff_type" type="int">0</falloff_type>
+            <falloff sid="falloff" type="float">0</falloff>
+            <index_of_refraction sid="index_of_refraction" type="float">1.5</index_of_refraction>
+            <wire_size sid="wire_size" type="float">1</wire_size>
+            <wire_units sid="wire_units" type="int">0</wire_units>
+            <apply_reflection_dimming sid="apply_reflection_dimming" type="bool">0</apply_reflection_dimming>
+            <dim_level sid="dim_level" type="float">0</dim_level>
+            <reflection_level sid="reflection_level" type="float">3</reflection_level>
+          </extended_shader>
+          <shader>
+            <ambient_diffuse_texture_lock sid="ambient_diffuse_texture_lock" type="bool">1</ambient_diffuse_texture_lock>
+            <ambient_diffuse_lock sid="ambient_diffuse_lock" type="bool">1</ambient_diffuse_lock>
+            <diffuse_specular_lock sid="diffuse_specular_lock" type="bool">0</diffuse_specular_lock>
+            <use_self_illum_color sid="use_self_illum_color" type="bool">0</use_self_illum_color>
+            <self_illumination sid="self_illumination" type="float">0</self_illumination>
+            <specular_level sid="specular_level" type="float">0</specular_level>
+            <soften sid="soften" type="float">0.1</soften>
+          </shader>
+        </technique>
+      </extra>
+    </effect>
+    <effect id="Mt_Hair_Back">
+      <profile_COMMON>
+        <newparam sid="Hair_Back_png-surface">
+          <surface type="2D">
+            <init_from>Hair_Back_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="Hair_Back_png-sampler">
+          <sampler2D>
+            <source>Hair_Back_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="Cmn_Character_NM_png-surface">
+          <surface type="2D">
+            <init_from>Cmn_Character_NM_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="Cmn_Character_NM_png-sampler">
+          <sampler2D>
+            <source>Cmn_Character_NM_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <blinn>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0.588 0.588 0.588 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="Hair_Back_png-sampler" texcoord="CHANNEL1"/>
+            </diffuse>
+            <specular>
+              <color>0 0 0 1</color>
+            </specular>
+            <shininess>
+              <float>10</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <transparent opaque="A_ONE">
+              <texture texture="Hair_Back_png-sampler" texcoord="CHANNEL1"/>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </blinn>
+          <extra>
+            <technique profile="OpenCOLLADA3dsMax">
+              <bump bumptype="HEIGHTFIELD">
+                <texture texture="Cmn_Character_NM_png-sampler" texcoord="CHANNEL1"/>
+              </bump>
+            </technique>
+          </extra>
+        </technique>
+      </profile_COMMON>
+      <extra>
+        <technique profile="OpenCOLLADA3dsMax">
+          <extended_shader>
+            <opacity_type sid="opacity_type" type="int">0</opacity_type>
+            <falloff_type sid="falloff_type" type="int">0</falloff_type>
+            <falloff sid="falloff" type="float">0</falloff>
+            <index_of_refraction sid="index_of_refraction" type="float">1.5</index_of_refraction>
+            <wire_size sid="wire_size" type="float">1</wire_size>
+            <wire_units sid="wire_units" type="int">0</wire_units>
+            <apply_reflection_dimming sid="apply_reflection_dimming" type="bool">0</apply_reflection_dimming>
+            <dim_level sid="dim_level" type="float">0</dim_level>
+            <reflection_level sid="reflection_level" type="float">3</reflection_level>
+          </extended_shader>
+          <shader>
+            <ambient_diffuse_texture_lock sid="ambient_diffuse_texture_lock" type="bool">1</ambient_diffuse_texture_lock>
+            <ambient_diffuse_lock sid="ambient_diffuse_lock" type="bool">1</ambient_diffuse_lock>
+            <diffuse_specular_lock sid="diffuse_specular_lock" type="bool">0</diffuse_specular_lock>
+            <use_self_illum_color sid="use_self_illum_color" type="bool">0</use_self_illum_color>
+            <self_illumination sid="self_illumination" type="float">0</self_illumination>
+            <specular_level sid="specular_level" type="float">0</specular_level>
+            <soften sid="soften" type="float">0.1</soften>
+          </shader>
+        </technique>
+      </extra>
+    </effect>
+    <effect id="Mt_Hat_Back_A">
+      <profile_COMMON>
+        <newparam sid="Hat_Back_A_png-surface">
+          <surface type="2D">
+            <init_from>Hat_Back_A_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="Hat_Back_A_png-sampler">
+          <sampler2D>
+            <source>Hat_Back_A_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="Cmn_Character_NM_png-surface">
+          <surface type="2D">
+            <init_from>Cmn_Character_NM_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="Cmn_Character_NM_png-sampler">
+          <sampler2D>
+            <source>Cmn_Character_NM_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <blinn>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0.588 0.588 0.588 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="Hat_Back_A_png-sampler" texcoord="CHANNEL1"/>
+            </diffuse>
+            <specular>
+              <color>0 0 0 1</color>
+            </specular>
+            <shininess>
+              <float>10</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <transparent opaque="A_ONE">
+              <texture texture="Hat_Back_A_png-sampler" texcoord="CHANNEL1"/>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </blinn>
+          <extra>
+            <technique profile="OpenCOLLADA3dsMax">
+              <bump bumptype="HEIGHTFIELD">
+                <texture texture="Cmn_Character_NM_png-sampler" texcoord="CHANNEL1"/>
+              </bump>
+            </technique>
+          </extra>
+        </technique>
+      </profile_COMMON>
+      <extra>
+        <technique profile="OpenCOLLADA3dsMax">
+          <extended_shader>
+            <opacity_type sid="opacity_type" type="int">0</opacity_type>
+            <falloff_type sid="falloff_type" type="int">0</falloff_type>
+            <falloff sid="falloff" type="float">0</falloff>
+            <index_of_refraction sid="index_of_refraction" type="float">1.5</index_of_refraction>
+            <wire_size sid="wire_size" type="float">1</wire_size>
+            <wire_units sid="wire_units" type="int">0</wire_units>
+            <apply_reflection_dimming sid="apply_reflection_dimming" type="bool">0</apply_reflection_dimming>
+            <dim_level sid="dim_level" type="float">0</dim_level>
+            <reflection_level sid="reflection_level" type="float">3</reflection_level>
+          </extended_shader>
+          <shader>
+            <ambient_diffuse_texture_lock sid="ambient_diffuse_texture_lock" type="bool">1</ambient_diffuse_texture_lock>
+            <ambient_diffuse_lock sid="ambient_diffuse_lock" type="bool">1</ambient_diffuse_lock>
+            <diffuse_specular_lock sid="diffuse_specular_lock" type="bool">0</diffuse_specular_lock>
+            <use_self_illum_color sid="use_self_illum_color" type="bool">0</use_self_illum_color>
+            <self_illumination sid="self_illumination" type="float">0</self_illumination>
+            <specular_level sid="specular_level" type="float">0</specular_level>
+            <soften sid="soften" type="float">0.1</soften>
+          </shader>
+        </technique>
+      </extra>
+    </effect>
+    <effect id="Mt_Hat_Back_B">
+      <profile_COMMON>
+        <newparam sid="Hat_Back_B_png-surface">
+          <surface type="2D">
+            <init_from>Hat_Back_B_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="Hat_Back_B_png-sampler">
+          <sampler2D>
+            <source>Hat_Back_B_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="Cmn_Character_NM_png-surface">
+          <surface type="2D">
+            <init_from>Cmn_Character_NM_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="Cmn_Character_NM_png-sampler">
+          <sampler2D>
+            <source>Cmn_Character_NM_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <blinn>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0.588 0.588 0.588 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="Hat_Back_B_png-sampler" texcoord="CHANNEL1"/>
+            </diffuse>
+            <specular>
+              <color>0 0 0 1</color>
+            </specular>
+            <shininess>
+              <float>10</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <transparent opaque="A_ONE">
+              <texture texture="Hat_Back_B_png-sampler" texcoord="CHANNEL1"/>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </blinn>
+          <extra>
+            <technique profile="OpenCOLLADA3dsMax">
+              <bump bumptype="HEIGHTFIELD">
+                <texture texture="Cmn_Character_NM_png-sampler" texcoord="CHANNEL1"/>
+              </bump>
+            </technique>
+          </extra>
+        </technique>
+      </profile_COMMON>
+      <extra>
+        <technique profile="OpenCOLLADA3dsMax">
+          <extended_shader>
+            <opacity_type sid="opacity_type" type="int">0</opacity_type>
+            <falloff_type sid="falloff_type" type="int">0</falloff_type>
+            <falloff sid="falloff" type="float">0</falloff>
+            <index_of_refraction sid="index_of_refraction" type="float">1.5</index_of_refraction>
+            <wire_size sid="wire_size" type="float">1</wire_size>
+            <wire_units sid="wire_units" type="int">0</wire_units>
+            <apply_reflection_dimming sid="apply_reflection_dimming" type="bool">0</apply_reflection_dimming>
+            <dim_level sid="dim_level" type="float">0</dim_level>
+            <reflection_level sid="reflection_level" type="float">3</reflection_level>
+          </extended_shader>
+          <shader>
+            <ambient_diffuse_texture_lock sid="ambient_diffuse_texture_lock" type="bool">1</ambient_diffuse_texture_lock>
+            <ambient_diffuse_lock sid="ambient_diffuse_lock" type="bool">1</ambient_diffuse_lock>
+            <diffuse_specular_lock sid="diffuse_specular_lock" type="bool">0</diffuse_specular_lock>
+            <use_self_illum_color sid="use_self_illum_color" type="bool">0</use_self_illum_color>
+            <self_illumination sid="self_illumination" type="float">0</self_illumination>
+            <specular_level sid="specular_level" type="float">0</specular_level>
+            <soften sid="soften" type="float">0.1</soften>
+          </shader>
+        </technique>
+      </extra>
+    </effect>
+  </library_effects>
+  <library_materials>
+    <material id="Mt_Body_Back-material" name="Mt_Body_Back">
+      <instance_effect url="#Mt_Body_Back"/>
+    </material>
+    <material id="Mt_Face_Back-material" name="Mt_Face_Back">
+      <instance_effect url="#Mt_Face_Back"/>
+    </material>
+    <material id="Mt_FootL_Back-material" name="Mt_FootL_Back">
+      <instance_effect url="#Mt_FootL_Back"/>
+    </material>
+    <material id="Mt_FootR_Back-material" name="Mt_FootR_Back">
+      <instance_effect url="#Mt_FootR_Back"/>
+    </material>
+    <material id="Mt_Hair_Back-material" name="Mt_Hair_Back">
+      <instance_effect url="#Mt_Hair_Back"/>
+    </material>
+    <material id="Mt_Hat_Back_A-material" name="Mt_Hat_Back_A">
+      <instance_effect url="#Mt_Hat_Back_A"/>
+    </material>
+    <material id="Mt_Hat_Back_B-material" name="Mt_Hat_Back_B">
+      <instance_effect url="#Mt_Hat_Back_B"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="geom-Body_Back__Mt_Body_Back" name="Body_Back__Mt_Body_Back">
+      <mesh>
+        <source id="geom-Body_Back__Mt_Body_Back-positions">
+          <float_array id="geom-Body_Back__Mt_Body_Back-positions-array" count="12">-0.5348842 0 -0.001544654 0.6251158 0 -0.001544654 -0.5348842 0 0.8800554 0.6251158 0 0.8800554</float_array>
+          <technique_common>
+            <accessor source="#geom-Body_Back__Mt_Body_Back-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Body_Back__Mt_Body_Back-normals">
+          <float_array id="geom-Body_Back__Mt_Body_Back-normals-array" count="12">0 -1 0 0 -1 0 0 -1 0 0 -1 0</float_array>
+          <technique_common>
+            <accessor source="#geom-Body_Back__Mt_Body_Back-normals-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Body_Back__Mt_Body_Back-map-2">
+          <float_array id="geom-Body_Back__Mt_Body_Back-map-2-array" count="12">1 1 1 1 1 1 1 1 1 1 1 1</float_array>
+          <technique_common>
+            <accessor source="#geom-Body_Back__Mt_Body_Back-map-2-array" count="4" stride="3">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Body_Back__Mt_Body_Back-map0">
+          <float_array id="geom-Body_Back__Mt_Body_Back-map0-array" count="12">1 1 1 1 1 1 1 1 1 1 1 1</float_array>
+          <technique_common>
+            <accessor source="#geom-Body_Back__Mt_Body_Back-map0-array" count="4" stride="3">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Body_Back__Mt_Body_Back-map1">
+          <float_array id="geom-Body_Back__Mt_Body_Back-map1-array" count="12">0 0 0 1 0 0 0 1 0 1 1 0</float_array>
+          <technique_common>
+            <accessor source="#geom-Body_Back__Mt_Body_Back-map1-array" count="4" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-Body_Back__Mt_Body_Back-vertices">
+          <input semantic="POSITION" source="#geom-Body_Back__Mt_Body_Back-positions"/>
+        </vertices>
+        <triangles material="Mt_Body_Back" count="2">
+          <input semantic="VERTEX" source="#geom-Body_Back__Mt_Body_Back-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#geom-Body_Back__Mt_Body_Back-normals" offset="1"/>
+          <input semantic="COLOR" source="#geom-Body_Back__Mt_Body_Back-map0" offset="2" set="0"/>
+          <input semantic="TEXCOORD" source="#geom-Body_Back__Mt_Body_Back-map1" offset="3" set="0"/>
+          <p>0 0 0 0 1 1 1 1 2 2 2 2 1 1 1 1 3 3 3 3 2 2 2 2</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom-Face_Back__Mt_Face_Back" name="Face_Back__Mt_Face_Back">
+      <mesh>
+        <source id="geom-Face_Back__Mt_Face_Back-positions">
+          <float_array id="geom-Face_Back__Mt_Face_Back-positions-array" count="12">-1.197888 -0.06 0.3607023 1.238112 -0.06 0.3607023 -1.197888 -0.05999994 2.355902 1.238112 -0.05999994 2.355902</float_array>
+          <technique_common>
+            <accessor source="#geom-Face_Back__Mt_Face_Back-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Face_Back__Mt_Face_Back-normals">
+          <float_array id="geom-Face_Back__Mt_Face_Back-normals-array" count="12">0 -1 0 0 -1 0 0 -1 0 0 -1 0</float_array>
+          <technique_common>
+            <accessor source="#geom-Face_Back__Mt_Face_Back-normals-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Face_Back__Mt_Face_Back-map-2">
+          <float_array id="geom-Face_Back__Mt_Face_Back-map-2-array" count="12">1 1 1 1 1 1 1 1 1 1 1 1</float_array>
+          <technique_common>
+            <accessor source="#geom-Face_Back__Mt_Face_Back-map-2-array" count="4" stride="3">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Face_Back__Mt_Face_Back-map0">
+          <float_array id="geom-Face_Back__Mt_Face_Back-map0-array" count="12">1 1 1 1 1 1 1 1 1 1 1 1</float_array>
+          <technique_common>
+            <accessor source="#geom-Face_Back__Mt_Face_Back-map0-array" count="4" stride="3">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Face_Back__Mt_Face_Back-map1">
+          <float_array id="geom-Face_Back__Mt_Face_Back-map1-array" count="12">0 0 0 1 0 0 0 1 0 1 1 0</float_array>
+          <technique_common>
+            <accessor source="#geom-Face_Back__Mt_Face_Back-map1-array" count="4" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-Face_Back__Mt_Face_Back-vertices">
+          <input semantic="POSITION" source="#geom-Face_Back__Mt_Face_Back-positions"/>
+        </vertices>
+        <triangles material="Mt_Face_Back" count="2">
+          <input semantic="VERTEX" source="#geom-Face_Back__Mt_Face_Back-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#geom-Face_Back__Mt_Face_Back-normals" offset="1"/>
+          <input semantic="COLOR" source="#geom-Face_Back__Mt_Face_Back-map0" offset="2" set="0"/>
+          <input semantic="TEXCOORD" source="#geom-Face_Back__Mt_Face_Back-map1" offset="3" set="0"/>
+          <p>0 0 0 0 1 1 1 1 2 2 2 2 1 1 1 1 3 3 3 3 2 2 2 2</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom-FootL_Back__Mt_FootL_Back" name="FootL_Back__Mt_FootL_Back">
+      <mesh>
+        <source id="geom-FootL_Back__Mt_FootL_Back-positions">
+          <float_array id="geom-FootL_Back__Mt_FootL_Back-positions-array" count="12">-1.069292 -0.06 -0.04522589 -0.002091587 -0.06 -0.04522589 -1.069292 -0.06 0.9291741 -0.002091587 -0.06 0.9291741</float_array>
+          <technique_common>
+            <accessor source="#geom-FootL_Back__Mt_FootL_Back-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-FootL_Back__Mt_FootL_Back-normals">
+          <float_array id="geom-FootL_Back__Mt_FootL_Back-normals-array" count="12">0 -1 3.72529e-7 0 -1 3.72529e-7 0 -1 0 0 -1 0</float_array>
+          <technique_common>
+            <accessor source="#geom-FootL_Back__Mt_FootL_Back-normals-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-FootL_Back__Mt_FootL_Back-map-2">
+          <float_array id="geom-FootL_Back__Mt_FootL_Back-map-2-array" count="12">1 1 1 1 1 1 1 1 1 1 1 1</float_array>
+          <technique_common>
+            <accessor source="#geom-FootL_Back__Mt_FootL_Back-map-2-array" count="4" stride="3">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-FootL_Back__Mt_FootL_Back-map0">
+          <float_array id="geom-FootL_Back__Mt_FootL_Back-map0-array" count="12">1 1 1 1 1 1 1 1 1 1 1 1</float_array>
+          <technique_common>
+            <accessor source="#geom-FootL_Back__Mt_FootL_Back-map0-array" count="4" stride="3">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-FootL_Back__Mt_FootL_Back-map1">
+          <float_array id="geom-FootL_Back__Mt_FootL_Back-map1-array" count="12">0 0 0 1 0 0 0 1 0 1 1 0</float_array>
+          <technique_common>
+            <accessor source="#geom-FootL_Back__Mt_FootL_Back-map1-array" count="4" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-FootL_Back__Mt_FootL_Back-vertices">
+          <input semantic="POSITION" source="#geom-FootL_Back__Mt_FootL_Back-positions"/>
+        </vertices>
+        <triangles material="Mt_FootL_Back" count="2">
+          <input semantic="VERTEX" source="#geom-FootL_Back__Mt_FootL_Back-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#geom-FootL_Back__Mt_FootL_Back-normals" offset="1"/>
+          <input semantic="COLOR" source="#geom-FootL_Back__Mt_FootL_Back-map0" offset="2" set="0"/>
+          <input semantic="TEXCOORD" source="#geom-FootL_Back__Mt_FootL_Back-map1" offset="3" set="0"/>
+          <p>0 0 0 0 1 1 1 1 2 2 2 2 1 1 1 1 3 3 3 3 2 2 2 2</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom-FootR_Back__Mt_FootR_Back" name="FootR_Back__Mt_FootR_Back">
+      <mesh>
+        <source id="geom-FootR_Back__Mt_FootR_Back-positions">
+          <float_array id="geom-FootR_Back__Mt_FootR_Back-positions-array" count="12">-0.04886773 0.04001977 -0.0056521 1.018332 0.04001977 -0.0056521 -0.04886773 0.04001975 0.9687479 1.018332 0.04001975 0.9687479</float_array>
+          <technique_common>
+            <accessor source="#geom-FootR_Back__Mt_FootR_Back-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-FootR_Back__Mt_FootR_Back-normals">
+          <float_array id="geom-FootR_Back__Mt_FootR_Back-normals-array" count="12">0 -1 0 0 -1 0 0 -1 0 0 -1 0</float_array>
+          <technique_common>
+            <accessor source="#geom-FootR_Back__Mt_FootR_Back-normals-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-FootR_Back__Mt_FootR_Back-map-2">
+          <float_array id="geom-FootR_Back__Mt_FootR_Back-map-2-array" count="12">1 1 1 1 1 1 1 1 1 1 1 1</float_array>
+          <technique_common>
+            <accessor source="#geom-FootR_Back__Mt_FootR_Back-map-2-array" count="4" stride="3">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-FootR_Back__Mt_FootR_Back-map0">
+          <float_array id="geom-FootR_Back__Mt_FootR_Back-map0-array" count="12">1 1 1 1 1 1 1 1 1 1 1 1</float_array>
+          <technique_common>
+            <accessor source="#geom-FootR_Back__Mt_FootR_Back-map0-array" count="4" stride="3">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-FootR_Back__Mt_FootR_Back-map1">
+          <float_array id="geom-FootR_Back__Mt_FootR_Back-map1-array" count="12">0 0 0 1 0 0 0 1 0 1 1 0</float_array>
+          <technique_common>
+            <accessor source="#geom-FootR_Back__Mt_FootR_Back-map1-array" count="4" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-FootR_Back__Mt_FootR_Back-vertices">
+          <input semantic="POSITION" source="#geom-FootR_Back__Mt_FootR_Back-positions"/>
+        </vertices>
+        <triangles material="Mt_FootR_Back" count="2">
+          <input semantic="VERTEX" source="#geom-FootR_Back__Mt_FootR_Back-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#geom-FootR_Back__Mt_FootR_Back-normals" offset="1"/>
+          <input semantic="COLOR" source="#geom-FootR_Back__Mt_FootR_Back-map0" offset="2" set="0"/>
+          <input semantic="TEXCOORD" source="#geom-FootR_Back__Mt_FootR_Back-map1" offset="3" set="0"/>
+          <p>0 0 0 0 1 1 1 1 2 2 2 2 1 1 1 1 3 3 3 3 2 2 2 2</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom-Hair_Back__Mt_Hair_Back" name="Hair_Back__Mt_Hair_Back">
+      <mesh>
+        <source id="geom-Hair_Back__Mt_Hair_Back-positions">
+          <float_array id="geom-Hair_Back__Mt_Hair_Back-positions-array" count="12">-0.2276416 -0.14 0.5875949 1.813958 -0.14 0.5875949 -0.2276416 -0.1400001 3.000395 1.813958 -0.1400001 3.000395</float_array>
+          <technique_common>
+            <accessor source="#geom-Hair_Back__Mt_Hair_Back-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Hair_Back__Mt_Hair_Back-normals">
+          <float_array id="geom-Hair_Back__Mt_Hair_Back-normals-array" count="12">0 -1 0 0 -1 0 0 -1 0 0 -1 0</float_array>
+          <technique_common>
+            <accessor source="#geom-Hair_Back__Mt_Hair_Back-normals-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Hair_Back__Mt_Hair_Back-map-2">
+          <float_array id="geom-Hair_Back__Mt_Hair_Back-map-2-array" count="12">1 1 1 1 1 1 1 1 1 1 1 1</float_array>
+          <technique_common>
+            <accessor source="#geom-Hair_Back__Mt_Hair_Back-map-2-array" count="4" stride="3">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Hair_Back__Mt_Hair_Back-map0">
+          <float_array id="geom-Hair_Back__Mt_Hair_Back-map0-array" count="12">1 1 1 1 1 1 1 1 1 1 1 1</float_array>
+          <technique_common>
+            <accessor source="#geom-Hair_Back__Mt_Hair_Back-map0-array" count="4" stride="3">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Hair_Back__Mt_Hair_Back-map1">
+          <float_array id="geom-Hair_Back__Mt_Hair_Back-map1-array" count="12">0 0 0 1 0 0 0 1 0 1 1 0</float_array>
+          <technique_common>
+            <accessor source="#geom-Hair_Back__Mt_Hair_Back-map1-array" count="4" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-Hair_Back__Mt_Hair_Back-vertices">
+          <input semantic="POSITION" source="#geom-Hair_Back__Mt_Hair_Back-positions"/>
+        </vertices>
+        <triangles material="Mt_Hair_Back" count="2">
+          <input semantic="VERTEX" source="#geom-Hair_Back__Mt_Hair_Back-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#geom-Hair_Back__Mt_Hair_Back-normals" offset="1"/>
+          <input semantic="COLOR" source="#geom-Hair_Back__Mt_Hair_Back-map0" offset="2" set="0"/>
+          <input semantic="TEXCOORD" source="#geom-Hair_Back__Mt_Hair_Back-map1" offset="3" set="0"/>
+          <p>0 0 0 0 1 1 1 1 2 2 2 2 1 1 1 1 3 3 3 3 2 2 2 2</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom-Hat_A_Back__Mt_Hat_Back_A" name="Hat_A_Back__Mt_Hat_Back_A">
+      <mesh>
+        <source id="geom-Hat_A_Back__Mt_Hat_Back_A-positions">
+          <float_array id="geom-Hat_A_Back__Mt_Hat_Back_A-positions-array" count="12">-1.041913 -0.1 1.037002 1.046087 -0.1 1.037002 -1.041913 -0.0999999 2.545002 1.046087 -0.0999999 2.545002</float_array>
+          <technique_common>
+            <accessor source="#geom-Hat_A_Back__Mt_Hat_Back_A-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Hat_A_Back__Mt_Hat_Back_A-normals">
+          <float_array id="geom-Hat_A_Back__Mt_Hat_Back_A-normals-array" count="12">0 -1 0 0 -1 0 0 -1 0 0 -1 0</float_array>
+          <technique_common>
+            <accessor source="#geom-Hat_A_Back__Mt_Hat_Back_A-normals-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Hat_A_Back__Mt_Hat_Back_A-map-2">
+          <float_array id="geom-Hat_A_Back__Mt_Hat_Back_A-map-2-array" count="12">1 1 1 1 1 1 1 1 1 1 1 1</float_array>
+          <technique_common>
+            <accessor source="#geom-Hat_A_Back__Mt_Hat_Back_A-map-2-array" count="4" stride="3">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Hat_A_Back__Mt_Hat_Back_A-map0">
+          <float_array id="geom-Hat_A_Back__Mt_Hat_Back_A-map0-array" count="12">1 1 1 1 1 1 1 1 1 1 1 1</float_array>
+          <technique_common>
+            <accessor source="#geom-Hat_A_Back__Mt_Hat_Back_A-map0-array" count="4" stride="3">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Hat_A_Back__Mt_Hat_Back_A-map1">
+          <float_array id="geom-Hat_A_Back__Mt_Hat_Back_A-map1-array" count="12">0 0 0 1 0 0 0 1 0 1 1 0</float_array>
+          <technique_common>
+            <accessor source="#geom-Hat_A_Back__Mt_Hat_Back_A-map1-array" count="4" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-Hat_A_Back__Mt_Hat_Back_A-vertices">
+          <input semantic="POSITION" source="#geom-Hat_A_Back__Mt_Hat_Back_A-positions"/>
+        </vertices>
+        <triangles material="Mt_Hat_Back_A" count="2">
+          <input semantic="VERTEX" source="#geom-Hat_A_Back__Mt_Hat_Back_A-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#geom-Hat_A_Back__Mt_Hat_Back_A-normals" offset="1"/>
+          <input semantic="COLOR" source="#geom-Hat_A_Back__Mt_Hat_Back_A-map0" offset="2" set="0"/>
+          <input semantic="TEXCOORD" source="#geom-Hat_A_Back__Mt_Hat_Back_A-map1" offset="3" set="0"/>
+          <p>0 0 0 0 1 1 1 1 2 2 2 2 1 1 1 1 3 3 3 3 2 2 2 2</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom-Hat_B_Back__Mt_Hat_Back_B" name="Hat_B_Back__Mt_Hat_Back_B">
+      <mesh>
+        <source id="geom-Hat_B_Back__Mt_Hat_Back_B-positions">
+          <float_array id="geom-Hat_B_Back__Mt_Hat_Back_B-positions-array" count="12">-0.7470703 0 1.660391 0.4589844 0 1.660391 -0.7470703 0 2.866445 0.4589844 0 2.866445</float_array>
+          <technique_common>
+            <accessor source="#geom-Hat_B_Back__Mt_Hat_Back_B-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Hat_B_Back__Mt_Hat_Back_B-normals">
+          <float_array id="geom-Hat_B_Back__Mt_Hat_Back_B-normals-array" count="12">0 -1 0 0 -1 0 0 -1 0 0 -1 0</float_array>
+          <technique_common>
+            <accessor source="#geom-Hat_B_Back__Mt_Hat_Back_B-normals-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Hat_B_Back__Mt_Hat_Back_B-map-2">
+          <float_array id="geom-Hat_B_Back__Mt_Hat_Back_B-map-2-array" count="12">1 1 1 1 1 1 1 1 1 1 1 1</float_array>
+          <technique_common>
+            <accessor source="#geom-Hat_B_Back__Mt_Hat_Back_B-map-2-array" count="4" stride="3">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Hat_B_Back__Mt_Hat_Back_B-map0">
+          <float_array id="geom-Hat_B_Back__Mt_Hat_Back_B-map0-array" count="12">1 1 1 1 1 1 1 1 1 1 1 1</float_array>
+          <technique_common>
+            <accessor source="#geom-Hat_B_Back__Mt_Hat_Back_B-map0-array" count="4" stride="3">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Hat_B_Back__Mt_Hat_Back_B-map1">
+          <float_array id="geom-Hat_B_Back__Mt_Hat_Back_B-map1-array" count="12">0 0 0 1 0 0 0 1 0 1 1 0</float_array>
+          <technique_common>
+            <accessor source="#geom-Hat_B_Back__Mt_Hat_Back_B-map1-array" count="4" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-Hat_B_Back__Mt_Hat_Back_B-vertices">
+          <input semantic="POSITION" source="#geom-Hat_B_Back__Mt_Hat_Back_B-positions"/>
+        </vertices>
+        <triangles material="Mt_Hat_Back_B" count="2">
+          <input semantic="VERTEX" source="#geom-Hat_B_Back__Mt_Hat_Back_B-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#geom-Hat_B_Back__Mt_Hat_Back_B-normals" offset="1"/>
+          <input semantic="COLOR" source="#geom-Hat_B_Back__Mt_Hat_Back_B-map0" offset="2" set="0"/>
+          <input semantic="TEXCOORD" source="#geom-Hat_B_Back__Mt_Hat_Back_B-map1" offset="3" set="0"/>
+          <p>0 0 0 0 1 1 1 1 2 2 2 2 1 1 1 1 3 3 3 3 2 2 2 2</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_controllers>
+    <controller id="geom-Body_Back__Mt_Body_Back-skin1">
+      <skin source="#geom-Body_Back__Mt_Body_Back">
+        <bind_shape_matrix>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</bind_shape_matrix>
+        <source id="geom-Body_Back__Mt_Body_Back-skin1-joints">
+          <Name_array id="geom-Body_Back__Mt_Body_Back-skin1-joints-array" count="1">joint0</Name_array>
+          <technique_common>
+            <accessor source="#geom-Body_Back__Mt_Body_Back-skin1-joints-array" count="1" stride="1">
+              <param name="JOINT" type="name"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Body_Back__Mt_Body_Back-skin1-bind_poses">
+          <float_array id="geom-Body_Back__Mt_Body_Back-skin1-bind_poses-array" count="16">1 0 0 -0.0451 0 0 1 -0.4553 0 -1 0 0 0 0 0 1</float_array>
+          <technique_common>
+            <accessor source="#geom-Body_Back__Mt_Body_Back-skin1-bind_poses-array" count="1" stride="16">
+              <param name="TRANSFORM" type="float4x4"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Body_Back__Mt_Body_Back-skin1-weights">
+          <float_array id="geom-Body_Back__Mt_Body_Back-skin1-weights-array" count="1">1</float_array>
+          <technique_common>
+            <accessor source="#geom-Body_Back__Mt_Body_Back-skin1-weights-array" count="1" stride="1">
+              <param name="WEIGHT" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <joints>
+          <input semantic="JOINT" source="#geom-Body_Back__Mt_Body_Back-skin1-joints"/>
+          <input semantic="INV_BIND_MATRIX" source="#geom-Body_Back__Mt_Body_Back-skin1-bind_poses"/>
+        </joints>
+        <vertex_weights count="4">
+          <input semantic="JOINT" source="#geom-Body_Back__Mt_Body_Back-skin1-joints" offset="0"/>
+          <input semantic="WEIGHT" source="#geom-Body_Back__Mt_Body_Back-skin1-weights" offset="1"/>
+          <vcount>1 1 1 1</vcount>
+          <v>0 0 0 0 0 0 0 0</v>
+        </vertex_weights>
+      </skin>
+    </controller>
+    <controller id="geom-Face_Back__Mt_Face_Back-skin1">
+      <skin source="#geom-Face_Back__Mt_Face_Back">
+        <bind_shape_matrix>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</bind_shape_matrix>
+        <source id="geom-Face_Back__Mt_Face_Back-skin1-joints">
+          <Name_array id="geom-Face_Back__Mt_Face_Back-skin1-joints-array" count="1">joint1</Name_array>
+          <technique_common>
+            <accessor source="#geom-Face_Back__Mt_Face_Back-skin1-joints-array" count="1" stride="1">
+              <param name="JOINT" type="name"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Face_Back__Mt_Face_Back-skin1-bind_poses">
+          <float_array id="geom-Face_Back__Mt_Face_Back-skin1-bind_poses-array" count="16">1 0 0 -0.008 0 0 1 -0.6475 0 -1 0 -0.06 0 0 0 1</float_array>
+          <technique_common>
+            <accessor source="#geom-Face_Back__Mt_Face_Back-skin1-bind_poses-array" count="1" stride="16">
+              <param name="TRANSFORM" type="float4x4"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Face_Back__Mt_Face_Back-skin1-weights">
+          <float_array id="geom-Face_Back__Mt_Face_Back-skin1-weights-array" count="1">1</float_array>
+          <technique_common>
+            <accessor source="#geom-Face_Back__Mt_Face_Back-skin1-weights-array" count="1" stride="1">
+              <param name="WEIGHT" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <joints>
+          <input semantic="JOINT" source="#geom-Face_Back__Mt_Face_Back-skin1-joints"/>
+          <input semantic="INV_BIND_MATRIX" source="#geom-Face_Back__Mt_Face_Back-skin1-bind_poses"/>
+        </joints>
+        <vertex_weights count="4">
+          <input semantic="JOINT" source="#geom-Face_Back__Mt_Face_Back-skin1-joints" offset="0"/>
+          <input semantic="WEIGHT" source="#geom-Face_Back__Mt_Face_Back-skin1-weights" offset="1"/>
+          <vcount>1 1 1 1</vcount>
+          <v>0 0 0 0 0 0 0 0</v>
+        </vertex_weights>
+      </skin>
+    </controller>
+    <controller id="geom-FootL_Back__Mt_FootL_Back-skin1">
+      <skin source="#geom-FootL_Back__Mt_FootL_Back">
+        <bind_shape_matrix>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</bind_shape_matrix>
+        <source id="geom-FootL_Back__Mt_FootL_Back-skin1-joints">
+          <Name_array id="geom-FootL_Back__Mt_FootL_Back-skin1-joints-array" count="1">joint2</Name_array>
+          <technique_common>
+            <accessor source="#geom-FootL_Back__Mt_FootL_Back-skin1-joints-array" count="1" stride="1">
+              <param name="JOINT" type="name"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-FootL_Back__Mt_FootL_Back-skin1-bind_poses">
+          <float_array id="geom-FootL_Back__Mt_FootL_Back-skin1-bind_poses-array" count="16">1 0 0 0.3497 0 0 1 -0.35 0 -1 0 -0.04 0 0 0 1</float_array>
+          <technique_common>
+            <accessor source="#geom-FootL_Back__Mt_FootL_Back-skin1-bind_poses-array" count="1" stride="16">
+              <param name="TRANSFORM" type="float4x4"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-FootL_Back__Mt_FootL_Back-skin1-weights">
+          <float_array id="geom-FootL_Back__Mt_FootL_Back-skin1-weights-array" count="1">1</float_array>
+          <technique_common>
+            <accessor source="#geom-FootL_Back__Mt_FootL_Back-skin1-weights-array" count="1" stride="1">
+              <param name="WEIGHT" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <joints>
+          <input semantic="JOINT" source="#geom-FootL_Back__Mt_FootL_Back-skin1-joints"/>
+          <input semantic="INV_BIND_MATRIX" source="#geom-FootL_Back__Mt_FootL_Back-skin1-bind_poses"/>
+        </joints>
+        <vertex_weights count="4">
+          <input semantic="JOINT" source="#geom-FootL_Back__Mt_FootL_Back-skin1-joints" offset="0"/>
+          <input semantic="WEIGHT" source="#geom-FootL_Back__Mt_FootL_Back-skin1-weights" offset="1"/>
+          <vcount>1 1 1 1</vcount>
+          <v>0 0 0 0 0 0 0 0</v>
+        </vertex_weights>
+      </skin>
+    </controller>
+    <controller id="geom-FootR_Back__Mt_FootR_Back-skin1">
+      <skin source="#geom-FootR_Back__Mt_FootR_Back">
+        <bind_shape_matrix>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</bind_shape_matrix>
+        <source id="geom-FootR_Back__Mt_FootR_Back-skin1-joints">
+          <Name_array id="geom-FootR_Back__Mt_FootR_Back-skin1-joints-array" count="1">joint3</Name_array>
+          <technique_common>
+            <accessor source="#geom-FootR_Back__Mt_FootR_Back-skin1-joints-array" count="1" stride="1">
+              <param name="JOINT" type="name"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-FootR_Back__Mt_FootR_Back-skin1-bind_poses">
+          <float_array id="geom-FootR_Back__Mt_FootR_Back-skin1-bind_poses-array" count="16">1 0 0 -0.4 0 0 1 -0.34 0 -1 0 0.04 0 0 0 1</float_array>
+          <technique_common>
+            <accessor source="#geom-FootR_Back__Mt_FootR_Back-skin1-bind_poses-array" count="1" stride="16">
+              <param name="TRANSFORM" type="float4x4"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-FootR_Back__Mt_FootR_Back-skin1-weights">
+          <float_array id="geom-FootR_Back__Mt_FootR_Back-skin1-weights-array" count="1">1</float_array>
+          <technique_common>
+            <accessor source="#geom-FootR_Back__Mt_FootR_Back-skin1-weights-array" count="1" stride="1">
+              <param name="WEIGHT" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <joints>
+          <input semantic="JOINT" source="#geom-FootR_Back__Mt_FootR_Back-skin1-joints"/>
+          <input semantic="INV_BIND_MATRIX" source="#geom-FootR_Back__Mt_FootR_Back-skin1-bind_poses"/>
+        </joints>
+        <vertex_weights count="4">
+          <input semantic="JOINT" source="#geom-FootR_Back__Mt_FootR_Back-skin1-joints" offset="0"/>
+          <input semantic="WEIGHT" source="#geom-FootR_Back__Mt_FootR_Back-skin1-weights" offset="1"/>
+          <vcount>1 1 1 1</vcount>
+          <v>0 0 0 0 0 0 0 0</v>
+        </vertex_weights>
+      </skin>
+    </controller>
+    <controller id="geom-Hair_Back__Mt_Hair_Back-skin1">
+      <skin source="#geom-Hair_Back__Mt_Hair_Back">
+        <bind_shape_matrix>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</bind_shape_matrix>
+        <source id="geom-Hair_Back__Mt_Hair_Back-skin1-joints">
+          <Name_array id="geom-Hair_Back__Mt_Hair_Back-skin1-joints-array" count="1">joint4</Name_array>
+          <technique_common>
+            <accessor source="#geom-Hair_Back__Mt_Hair_Back-skin1-joints-array" count="1" stride="1">
+              <param name="JOINT" type="name"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Hair_Back__Mt_Hair_Back-skin1-bind_poses">
+          <float_array id="geom-Hair_Back__Mt_Hair_Back-skin1-bind_poses-array" count="16">1 0 0 -0.3079 0 0 1 -2.2568 0 -1 0 0.06 0 0 0 1</float_array>
+          <technique_common>
+            <accessor source="#geom-Hair_Back__Mt_Hair_Back-skin1-bind_poses-array" count="1" stride="16">
+              <param name="TRANSFORM" type="float4x4"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Hair_Back__Mt_Hair_Back-skin1-weights">
+          <float_array id="geom-Hair_Back__Mt_Hair_Back-skin1-weights-array" count="1">1</float_array>
+          <technique_common>
+            <accessor source="#geom-Hair_Back__Mt_Hair_Back-skin1-weights-array" count="1" stride="1">
+              <param name="WEIGHT" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <joints>
+          <input semantic="JOINT" source="#geom-Hair_Back__Mt_Hair_Back-skin1-joints"/>
+          <input semantic="INV_BIND_MATRIX" source="#geom-Hair_Back__Mt_Hair_Back-skin1-bind_poses"/>
+        </joints>
+        <vertex_weights count="4">
+          <input semantic="JOINT" source="#geom-Hair_Back__Mt_Hair_Back-skin1-joints" offset="0"/>
+          <input semantic="WEIGHT" source="#geom-Hair_Back__Mt_Hair_Back-skin1-weights" offset="1"/>
+          <vcount>1 1 1 1</vcount>
+          <v>0 0 0 0 0 0 0 0</v>
+        </vertex_weights>
+      </skin>
+    </controller>
+    <controller id="geom-Hat_A_Back__Mt_Hat_Back_A-skin1">
+      <skin source="#geom-Hat_A_Back__Mt_Hat_Back_A">
+        <bind_shape_matrix>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</bind_shape_matrix>
+        <source id="geom-Hat_A_Back__Mt_Hat_Back_A-skin1-joints">
+          <Name_array id="geom-Hat_A_Back__Mt_Hat_Back_A-skin1-joints-array" count="1">joint5</Name_array>
+          <technique_common>
+            <accessor source="#geom-Hat_A_Back__Mt_Hat_Back_A-skin1-joints-array" count="1" stride="1">
+              <param name="JOINT" type="name"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Hat_A_Back__Mt_Hat_Back_A-skin1-bind_poses">
+          <float_array id="geom-Hat_A_Back__Mt_Hat_Back_A-skin1-bind_poses-array" count="16">1 0 0 0 0 0 1 -2.26 0 -1 0 0 0 0 0 1</float_array>
+          <technique_common>
+            <accessor source="#geom-Hat_A_Back__Mt_Hat_Back_A-skin1-bind_poses-array" count="1" stride="16">
+              <param name="TRANSFORM" type="float4x4"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Hat_A_Back__Mt_Hat_Back_A-skin1-weights">
+          <float_array id="geom-Hat_A_Back__Mt_Hat_Back_A-skin1-weights-array" count="1">1</float_array>
+          <technique_common>
+            <accessor source="#geom-Hat_A_Back__Mt_Hat_Back_A-skin1-weights-array" count="1" stride="1">
+              <param name="WEIGHT" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <joints>
+          <input semantic="JOINT" source="#geom-Hat_A_Back__Mt_Hat_Back_A-skin1-joints"/>
+          <input semantic="INV_BIND_MATRIX" source="#geom-Hat_A_Back__Mt_Hat_Back_A-skin1-bind_poses"/>
+        </joints>
+        <vertex_weights count="4">
+          <input semantic="JOINT" source="#geom-Hat_A_Back__Mt_Hat_Back_A-skin1-joints" offset="0"/>
+          <input semantic="WEIGHT" source="#geom-Hat_A_Back__Mt_Hat_Back_A-skin1-weights" offset="1"/>
+          <vcount>1 1 1 1</vcount>
+          <v>0 0 0 0 0 0 0 0</v>
+        </vertex_weights>
+      </skin>
+    </controller>
+    <controller id="geom-Hat_B_Back__Mt_Hat_Back_B-skin1">
+      <skin source="#geom-Hat_B_Back__Mt_Hat_Back_B">
+        <bind_shape_matrix>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</bind_shape_matrix>
+        <source id="geom-Hat_B_Back__Mt_Hat_Back_B-skin1-joints">
+          <Name_array id="geom-Hat_B_Back__Mt_Hat_Back_B-skin1-joints-array" count="1">joint6</Name_array>
+          <technique_common>
+            <accessor source="#geom-Hat_B_Back__Mt_Hat_Back_B-skin1-joints-array" count="1" stride="1">
+              <param name="JOINT" type="name"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Hat_B_Back__Mt_Hat_Back_B-skin1-bind_poses">
+          <float_array id="geom-Hat_B_Back__Mt_Hat_Back_B-skin1-bind_poses-array" count="16">1 0 0 0 0 0 1 -2.26 0 -1 0 0 0 0 0 1</float_array>
+          <technique_common>
+            <accessor source="#geom-Hat_B_Back__Mt_Hat_Back_B-skin1-bind_poses-array" count="1" stride="16">
+              <param name="TRANSFORM" type="float4x4"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Hat_B_Back__Mt_Hat_Back_B-skin1-weights">
+          <float_array id="geom-Hat_B_Back__Mt_Hat_Back_B-skin1-weights-array" count="1">1</float_array>
+          <technique_common>
+            <accessor source="#geom-Hat_B_Back__Mt_Hat_Back_B-skin1-weights-array" count="1" stride="1">
+              <param name="WEIGHT" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <joints>
+          <input semantic="JOINT" source="#geom-Hat_B_Back__Mt_Hat_Back_B-skin1-joints"/>
+          <input semantic="INV_BIND_MATRIX" source="#geom-Hat_B_Back__Mt_Hat_Back_B-skin1-bind_poses"/>
+        </joints>
+        <vertex_weights count="4">
+          <input semantic="JOINT" source="#geom-Hat_B_Back__Mt_Hat_Back_B-skin1-joints" offset="0"/>
+          <input semantic="WEIGHT" source="#geom-Hat_B_Back__Mt_Hat_Back_B-skin1-weights" offset="1"/>
+          <vcount>1 1 1 1</vcount>
+          <v>0 0 0 0 0 0 0 0</v>
+        </vertex_weights>
+      </skin>
+    </controller>
+  </library_controllers>
+  <library_lights>
+    <light id="EnvironmentAmbientLight" name="EnvironmentAmbientLight">
+      <technique_common>
+        <ambient>
+          <color>0 0 0</color>
+        </ambient>
+      </technique_common>
+    </light>
+  </library_lights>
+  <library_images>
+    <image id="Body_Back_png">
+      <init_from>./Body_Back.png</init_from>
+    </image>
+    <image id="Cmn_Character_NM_png">
+      <init_from>./Cmn_Character_NM.png</init_from>
+    </image>
+    <image id="Face_Back_png">
+      <init_from>./Face_Back.png</init_from>
+    </image>
+    <image id="FootL_Back_001_png">
+      <init_from>./FootL_Back.001.png</init_from>
+    </image>
+    <image id="FootR_Back_001_png">
+      <init_from>./FootR_Back.001.png</init_from>
+    </image>
+    <image id="Hair_Back_png">
+      <init_from>./Hair_Back.png</init_from>
+    </image>
+    <image id="Hat_Back_A_png">
+      <init_from>./Hat_Back_A.png</init_from>
+    </image>
+    <image id="Hat_Back_B_png">
+      <init_from>./Hat_Back_B.png</init_from>
+    </image>
+  </library_images>
+  <library_visual_scenes>
+    <visual_scene id="MaxScene">
+      <node name="EnvironmentAmbientLight">
+        <instance_light url="#EnvironmentAmbientLight"/>
+      </node>
+      <node id="node-Export" name="Export">
+        <rotate>-1 0 0 -90</rotate>
+        <node id="node-Base" name="Base">
+          <node id="node-B_Body_Back" name="B_Body_Back">
+            <translate>0.0451 0.4553 0</translate>
+            <node id="node-Body_Back" name="Body_Back" sid="joint0" type="JOINT">
+              <extra>
+                <technique profile="OpenCOLLADA">
+                  <cast_shadows sid="cast_shadows" type="bool">1</cast_shadows>
+                  <receive_shadows sid="receive_shadows" type="bool">1</receive_shadows>
+                  <primary_visibility sid="primary_visibility" type="bool">1</primary_visibility>
+                  <secondary_visibility sid="secondary_visibility" type="bool">1</secondary_visibility>
+                </technique>
+              </extra>
+            </node>
+            <extra>
+              <technique profile="OpenCOLLADA">
+                <cast_shadows sid="cast_shadows" type="bool">1</cast_shadows>
+                <receive_shadows sid="receive_shadows" type="bool">1</receive_shadows>
+                <primary_visibility sid="primary_visibility" type="bool">1</primary_visibility>
+                <secondary_visibility sid="secondary_visibility" type="bool">1</secondary_visibility>
+              </technique>
+            </extra>
+          </node>
+          <node id="node-B_Face_Back" name="B_Face_Back">
+            <translate>0.008 0.6475 0.06</translate>
+            <node id="node-Face_Back" name="Face_Back" sid="joint1" type="JOINT">
+              <extra>
+                <technique profile="OpenCOLLADA">
+                  <cast_shadows sid="cast_shadows" type="bool">1</cast_shadows>
+                  <receive_shadows sid="receive_shadows" type="bool">1</receive_shadows>
+                  <primary_visibility sid="primary_visibility" type="bool">1</primary_visibility>
+                  <secondary_visibility sid="secondary_visibility" type="bool">1</secondary_visibility>
+                </technique>
+              </extra>
+            </node>
+            <node id="node-Lct_Breath" name="Lct_Breath">
+              <translate>-0.1135435 0.3540248 -0.06</translate>
+              <extra>
+                <technique profile="OpenCOLLADA">
+                  <cast_shadows sid="cast_shadows" type="bool">1</cast_shadows>
+                  <receive_shadows sid="receive_shadows" type="bool">1</receive_shadows>
+                  <primary_visibility sid="primary_visibility" type="bool">1</primary_visibility>
+                  <secondary_visibility sid="secondary_visibility" type="bool">1</secondary_visibility>
+                </technique>
+              </extra>
+            </node>
+            <extra>
+              <technique profile="OpenCOLLADA">
+                <cast_shadows sid="cast_shadows" type="bool">1</cast_shadows>
+                <receive_shadows sid="receive_shadows" type="bool">1</receive_shadows>
+                <primary_visibility sid="primary_visibility" type="bool">1</primary_visibility>
+                <secondary_visibility sid="secondary_visibility" type="bool">1</secondary_visibility>
+              </technique>
+            </extra>
+          </node>
+          <node id="node-B_FootL_Back" name="B_FootL_Back">
+            <translate>-0.3497 0.35 0.04</translate>
+            <node id="node-FootL_Back" name="FootL_Back" sid="joint2" type="JOINT">
+              <extra>
+                <technique profile="OpenCOLLADA">
+                  <cast_shadows sid="cast_shadows" type="bool">1</cast_shadows>
+                  <receive_shadows sid="receive_shadows" type="bool">1</receive_shadows>
+                  <primary_visibility sid="primary_visibility" type="bool">1</primary_visibility>
+                  <secondary_visibility sid="secondary_visibility" type="bool">1</secondary_visibility>
+                </technique>
+              </extra>
+            </node>
+            <extra>
+              <technique profile="OpenCOLLADA">
+                <cast_shadows sid="cast_shadows" type="bool">1</cast_shadows>
+                <receive_shadows sid="receive_shadows" type="bool">1</receive_shadows>
+                <primary_visibility sid="primary_visibility" type="bool">1</primary_visibility>
+                <secondary_visibility sid="secondary_visibility" type="bool">1</secondary_visibility>
+              </technique>
+            </extra>
+          </node>
+          <node id="node-B_FootR_Back" name="B_FootR_Back">
+            <translate>0.4 0.34 -0.04</translate>
+            <node id="node-FootR_Back" name="FootR_Back" sid="joint3" type="JOINT">
+              <extra>
+                <technique profile="OpenCOLLADA">
+                  <cast_shadows sid="cast_shadows" type="bool">1</cast_shadows>
+                  <receive_shadows sid="receive_shadows" type="bool">1</receive_shadows>
+                  <primary_visibility sid="primary_visibility" type="bool">1</primary_visibility>
+                  <secondary_visibility sid="secondary_visibility" type="bool">1</secondary_visibility>
+                </technique>
+              </extra>
+            </node>
+            <extra>
+              <technique profile="OpenCOLLADA">
+                <cast_shadows sid="cast_shadows" type="bool">1</cast_shadows>
+                <receive_shadows sid="receive_shadows" type="bool">1</receive_shadows>
+                <primary_visibility sid="primary_visibility" type="bool">1</primary_visibility>
+                <secondary_visibility sid="secondary_visibility" type="bool">1</secondary_visibility>
+              </technique>
+            </extra>
+          </node>
+          <node id="node-B_Hair_Back" name="B_Hair_Back">
+            <translate>0.3079109 2.256752 -0.06</translate>
+            <node id="node-Hair_Back" name="Hair_Back" sid="joint4" type="JOINT">
+              <extra>
+                <technique profile="OpenCOLLADA">
+                  <cast_shadows sid="cast_shadows" type="bool">1</cast_shadows>
+                  <receive_shadows sid="receive_shadows" type="bool">1</receive_shadows>
+                  <primary_visibility sid="primary_visibility" type="bool">1</primary_visibility>
+                  <secondary_visibility sid="secondary_visibility" type="bool">1</secondary_visibility>
+                </technique>
+              </extra>
+            </node>
+            <extra>
+              <technique profile="OpenCOLLADA">
+                <cast_shadows sid="cast_shadows" type="bool">1</cast_shadows>
+                <receive_shadows sid="receive_shadows" type="bool">1</receive_shadows>
+                <primary_visibility sid="primary_visibility" type="bool">1</primary_visibility>
+                <secondary_visibility sid="secondary_visibility" type="bool">1</secondary_visibility>
+              </technique>
+            </extra>
+          </node>
+          <node id="node-Lct_PrBaseZ_Face" name="Lct_PrBaseZ_Face">
+            <translate>0.008 0.6475 0.06</translate>
+            <node id="node-B_Hat_Back" name="B_Hat_Back">
+              <translate>-0.008 1.6125 -0.06</translate>
+              <node id="node-Hat_A_Back" name="Hat_A_Back" sid="joint5" type="JOINT">
+                <extra>
+                  <technique profile="OpenCOLLADA">
+                    <cast_shadows sid="cast_shadows" type="bool">1</cast_shadows>
+                    <receive_shadows sid="receive_shadows" type="bool">1</receive_shadows>
+                    <primary_visibility sid="primary_visibility" type="bool">1</primary_visibility>
+                    <secondary_visibility sid="secondary_visibility" type="bool">1</secondary_visibility>
+                  </technique>
+                </extra>
+              </node>
+              <node id="node-Hat_B_Back" name="Hat_B_Back" sid="joint6" type="JOINT">
+                <extra>
+                  <technique profile="OpenCOLLADA">
+                    <cast_shadows sid="cast_shadows" type="bool">1</cast_shadows>
+                    <receive_shadows sid="receive_shadows" type="bool">1</receive_shadows>
+                    <primary_visibility sid="primary_visibility" type="bool">1</primary_visibility>
+                    <secondary_visibility sid="secondary_visibility" type="bool">1</secondary_visibility>
+                  </technique>
+                </extra>
+              </node>
+              <extra>
+                <technique profile="OpenCOLLADA">
+                  <cast_shadows sid="cast_shadows" type="bool">1</cast_shadows>
+                  <receive_shadows sid="receive_shadows" type="bool">1</receive_shadows>
+                  <primary_visibility sid="primary_visibility" type="bool">1</primary_visibility>
+                  <secondary_visibility sid="secondary_visibility" type="bool">1</secondary_visibility>
+                </technique>
+              </extra>
+            </node>
+            <extra>
+              <technique profile="OpenCOLLADA">
+                <cast_shadows sid="cast_shadows" type="bool">1</cast_shadows>
+                <receive_shadows sid="receive_shadows" type="bool">1</receive_shadows>
+                <primary_visibility sid="primary_visibility" type="bool">1</primary_visibility>
+                <secondary_visibility sid="secondary_visibility" type="bool">1</secondary_visibility>
+              </technique>
+            </extra>
+          </node>
+          <extra>
+            <technique profile="OpenCOLLADA">
+              <cast_shadows sid="cast_shadows" type="bool">1</cast_shadows>
+              <receive_shadows sid="receive_shadows" type="bool">1</receive_shadows>
+              <primary_visibility sid="primary_visibility" type="bool">1</primary_visibility>
+              <secondary_visibility sid="secondary_visibility" type="bool">1</secondary_visibility>
+            </technique>
+          </extra>
+        </node>
+        <extra>
+          <technique profile="OpenCOLLADA">
+            <cast_shadows sid="cast_shadows" type="bool">1</cast_shadows>
+            <receive_shadows sid="receive_shadows" type="bool">1</receive_shadows>
+            <primary_visibility sid="primary_visibility" type="bool">1</primary_visibility>
+            <secondary_visibility sid="secondary_visibility" type="bool">1</secondary_visibility>
+          </technique>
+        </extra>
+      </node>
+      <node id="node-Body_Back__Mt_Body_Back" name="Body_Back__Mt_Body_Back">
+        <instance_controller url="#geom-Body_Back__Mt_Body_Back-skin1">
+          <skeleton>#node-Body_Back</skeleton>
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Mt_Body_Back" target="#Mt_Body_Back-material">
+                <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="0"/>
+                <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="0"/>
+                <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_controller>
+        <extra>
+          <technique profile="OpenCOLLADA">
+            <cast_shadows sid="cast_shadows" type="bool">1</cast_shadows>
+            <receive_shadows sid="receive_shadows" type="bool">1</receive_shadows>
+            <primary_visibility sid="primary_visibility" type="bool">1</primary_visibility>
+            <secondary_visibility sid="secondary_visibility" type="bool">1</secondary_visibility>
+          </technique>
+        </extra>
+      </node>
+      <node id="node-Face_Back__Mt_Face_Back" name="Face_Back__Mt_Face_Back">
+        <instance_controller url="#geom-Face_Back__Mt_Face_Back-skin1">
+          <skeleton>#node-Face_Back</skeleton>
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Mt_Face_Back" target="#Mt_Face_Back-material">
+                <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="0"/>
+                <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="0"/>
+                <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_controller>
+        <extra>
+          <technique profile="OpenCOLLADA">
+            <cast_shadows sid="cast_shadows" type="bool">1</cast_shadows>
+            <receive_shadows sid="receive_shadows" type="bool">1</receive_shadows>
+            <primary_visibility sid="primary_visibility" type="bool">1</primary_visibility>
+            <secondary_visibility sid="secondary_visibility" type="bool">1</secondary_visibility>
+          </technique>
+        </extra>
+      </node>
+      <node id="node-FootL_Back__Mt_FootL_Back" name="FootL_Back__Mt_FootL_Back">
+        <instance_controller url="#geom-FootL_Back__Mt_FootL_Back-skin1">
+          <skeleton>#node-FootL_Back</skeleton>
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Mt_FootL_Back" target="#Mt_FootL_Back-material">
+                <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="0"/>
+                <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="0"/>
+                <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_controller>
+        <extra>
+          <technique profile="OpenCOLLADA">
+            <cast_shadows sid="cast_shadows" type="bool">1</cast_shadows>
+            <receive_shadows sid="receive_shadows" type="bool">1</receive_shadows>
+            <primary_visibility sid="primary_visibility" type="bool">1</primary_visibility>
+            <secondary_visibility sid="secondary_visibility" type="bool">1</secondary_visibility>
+          </technique>
+        </extra>
+      </node>
+      <node id="node-FootR_Back__Mt_FootR_Back" name="FootR_Back__Mt_FootR_Back">
+        <instance_controller url="#geom-FootR_Back__Mt_FootR_Back-skin1">
+          <skeleton>#node-FootR_Back</skeleton>
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Mt_FootR_Back" target="#Mt_FootR_Back-material">
+                <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="0"/>
+                <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="0"/>
+                <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_controller>
+        <extra>
+          <technique profile="OpenCOLLADA">
+            <cast_shadows sid="cast_shadows" type="bool">1</cast_shadows>
+            <receive_shadows sid="receive_shadows" type="bool">1</receive_shadows>
+            <primary_visibility sid="primary_visibility" type="bool">1</primary_visibility>
+            <secondary_visibility sid="secondary_visibility" type="bool">1</secondary_visibility>
+          </technique>
+        </extra>
+      </node>
+      <node id="node-Hair_Back__Mt_Hair_Back" name="Hair_Back__Mt_Hair_Back">
+        <instance_controller url="#geom-Hair_Back__Mt_Hair_Back-skin1">
+          <skeleton>#node-Hair_Back</skeleton>
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Mt_Hair_Back" target="#Mt_Hair_Back-material">
+                <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="0"/>
+                <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="0"/>
+                <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_controller>
+        <extra>
+          <technique profile="OpenCOLLADA">
+            <cast_shadows sid="cast_shadows" type="bool">1</cast_shadows>
+            <receive_shadows sid="receive_shadows" type="bool">1</receive_shadows>
+            <primary_visibility sid="primary_visibility" type="bool">1</primary_visibility>
+            <secondary_visibility sid="secondary_visibility" type="bool">1</secondary_visibility>
+          </technique>
+        </extra>
+      </node>
+      <node id="node-Hat_A_Back__Mt_Hat_Back_A" name="Hat_A_Back__Mt_Hat_Back_A">
+        <instance_controller url="#geom-Hat_A_Back__Mt_Hat_Back_A-skin1">
+          <skeleton>#node-Hat_A_Back</skeleton>
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Mt_Hat_Back_A" target="#Mt_Hat_Back_A-material">
+                <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="0"/>
+                <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="0"/>
+                <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_controller>
+        <extra>
+          <technique profile="OpenCOLLADA">
+            <cast_shadows sid="cast_shadows" type="bool">1</cast_shadows>
+            <receive_shadows sid="receive_shadows" type="bool">1</receive_shadows>
+            <primary_visibility sid="primary_visibility" type="bool">1</primary_visibility>
+            <secondary_visibility sid="secondary_visibility" type="bool">1</secondary_visibility>
+          </technique>
+        </extra>
+      </node>
+      <node id="node-Hat_B_Back__Mt_Hat_Back_B" name="Hat_B_Back__Mt_Hat_Back_B">
+        <instance_controller url="#geom-Hat_B_Back__Mt_Hat_Back_B-skin1">
+          <skeleton>#node-Hat_B_Back</skeleton>
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Mt_Hat_Back_B" target="#Mt_Hat_Back_B-material">
+                <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="0"/>
+                <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="0"/>
+                <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_controller>
+        <extra>
+          <technique profile="OpenCOLLADA">
+            <cast_shadows sid="cast_shadows" type="bool">1</cast_shadows>
+            <receive_shadows sid="receive_shadows" type="bool">1</receive_shadows>
+            <primary_visibility sid="primary_visibility" type="bool">1</primary_visibility>
+            <secondary_visibility sid="secondary_visibility" type="bool">1</secondary_visibility>
+          </technique>
+        </extra>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#MaxScene"/>
+  </scene>
+</COLLADA>
